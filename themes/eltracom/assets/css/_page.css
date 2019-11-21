@@ -15,13 +15,17 @@
 	background-repeat: no-repeat!important;
 }
 .page-banner-des-inner {
-    padding: 135px 20%;
+    padding: 0 20%;
     position: relative;
     z-index: 2;
     text-align: center;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
 }
-.page-banner-des-inner > span{
+.page-banner-des-inner div > span{
     display: block;
     font-size: 13px;
     line-height: 15px;

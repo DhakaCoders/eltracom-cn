@@ -5,6 +5,10 @@
 @import url('_page.css');
 @import url('_home.css');
 /*Rannojit*/
+@import url('_certificates.css');
+@import url('_terms.css');
+@import url('_service-business-brokerage.css');
+@import url('_crs.css');
 
 
 
@@ -17,4 +21,4 @@
 
 
 @import url('_footer.css');
-
+@import url('_service-exclusive-agencies.css');

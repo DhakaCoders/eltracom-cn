@@ -1,5 +1,5 @@
 /**
-Commons
+Commons 
 */
 *, *:focus,.btn,.btn:focus{
 	outline: 0!important;
@@ -94,7 +94,7 @@ Containers
 	width: 100%;
 }
 .container-md{
-	
+	max-width: 970px;
 }
 
 .container-sm{
