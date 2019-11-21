@@ -1,5 +1,5 @@
 (function($) {
-
+var windowWidth = $(window).width();
 
 /*Milon*/
 
@@ -17,6 +17,20 @@
 
 
 /*Rannojit*/
+
+if (windowWidth > 767) {
+  if( $('#sidebar').length ){
+    $('#sidebar').stickySidebar({
+        topSpacing: 100,
+        bottomSpacing: 60
+    });
+  }
+  $('.sidebar-controller ul').onePageNav({
+   currentClass: 'current',
+   changeHash: false,
+   scrollSpeed: 500
+  });
+}
 
 
 
