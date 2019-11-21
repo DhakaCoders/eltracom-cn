@@ -11,7 +11,10 @@
 	background: #e8e9ed;
 	margin: 0 60px;
 	border-radius: 12px;
-	padding: 140px 0 125px;
+	padding: 140px 0 65px;
+}
+.certificates-page-con-controller ul li{
+	padding-bottom: 50px;
 }
 .certificates-item-row{
 	position: relative;
@@ -23,4 +26,21 @@
 	top: 0;
 	width: 176px;
 	text-align: center;
+}
+.certificates-item-row p{
+	margin-bottom: 35px;
+}
+
+.certificates-item-row-des strong{
+	display: block;
+	font-size: 30px;
+	line-height: 35px;
+    font-family: 'RobotoBlack';	
+    padding-bottom: 20px;
+}
+.certificates-item-row-des strong span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
