@@ -1,0 +1,364 @@
+/*
+-----------------------
+ec-contact-frm-sec-wrp
+-----------------------
+*/
+.ec-contact-frm-sec-wrp{
+	padding-top: 100px;
+	padding-bottom: 110px;
+}
+.contact-form{
+	max-width: 660px;
+	width: 100%;
+	margin: 0 auto;
+}
+/*
+-----------------------
+ Contact Form Css
+-----------------------
+*/
+.contact-form .wpforms-form{
+	width: 100%;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-row{
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-row .wpforms-one-half{
+	width: 50% !important;
+	float: left !important;
+	margin-left: 0% !important;
+	padding: 0 10px;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field.wpforms-one-half{
+	width: 50% !important;
+	float: left !important;
+	margin-left: 0 !important;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-row .wpforms-one-half:first-child{
+	padding-left: 0 !important;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field .wpforms-field-row .wpforms-one-half:last-child{
+	padding-right: 0 !important;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input[type="text"],
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input[type="email"],
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input[type="number"],
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field textarea{
+	width: 100% !important;
+	max-width: 100% !important;
+	display: block;
+	height: 50px !important;
+	padding: 15px 15px !important;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	font-size: 14px;
+	line-height: 16px;
+	color: #202124;
+	background: #f7f7f7;
+	border: none;
+}
+.contact-form .select-box.check-box select {
+    background-image: url(../images/select-angle-icon.png)!important;
+    background-size: 14px 10px;
+    background-repeat: no-repeat !important;
+    background-position: 96% center !important;
+}
+.contact-form .select-box select {
+    outline: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 40px;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 50px !important;
+    border: none;
+    padding: 15px 15px;
+    font-size: 14px !important;
+    line-height: 16px;
+    color: #202124 !important;
+    font-weight: 400 !important;
+    position: relative;
+    background: #f7f7f7;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error input{
+	border-color: #FF5C26!important;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B7B7B7;
+  opacity: 1;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input::-moz-placeholder { /* Firefox 19+ */
+  color: #B7B7B7;
+  opacity: 1;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input:-ms-input-placeholder { /* IE 10+ */
+  color: #B7B7B7;
+  opacity: 1;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input:-moz-placeholder { /* Firefox 18- */
+  color: #B7B7B7;
+  opacity: 1;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B7B7B7;
+  opacity: 1;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #B7B7B7;
+  opacity: 1;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #B7B7B7;
+  opacity: 1;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field textarea:-moz-placeholder { /* Firefox 18- */
+  color: #B7B7B7;
+  opacity: 1;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input[type="text"]:focus,
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input[type="email"]:focus,
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field input[type="number"]:focus,
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field textarea:focus{
+	border-color: #C4C2C2 !important;
+}
+.contact-form .wpforms-form .wpforms-field-container .wpforms-field textarea{
+	height: 111px !important;
+	resize: none;
+}
+.contact-form label.wpforms-field-label{
+	font-style: normal !important;
+	font-weight: 400 !important;
+	font-size: 14px !important;
+	line-height: 16px !important;/* identical to box height */
+	text-transform: capitalize;
+	color: #202124;
+	margin: 0;
+	margin-bottom: 10px !important;
+}
+.contact-form div.wpforms-container-full .wpforms-form .wpforms-field{
+	padding: 0 !important;
+}
+.contact-form .wpforms-submit-container button[type="submit"],
+.contact-form .wpforms-submit-container input[type="submit"]{
+    max-width: 228px;
+    width: 100%;
+    height: 60px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px !important;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #fff !important;
+    outline: none !important;
+    background: #003fa5 !important;
+    box-sizing: border-box !important;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    letter-spacing: 1.3px;
+    float: left;
+}
+.contact-form-text{
+	float: right;
+	font-size: 14px;
+	line-height: 16px;
+	color: #202124;
+	padding-top: 30px;
+	font-weight: 400;
+}
+.contact-form .wpforms-submit-container .wpforms-submit:hover{
+	background-color: #032864 !important;
+	-ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.contact-form div.wpforms-container-full .wpforms-form .wpforms-submit-container{
+	padding-top: 0 !important;
+}
+.contact-form div.wpforms-container-full{
+	margin-bottom: 0 !important;
+}
+
+.contact-form div.wpforms-container-full .wpforms-form label.wpforms-error{
+	font-size: 16px !important;
+	line-height: 18px !important;
+	color: #FF5C26 !important;
+	font-weight: 400 !important;
+	padding-top: 10px;
+}
+.google-map-sec-wrp{
+	position: relative;
+}
+#contactMap{
+	height: 636px;
+}
+.map-address{
+	position: absolute;
+	right: 175px;
+	top: -55px;
+	max-width: 468px;
+	width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.16);
+    background: #fff;
+    padding: 55px 55px 45px;
+}
+.addr-box-inner h3{
+	margin: 0;
+	color: #003fa5;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.addr-box-inner h3 strong{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.map-date ul,
+.addr-box-inner ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.addr-box-inner ul li{
+	color: #000417;
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: 400;
+}
+.addr-box-inner > ul > li:first-child{
+	padding-bottom: 12px;
+}
+.addr-box-inner ul li a{
+	color: #000417;
+}
+.addr-box-inner ul li a:hover{
+	color: #0168f0;
+}
+.map-socail{
+	padding-top: 12px;
+}
+.map-socail a{
+	display: inline-block;
+	vertical-align: baseline;
+	background-color: #f2f2f2;
+	width: 42px;
+	height: 42px;
+	border-radius: 50px;
+	font-size: 18px;
+	line-height: 45px;
+	color: #7b7b7b;
+	text-align: center;
+}
+.map-socail a:hover{
+	color: #0168f0;
+}
+.map-socail a:last-of-type{
+	margin-left: 10px;
+}
+.map-date{
+	max-width: 280px;
+	width: 100%;
+	padding-top: 35px;
+}
+.map-date ul li {
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+}
+.map-date ul li span{
+	width: 50%;
+	float: left;
+	color: #000417;
+	font-size: 15px;
+	line-height: 17px;
+	font-weight: 400;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.map-date ul li span:last-child{
+	text-align: right;
+}
+
+/*
+----------------
+ Career Css
+----------------
+*/
+.career-frm-sec-wrp{
+	padding-top: 125px;
+	padding-bottom: 80px;
+}
+.ec-contact-frm-dsc {
+    font-size: 18px;
+    line-height: 32px;
+    color: #000417;
+    padding-bottom: 50px;
+    padding-right: 20px;
+}
+.ec-contact-frm-dsc h3{
+	margin: 0;
+	color: #003fa5;
+	font-weight: 300;
+	line-height: 32px;
+	margin-bottom: 30px;
+}
+.ec-contact-frm-dsc h3 strong{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.contact-cv-upload{
+	position: relative;
+}
+.contact-cv-upload .file-input {
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 20px 0 12px 5px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+}
+.contact-cv-upload .file-input-div{
+	position: relative;
+	cursor: pointer;
+}
+.contact-cv-upload .file-input-div:before{
+    content: "\f093";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 22px;
+    top: 17px;
+    color: #707070;
+}
+.message-title{
+	float: left;
+	width: 100%;
+	padding-top: 50px;
+}
+.message-title p{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	color: #00ad64;
+	text-align: center;
+}
+
+
