@@ -15,11 +15,19 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #f8f8f8;
-    color: #000000;
-    font-size: 18px;
-    line-height: 1.2;
+    background: #fff;
+    color: #000417;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
+p{
+	line-height: 25px;
+}
+/*  font-family: 'Roboto Condensed', sans-serif;  */
+
+
 /*-- app gap use pattern --*/
 /*data-xxs = 575
 data-xs = 767
@@ -81,11 +89,16 @@ Containers
 .container-xlg{}
 .container-lg{}
 .container{
-	max-width: 1200px;
+	max-width: 1400px;
+	width: 100%;
 }
-.container-md{}
+.container-md{
+	
+}
 
-.container-sm{}
+.container-sm{
+
+}
 
 
 .ulc{
