@@ -1,5 +1,28 @@
 (function($) {
 
+
+/*Milon*/
+
+
+
+
+
+
+
+/*Prashanto*/
+
+
+
+
+
+
+/*Rannojit*/
+
+
+
+
+
+
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
