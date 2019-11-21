@@ -1,0 +1,120 @@
+
+
+.service-ex-sec{
+	margin-top: -33px;
+	margin-bottom: 35px;
+}
+.service-ex-agenc-grd-wrp li:not(:last-child) {
+	margin-bottom: 30px;
+}
+.service-ex-agenc-grd-wrp li{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.service-ex-agenc-grd-wrp li .service-ex-img{
+	width:59.48%;
+	float: left;
+	position: relative;
+	order: 1;
+    overflow: hidden;
+    border-radius: 14px;
+}
+.service-ex-agenc-grd-wrp li .service-ex-img img{
+	max-width:815px;
+	width:100%; 
+	-ms-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.service-ex-img:hover img{
+    -ms-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.service-ex-agenc-grd-wrp li .service-ex-des{
+	width:40.52%;
+	order: 2;
+	padding-left: 100px;
+}
+.service-ex-agenc-grd-wrp li:nth-child(2n+2) .service-ex-img{
+	order:2;
+}
+.service-ex-agenc-grd-wrp li:nth-child(2n+2) .service-ex-des{
+	order:1;
+	padding-left: 0;
+	padding-right: 100px
+}
+.service-ex-agenc-grd-wrp li .service-ex-des h4{
+	font-weight: 300;
+	line-height: 1.14;
+	color: #000417;
+	margin-bottom: 17px;
+}
+
+.service-ex-agenc-grd-wrp li .service-ex-des h4 span{
+	font-weight: 900;
+}
+.service-ex-agenc-grd-wrp li .service-ex-des p{
+ 	line-height:25px;
+}
+
+.service-ex-btm-lnc{
+	text-align: center;
+	padding: 55px 0;
+}
+.service-ex-btm-lnc a{
+	text-align: center;
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 21px 42px;
+	background-color: #003fa5;
+	color:#fff;
+	font-size: 13px;
+	font-weight: 900;
+	line-height: 15px;
+	letter-spacing: 1.3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
