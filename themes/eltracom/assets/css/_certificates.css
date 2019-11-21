@@ -1,0 +1,46 @@
+.certificates-page-entry-con{
+	text-align: center;
+	padding: 110px 0 50px;
+
+}
+.certificates-page-entry-con p{
+	font-size: 18px;
+	line-height: 34px;
+}
+.certificates-page-con{
+	background: #e8e9ed;
+	margin: 0 60px;
+	border-radius: 12px;
+	padding: 140px 0 65px;
+}
+.certificates-page-con-controller ul li{
+	padding-bottom: 50px;
+}
+.certificates-item-row{
+	position: relative;
+	padding: 10px 0 0 230px;
+}
+.certificates-item-row-logo{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 176px;
+	text-align: center;
+}
+.certificates-item-row p{
+	margin-bottom: 35px;
+}
+
+.certificates-item-row-des strong{
+	display: block;
+	font-size: 30px;
+	line-height: 35px;
+    font-family: 'RobotoBlack';	
+    padding-bottom: 20px;
+}
+.certificates-item-row-des strong span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}

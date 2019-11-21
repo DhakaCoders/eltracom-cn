@@ -1,0 +1,100 @@
+header.header{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 11;
+}
+.header-inr{
+	padding: 0 0 0 55px;
+}
+.hdr-lft{
+	float: left;
+}
+.hdr-rgt{
+	float: right;
+	width: 80px;
+}
+.logo{
+	padding-top: 20px;
+}
+.logo a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.hdr-humberger-btn{
+	width: 80px;
+	height: 80px;
+	position: relative;
+	float: right;
+	background: #005ef4;
+	cursor: pointer;
+}
+.hdr-humberger-btn-inr{
+	height: 20px;
+	width: 26px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	z-index: 11;
+}
+.hdr-humberger-btn span{
+	background: #fff;
+	height: 2px;
+	margin-bottom: 5px;
+	display: block;
+}
+.hdr-humberger-btn span:last-child{
+	margin-bottom: 0;
+}
+
+.language {
+    float: right;
+    position: relative;
+    margin-top: 35px;
+    margin: 30px;
+}
+.language a.active {
+    position: static;
+    padding-bottom: 15px;
+    opacity: 1;
+    color: #fff!important;
+}
+.language a {
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 36px;
+    font-weight: 700;
+    opacity: 0;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    letter-spacing: 2.8px;
+}
+.language a.active::after {
+    content: "\f0d7";
+    position: absolute;
+    font-family: FontAwesome;
+    right: 3px;
+    bottom: 0;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 16px;
+}
+.language:hover a.active:after {
+    content: "\f0d8";
+}
+.language:hover a {
+    opacity: 1;
+    color: #0294cf;
+}
