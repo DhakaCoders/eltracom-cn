@@ -17,8 +17,28 @@
 .footer-wrap a:hover{
 	color:#003fa5;
 }
-.ftr-main-lft {
-	padding-left: 135px;
+.footer-innr{
+	max-width: 1090px;
+	margin: 0 auto;
+}
+
+
+
+
+
+.ftr-main-con{
+	padding-bottom: 130px;
+}
+.ftr-main-con .ftr-main-lft,
+.ftr-main-con .ftr-main-rgt{
+	width:50%;
+	float: left
+}
+.ftr-main-con .ftr-main-lft{
+	padding-right: 15px;
+}
+.ftr-main-lft .ftr-addr{
+	margin-bottom: 60px;
 }
 .ftr-main-lft .ftr-addr li{
 	margin-bottom: 12px;
@@ -40,10 +60,7 @@
 .ftr-social a:last-child{
 	margin-right: 0;
 }
-.ftr-main-rgt{
-	padding-left: 63px;
-	padding-right: 140px;
-}
+
 .ftr-main-rgt p{
 	font-size: 14px;
 	line-height: 1.79;
@@ -52,6 +69,7 @@
 }
 .ftr-nl-from-wrp{
 	position: relative;
+	margin-bottom: 30px;
 }
 .ftr-nl-from-wrp input{
 	width:100%;
@@ -60,6 +78,7 @@
 	background: #000417;
 	border: solid 1px #343434;
 	padding: 20px 72px 20px 35px;
+	font-style: italic;
 }
 .ftr-nl-from-wrp input::-webkit-input-placeholder { /* Edge */
 	color: #969392;
@@ -106,7 +125,9 @@
 .ftr-nl-from-wrp button:hover span:after{
 	left:20px;	
 }
-
+.ftr-rgt-links{
+	padding: 18px 0;
+}
 .ftr-rgt-links li{
 	float: left;
 	margin-right: 38px;
@@ -122,13 +143,48 @@
 	text-transform: uppercase;
 }
 
-             
 
+.ftr-btm-lft,
+.ftr-btm-rgt{
+	width:50%;
+	float: left
+}
+.ftr-btm-lft{
+	font-size: 11px;
+	line-height: 32px;
+	letter-spacing: 1.1px;
+	text-align: left;
+	color: #868686;
+}
 
+.ftr-btm-rgt a {
+    text-decoration: none;
+    min-width: 160px;
+    text-align: right;
+    position: relative;
+}
+.creation-with-txt {
+    position: relative;
+    color: #003fa5;
+    font-size: 11px;
+	line-height: 32px;
+	letter-spacing: 1.1px;
+    margin-bottom: 0;
+    padding-right: 4px;
+    display: inline-block;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+    filter: alpha(opacity=0);
+    zoom: 1;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
 
-
-
-
+.creation-with-txt i {
+    color: #003fa5;
+}
 
 
 
