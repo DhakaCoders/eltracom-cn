@@ -33,11 +33,12 @@
     -o-transform: scale(1.03);
     transform: scale(1.03);
 }
-
 .service-ex-agenc-grd-wrp li .service-ex-des{
 	width:40.52%;
 	order: 2;
 	padding-left: 100px;
+	padding-top: 75px;
+	padding-bottom: 75px;
 }
 .service-ex-agenc-grd-wrp li:nth-child(2n+2) .service-ex-img{
 	order:2;
@@ -53,14 +54,12 @@
 	color: #000417;
 	margin-bottom: 17px;
 }
-
 .service-ex-agenc-grd-wrp li .service-ex-des h4 span{
 	font-weight: 900;
 }
 .service-ex-agenc-grd-wrp li .service-ex-des p{
  	line-height:25px;
 }
-
 .service-ex-btm-lnc{
 	text-align: center;
 	padding: 55px 0;

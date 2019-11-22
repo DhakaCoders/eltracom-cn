@@ -3,21 +3,17 @@
 .companyPage-aboutUs-sec{
 	padding: 110px 0;
 }
-
-
 .companyPage-aboutUs-innr{
 	max-width: 890px;
 	margin: 0 auto;
 
 }
-
 .companyPage-about-lft,
 .companyPage-about-rgt{
 	width:50%;
 	float: left;
 	padding: 0 22px;
 }
-
 .companyPage-about-innr p{
   font-size: 18px;
   line-height: 30px;
@@ -40,6 +36,8 @@
 	background-position: center center !important;
 	background-repeat: no-repeat !important;
 }
+
+
 .counter-overlay-spn{
 	position: absolute;
 	top:0;
@@ -78,7 +76,6 @@
 	float: left;
 	padding: 36px 0;
 	position: relative;
-	/*min-height: 171px;*/
 }
 .counter-col-1{
 	width: 32.09%;
@@ -94,14 +91,14 @@
 	text-align: left;
 	padding-left: 53px;
 	padding-top: 40px;
-	padding-right: 124px;
+	padding-right: 150px;
 }
 .counter-col-5{
 	width: 31.10%;
 	text-align: left;
 	padding-left: 50px;
 	padding-top: 40px;
-	padding-right: 124px;
+	padding-right: 146px;
 }
 .counter-col-6{
 	width: 36.81%;
@@ -130,33 +127,285 @@
 	color: #b4b4b4;
 	text-transform: uppercase;
 }
-
-
-
-
-
+.counter-col-5 small,
 .counter-col-4 small{
 	position: absolute;
 	text-align: left;
 	top:50%;
-	right:24px;
+	right:51px;
 	-webkit-transform: translateY(-50%);
-	   -moz-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	     -o-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 .counter-col-5 small{
-	position: absolute;
-	text-align: left;
-	top:50%;
-	right:44px;
-	-webkit-transform: translateY(-50%);
-	   -moz-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	     -o-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	right:70px;
 }
+
+
+
+
+
+
+
+.ourValue-hdr{
+	padding: 60px 0 60px;
+}
+.ourValue-hdr h3{
+	font-size: 45px;
+	line-height: 49px;
+	color: #003fa5;
+	font-weight: 300;
+}
+
+.ourValue-grd-wrp {
+	padding-bottom: 70px;
+}
+.ourValue-grd-wrp li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ourValue-grd-wrp li:not(:last-child) {
+    margin-bottom: 42px;
+}
+.ourValue-grd-wrp  li .ourValue-img {
+    width: 56.77%;
+    float: left;
+    position: relative;
+    order: 1;
+    overflow: hidden;
+    border-radius: 14px;
+}
+.ourValue-grd-wrp  li .ourValue-des {
+    width: 43.23%;
+    order: 2;
+}
+.ourValue-grd-wrp  li:nth-child(2n+2) .ourValue-img {
+    order: 2;
+}
+.ourValue-grd-wrp li:nth-child(2n+2) .ourValue-des {
+    order: 1;
+}
+
+.ourValue-img-inner{
+	min-height: 480px;
+	background-size: cover !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	-ms-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.ourValue-img:hover .ourValue-img-inner{
+    -ms-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.ourValue-grd-wrp li .ourValue-des .ourValue-des-innr{
+	max-width: 555px;
+	float: left;
+	padding: 20px 0 20px 108px
+}
+
+.ourValue-grd-wrp li:nth-child(2n+2) .ourValue-des .ourValue-des-innr{
+	float: right;
+	padding: 20px 112px 20px 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weOffer-sec-innr{
+	max-width: 1800px;
+	margin: 0 auto;
+	border-radius: 12px;
+	background-color: #e8e9ed;
+    padding: 84px 0 140px;
+}
+.weOffer-head{
+	padding-bottom: 80px;
+}
+.weOffer-head h3{
+	font-size: 45px;
+	line-height: 1.09;
+	color: #003fa5;
+	font-weight: 300;
+}
+.weOffer-col-wrap{
+	max-width: 1335px;
+	margin: 0 auto;
+}
+.weOffer-col{
+	width: 27.19%;
+	float: left;
+	padding-top: 38px;
+	padding-right: 30px;
+}
+
+.weOffer-col-2{
+	width: 45.62%;
+	padding-top: 0;
+	padding-right: 0;
+}
+.weOffer-col-wrap h6{
+	font-size: 21px;
+	font-weight: 900;
+	line-height: 26px;
+	color: #002854;
+	margin-bottom: 18px;
+}
+.weOffer-col-wrap p{
+	line-height: 25px;
+	color: #000417;
+	margin-bottom: 30px;
+}
+
+.weOffer-col-wrap a{
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+	padding-right: 25px;
+	margin-left: 8px;
+	font-size: 13px;
+	font-weight: 700;
+	font-stretch: condensed;
+	line-height: 1.23;
+	letter-spacing: 0.65px;
+	text-align: left;
+	color: #003fa5;
+	text-transform: uppercase;
+    -ms-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.weOffer-col-wrap a:hover{    
+	padding-right: 30px;
+}
+.weOffer-col-wrap a::after {
+    position: absolute;
+    content: "\f178";
+    font-family: 'FontAwesome';
+    top: 1px;
+    right: 0;
+	color: #003fa5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -250,71 +499,6 @@
 
 
 
-
-.ourValue-hdr{
-	padding: 60px 0 60px;
-}
-.ourValue-hdr h3{
-	font-size: 45px;
-	line-height: 49px;
-	color: #003fa5;
-	font-weight: 300;
-}
-
-
-.ourValue-grd-wrp li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.ourValue-grd-wrp li:not(:last-child) {
-    margin-bottom: 42px;
-}
-.ourValue-grd-wrp  li .ourValue-img {
-    width: 56.77%;
-    float: left;
-    position: relative;
-    order: 1;
-    overflow: hidden;
-    border-radius: 14px;
-}
-.ourValue-grd-wrp  li .ourValue-des {
-    width: 43.23%;
-    order: 2;
-}
-.ourValue-grd-wrp  li:nth-child(2n+2) .ourValue-img {
-    order: 2;
-}
-.ourValue-grd-wrp li:nth-child(2n+2) .ourValue-des {
-    order: 1;
-}
-
-.ourValue-img-inner{
-	min-height: 480px;
-	background-size: cover !important;
-	background-position: center center !important;
-	background-repeat: no-repeat !important;
-	-ms-transition: all .3s ease;
-	-webkit-transition: all .3s ease;
-	transition: all .3s ease;
-}
-.ourValue-img:hover .ourValue-img-inner{
-    -ms-transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    transform: scale(1.03);
-}
-.ourValue-des-innr{
-	max-width: 555px;
-	float: left;
-	padding-left: 108px;
-}
-
-.ourValue-grd-wrp li:nth-child(2n+2) .ourValue-des .ourValue-des-innr{
-	float: right;
-	padding-left: 0;
-	padding-right: 112px;
-}
 
 
 
