@@ -185,10 +185,25 @@ if( $('#contactMap').length ){
 
 /*Prashanto*/
 
+//counter-master
+if( $('.counter').length ){
 
+  $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+  });
+}
 
+//match Height
+if (windowWidth > 768) {
+  if($('.matchHeightCol').length){
+    $('.matchHeightCol').matchHeight();
+  };
+}
 
-
+if($('.companyPortfolioSlider-item').length){
+  $('.companyPortfolioSlider-item').matchHeight();
+};
 
 /*Rannojit*/
 
