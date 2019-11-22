@@ -422,6 +422,10 @@ ec-contact-frm-sec-wrp
 	#contactMap {
 	    height: 550px;
 	}
+	.career-frm-sec-wrp {
+	    padding-top: 100px;
+	    padding-bottom: 70px;
+	}
 
 }
 
@@ -470,6 +474,20 @@ ec-contact-frm-sec-wrp
 	}
 	#contactMap {
 	    height: 500px;
+	}
+	.career-frm-sec-wrp {
+	    padding-top: 50px;
+	    padding-bottom: 60px;
+	}
+	.ec-contact-frm-dsc h3 {
+	    margin-bottom: 20px;
+	}
+	.ec-contact-frm-dsc {
+	    padding-bottom: 30px;
+	    padding-right: 0;
+	}
+	.message-title {
+	    padding-top: 30px;
 	}
 }
 
