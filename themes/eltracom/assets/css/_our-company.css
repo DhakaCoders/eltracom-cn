@@ -218,100 +218,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .weOffer-sec-innr{
 	max-width: 1800px;
 	margin: 0 auto;
@@ -393,58 +299,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .company-portfolio-innr{
 	max-width: 1280px;
 	margin: 0 auto;
 }
 .company-portfolio-head{
-	padding: 90px 0 20px;
+	padding: 90px 0 62px;
 }
 .company-portfolio-head h3{
 	font-size: 45px;
@@ -461,20 +321,36 @@
 .companyPortfolioSlider-item{
 	width:33.333%;
 	float: left;
-	padding: 65px 82px;
+	background: #fff;
+	padding: 35px 82px 82px;
 	position: relative;
+	border-left: 1px solid #e6e6e6;
+	cursor: pointer;
+	z-index: 5;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
-.companyPortfolioSlider-item:after{
-	content: "";
-	width:2px;
-	height:95%;
-	position: absolute;
-	background: #e6e6e6;
-	right:0;
-	bottom: 0;
+.companyPortfolioSlider-item:hover{
+	border:0;
+	border-radius: 12px;
+	-webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06); 
+	-ms-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06); 
+  	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06);
+	z-index: 7;
+	-webkit-transform: scale(1.03);
+	   -moz-transform: scale(1.03);
+	    -ms-transform: scale(1.03);
+	     -o-transform: scale(1.03);
+	        transform: scale(1.03);
 }
-.companyPortfolioSlider-item:nth-child(3):after{
-	content: none;
+.slick-current.slick-active .companyPortfolioSlider-item{
+	border-left: 0;
+}
+.companyPortfolioSlider-item img{
+	display: inline-block;
 }
 .companyPortfolioSlider-item h5{
 	font-weight: 300;
@@ -499,13 +375,55 @@
 
 
 
+.portfolio-arrows span.rightArrow svg,
+.portfolio-arrows span.leftArrow svg{
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.portfolio-arrows span.rightArrow:hover svg,
+.portfolio-arrows span.leftArrow:hover svg{
+	fill: #003fa5!important;
+}
 
+.portfolio-arrows{
+	position: relative;
+	padding: 20px 0;
+}
+.portfolio-arrows span.leftArrow{
+    position: absolute;
+    left: 45.8%;
+    bottom: 35px;
+    z-index: 25;
+    width: 31px;
+    height: 23px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
 
-
-
-
-
-
+.portfolio-arrows span.rightArrow {
+    position: absolute;
+    right: 45.8%;
+    bottom: 35px;
+    z-index: 25;
+    width: 31px;
+    height: 23px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
 
 
 

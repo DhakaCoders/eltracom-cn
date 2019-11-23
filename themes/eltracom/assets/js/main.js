@@ -205,6 +205,44 @@ if($('.companyPortfolioSlider-item').length){
   $('.companyPortfolioSlider-item').matchHeight();
 };
 
+/**
+Slick slider
+*/
+if( $('.companyPortfolioSlider').length ){
+  $('.companyPortfolioSlider').slick({
+      pauseOnHover: false,
+      autoplay: false,
+      autoplaySpeed: 10000,
+      dots: false,
+      arrows:true,
+      infinite: true,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.portfolio-arrows .leftArrow'),
+      nextArrow: $('.portfolio-arrows .rightArrow'),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+  });
+}
+
+
+
+
 /*Rannojit*/
 
 if (windowWidth > 767) {
