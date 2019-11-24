@@ -1,5 +1,8 @@
 (function($) {
 var windowWidth = $(window).width();
+if($('.matchHeightCol').length){
+    $('.matchHeightCol').matchHeight();
+};
 
 /*Milon*/
 
