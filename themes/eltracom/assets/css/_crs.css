@@ -137,13 +137,6 @@
 }
 
 
-
-@media(max-width: 639px){
-
-}
-
-
-
 @media(max-width: 575px){
 	.crs-gray-box{
 		padding-top: 40px;
@@ -161,7 +154,9 @@
 	.crs-page-entry-hdr {
 	    padding-bottom: 30px;
 	}
-
+	.crs-page-entry-hdr{
+		padding-top: 70px;
+	}
 }
 
 
@@ -169,11 +164,5 @@
 	.crs-gray-box-grd-rgt {
 	    padding-left: 10px;
 	}
-
-}
-
-
-
-@media(max-width: 359px){
 
 }
