@@ -123,14 +123,6 @@
 	}
 }
 
-
-
-@media(max-width: 639px){
-
-}
-
-
-
 @media(max-width: 575px){
 	.article-content-row {
 	    padding-bottom: 30px;
@@ -139,16 +131,4 @@
 		font-size: 17px;
 		line-height: 27px;
 	}
-}
-
-
-@media(max-width: 479px){
-
-
-}
-
-
-
-@media(max-width: 359px){
-
 }
