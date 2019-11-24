@@ -417,12 +417,18 @@ body.body-scroll{
 .bmp-grd-item strong span{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+     transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 
 
 
 .bmp-grd-item:hover{
     background: #0041a3;
+}
+.bmp-grd-item:hover strong{
+    font-size: 24px;
 }
 .bmp-grd-item:hover strong span{
     display: none;
