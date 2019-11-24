@@ -263,14 +263,19 @@ if (windowWidth > 767) {
 }
 
 
-
-
-
-
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 	
+$('.hdr-humberger-btn').on('click', function(){
+  $('.burger-menu-wrap').fadeIn(300);
+  $('body').addClass('body-scroll');
+});
+$('.bm-close-btn').on('click', function(){
+  $('.burger-menu-wrap').fadeOut(300);
+  $('body').removeClass('body-scroll');
+});
+
 
 /**
 Responsive on 767px
