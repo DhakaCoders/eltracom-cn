@@ -59,3 +59,28 @@ h1.banner-page-title,
     vertical-align: baseline;
     font-weight: 700;
 }
+
+@media(max-width: 767px){
+    strong.banner-page-title, 
+    h1.banner-page-title, 
+    .page-banner-des-inner h1, 
+    .page-banner-des-inner strong{
+        font-size: 40px;
+    }
+    .page-banner-des-inner{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width: 575px){
+    strong.banner-page-title, 
+    h1.banner-page-title, 
+    .page-banner-des-inner h1, 
+    .page-banner-des-inner strong{
+        font-size: 37px;
+    }
+    .page-banner-des-inner{
+        min-height: 360px!important;
+    }
+}
