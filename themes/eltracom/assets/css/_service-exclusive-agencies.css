@@ -2,7 +2,6 @@
 
 .service-ex-sec{
 	margin-top: -33px;
-	margin-bottom: 35px;
 }
 .service-ex-agenc-grd-wrp li:not(:last-child) {
 	margin-bottom: 30px;
@@ -62,7 +61,7 @@
 }
 .service-ex-btm-lnc{
 	text-align: center;
-	padding: 55px 0;
+	padding: 55px 0 0;
 }
 .service-ex-btm-lnc a{
 	text-align: center;
@@ -78,9 +77,9 @@
 }
 
 
-
-
-
+#ftr-top-service-ex img{
+	margin-top: -97px;
+}
 
 
 
