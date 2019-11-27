@@ -6,7 +6,7 @@ a,input,img,textarea,button{
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.scale{
+.scale,.home-2-plate-grd-item:hover .home-2-plate-grd-img img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);

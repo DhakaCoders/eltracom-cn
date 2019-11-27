@@ -66,6 +66,7 @@ Containers
 .container-xlg,
 .container-lg,
 .container-md,
+.container-md-2,
 .container-sm{
 	width: 100%;
     padding-right: 15px;
@@ -79,6 +80,8 @@ Containers
 .container-lg:after,
 .container-md:before,
 .container-md:after,
+.container-md-2:after,
+.container-md-2:before,
 .container-sm:beofre,
 .container-sm:after,
 .container-xs:beofre,
@@ -87,13 +90,18 @@ Containers
 	display: table;
 	clear: both;
 }
-.container-xlg{}
+.container-xlg{
+	max-width: 1660px;
+}
 .container-lg{
 	max-width: 1480px;
 }
 .container{
 	max-width: 1400px;
 	width: 100%;
+}
+.container-md-2{
+	max-width: 1200px;
 }
 .container-md{
 	max-width: 970px;
