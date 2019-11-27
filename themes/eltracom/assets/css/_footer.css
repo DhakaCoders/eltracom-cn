@@ -181,10 +181,34 @@
     -ms-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
-
 .creation-with-txt i {
-    color: #003fa5;
+    color: red;
 }
+.ftr-btm-rgt a:hover .creation-with-txt {
+	opacity: 1;
+}
+
+.ftr-top-wrp{
+    position: relative;
+    z-index: -1;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
