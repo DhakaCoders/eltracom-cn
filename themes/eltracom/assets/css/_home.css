@@ -1,3 +1,117 @@
+.home-page-bnr{
+	min-height: 1080px;
+	background-size: cover!important;
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
+	position: relative;
+}
+.home-page-bnr-overlay-bg{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0.66;
+  	background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+  	-ms-background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+  	-webkit-background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+}
+.scroll-btn{
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	z-index: 11;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.home-bnr-logo{
+	position: absolute;
+	left: 50%;
+	top: 320px;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	z-index: 2;
+}
+a.home-bnr-logo{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+
+
+.home-bnr-sidebar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 80px;
+  	background-color: #001a38;
+  	background-color: rgba(0,26,56, 0.71);
+  	z-index: 5;
+}
+.home-bnr-sidebar-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.chat-box{
+	position: absolute;
+	bottom: 20px;
+	left: -12px;
+	z-index: 11;
+	max-width: 70px;
+	height: 76px;
+}
+
+.bnr-sidebar-links{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.bnr-sidebar-links-inner{
+	position: relative;
+	padding-top: 100px;
+	height: 100%;
+	width: 100%;
+}
+.bnr-sidebar-links strong{
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 1.2px;
+	font-weight: 400;
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	display: inline-block;
+	vertical-align: baseline;
+	position: absolute;
+	top: 0;
+	left: -20px;
+}
+.bnr-sidebar-links ul li:not(:last-child){
+	padding-bottom: 30px;
+}
+.bnr-sidebar-links ul li a{
+	color: #fff;
+	font-size: 12px;
+	line-height: 14px;
+    font-family: 'RobotoBlack';
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+
 .perfection-section{
 	padding: 60px 140px 75px 0;
 	position: relative;

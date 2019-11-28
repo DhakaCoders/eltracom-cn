@@ -4,6 +4,22 @@ if($('.matchHeightCol').length){
     $('.matchHeightCol').matchHeight();
 };
 
+$('.scroll-btn').on('click', function(e){
+  e.preventDefault();
+  var togo = $(this).data('to');
+  goToByScroll(togo, 0);
+});
+
+function goToByScroll(id, offset){
+  if(id){
+      // Remove "link" from the ID
+    id = id.replace("link", "");
+      // Scroll
+    $('html,body').animate(
+        {scrollTop: $(id).offset().top - offset},
+      500);
+  }
+}
 /*Milon*/
 
 /*career page file upload*/
