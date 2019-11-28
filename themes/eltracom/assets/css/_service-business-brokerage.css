@@ -83,3 +83,105 @@
     padding-top: 21px;
     line-height: 15px;
 }
+
+@media(max-width: 1299px){
+	.business-brokerage-page-con{
+		margin: 0 30px;
+	}
+}
+@media(max-width: 1199px){
+	
+	.business-brokerage-page-con-wrap{
+		padding-top: 110px;
+	}
+	.business-brokerage-page-grd-controller ul li {
+	    padding: 0 50px 70px;
+	}
+}
+
+
+@media(max-width: 991px){
+	.business-brokerage-page-con-wrap{
+		padding-top: 90px;
+	}
+	.business-brokerage-page-entry-con h1{
+		margin-bottom: 30px;
+	}
+	.business-brokerage-page-con{
+		margin: 0 15px;
+	}
+	.bb-page-grd-item strong {
+	    font-size: 19px;
+	    line-height: 24px;
+	}
+
+}
+
+
+@media(max-width: 767px){
+	.business-brokerage-page-con-wrap {
+	    padding-top: 70px;
+	}
+	.business-brokerage-page-entry-con h1 {
+	    margin-bottom: 25px;
+	}
+	.business-brokerage-page-entry-con p {
+	    line-height: 29px;
+	}
+	.business-brokerage-page-con{
+		padding-top: 70px;
+	}
+	.business-brokerage-page-grd-controller ul li{
+		width: 100%;
+		padding: 0 20px 50px;
+	}
+	.business-brokerage-page-grd-controller ul{
+		max-width: 428px;
+		margin: 0 auto;
+	}
+	.bb-page-grd-item{
+		padding-left: 0;
+		text-align: center;
+	}
+	.bb-page-grd-item i{
+		position: static;
+		margin-bottom: 15px;
+		display: block;
+	}
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+	.business-brokerage-page-entry-con p {
+		font-size: 17px;
+	    line-height: 26px;
+	}
+	.business-brokerage-page-entry-con h1{
+		font-size: 28px;
+	}
+	.business-brokerage-page-grd-controller ul li{
+		padding-bottom: 40px;
+	}
+
+}
+
+
+@media(max-width: 479px){
+	.bb-page-grd-item strong br{
+		display: none;
+	}
+
+}
+
+
+
+@media(max-width: 359px){
+
+}

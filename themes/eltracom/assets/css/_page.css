@@ -4,6 +4,15 @@
 .page-banner-controller{
     min-height: 350px;
 }
+.page-bnr-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,26,36,.4);
+    z-index: 2;
+}
 .page-banner-bg{
 	position: absolute;
 	left: 0;
@@ -166,4 +175,28 @@ h1.banner-page-title,
 .ec-csr-popup-sec-wrp .ec-contact-frm-dsc {
     padding-bottom: 35px;
     padding-right: 0;
+}
+@media(max-width: 767px){
+    strong.banner-page-title, 
+    h1.banner-page-title, 
+    .page-banner-des-inner h1, 
+    .page-banner-des-inner strong{
+        font-size: 40px;
+    }
+    .page-banner-des-inner{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width: 575px){
+    strong.banner-page-title, 
+    h1.banner-page-title, 
+    .page-banner-des-inner h1, 
+    .page-banner-des-inner strong{
+        font-size: 37px;
+    }
+    .page-banner-des-inner{
+        min-height: 360px!important;
+    }
 }

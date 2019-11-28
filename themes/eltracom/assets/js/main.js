@@ -1,6 +1,25 @@
 (function($) {
 var windowWidth = $(window).width();
+if($('.matchHeightCol').length){
+    $('.matchHeightCol').matchHeight();
+};
 
+$('.scroll-btn').on('click', function(e){
+  e.preventDefault();
+  var togo = $(this).data('to');
+  goToByScroll(togo, 0);
+});
+
+function goToByScroll(id, offset){
+  if(id){
+      // Remove "link" from the ID
+    id = id.replace("link", "");
+      // Scroll
+    $('html,body').animate(
+        {scrollTop: $(id).offset().top - offset},
+      500);
+  }
+}
 /*Milon*/
 
 /*career page file upload*/
@@ -185,7 +204,60 @@ if( $('#contactMap').length ){
 
 /*Prashanto*/
 
+//counter-master
+if( $('.counter').length ){
 
+  $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+  });
+}
+
+//match Height
+if (windowWidth > 768) {
+  if($('.matchHeightCol').length){
+    $('.matchHeightCol').matchHeight();
+  };
+}
+
+if($('.companyPortfolioSlider-item').length){
+  $('.companyPortfolioSlider-item').matchHeight();
+};
+
+/**
+Slick slider
+*/
+if( $('.companyPortfolioSlider').length ){
+  $('.companyPortfolioSlider').slick({
+      pauseOnHover: false,
+      autoplay: false,
+      autoplaySpeed: 10000,
+      dots: false,
+      arrows:true,
+      infinite: true,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.portfolio-arrows .leftArrow'),
+      nextArrow: $('.portfolio-arrows .rightArrow'),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+  });
+}
 
 
 
@@ -207,14 +279,19 @@ if (windowWidth > 767) {
 }
 
 
-
-
-
-
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 	
+$('.hdr-humberger-btn').on('click', function(){
+  $('.burger-menu-wrap').fadeIn(300);
+  $('body').addClass('body-scroll');
+});
+$('.bm-close-btn').on('click', function(){
+  $('.burger-menu-wrap').fadeOut(300);
+  $('body').removeClass('body-scroll');
+});
+
 
 /**
 Responsive on 767px
