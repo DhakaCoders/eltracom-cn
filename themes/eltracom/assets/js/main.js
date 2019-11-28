@@ -242,14 +242,14 @@ if( $('.companyPortfolioSlider').length ){
       nextArrow: $('.portfolio-arrows .rightArrow'),
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 880,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 500,
+          breakpoint: 550,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
