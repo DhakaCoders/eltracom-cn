@@ -1,18 +1,9 @@
-
-
 .companyPage-aboutUs-sec{
-	padding: 110px 0;
+	padding: 100px 0 95px;
 }
-.companyPage-aboutUs-innr{
-	max-width: 890px;
+.companyPage-about-innr{
+	max-width: 830px;
 	margin: 0 auto;
-
-}
-.companyPage-about-lft,
-.companyPage-about-rgt{
-	width:50%;
-	float: left;
-	padding: 0 22px;
 }
 .companyPage-about-innr p{
   font-size: 18px;
@@ -20,15 +11,12 @@
   color: #000417;
   margin-bottom: 25px;
 }
-.companyPage-about-hdr h1{
+.companyPage-about-innr h1{
 	font-size: 30px;
 	font-weight: 300;
-	line-height: 1.67;
+	line-height: 50px;
 	color: #003fa5;
 	margin-bottom: 18px;
-}
-.companyPage-about-hdr{
-	padding-left: 22px;
 }
 .company-counter-sec{
 	position: relative;
@@ -36,8 +24,6 @@
 	background-position: center center !important;
 	background-repeat: no-repeat !important;
 }
-
-
 .counter-overlay-spn{
 	position: absolute;
 	top:0;
@@ -140,13 +126,6 @@
 .counter-col-5 small{
 	right:70px;
 }
-
-
-
-
-
-
-
 .ourValue-hdr{
 	padding: 60px 0 60px;
 }
@@ -156,7 +135,6 @@
 	color: #003fa5;
 	font-weight: 300;
 }
-
 .ourValue-grd-wrp {
 	padding-bottom: 70px;
 }
@@ -187,7 +165,6 @@
 .ourValue-grd-wrp li:nth-child(2n+2) .ourValue-des {
     order: 1;
 }
-
 .ourValue-img-inner{
 	min-height: 480px;
 	background-size: cover !important;
@@ -208,17 +185,10 @@
 	float: left;
 	padding: 20px 0 20px 108px
 }
-
 .ourValue-grd-wrp li:nth-child(2n+2) .ourValue-des .ourValue-des-innr{
 	float: right;
 	padding: 20px 112px 20px 0
 }
-
-
-
-
-
-
 .weOffer-sec-innr{
 	max-width: 1800px;
 	margin: 0 auto;
@@ -263,7 +233,6 @@
 	color: #000417;
 	margin-bottom: 30px;
 }
-
 .weOffer-col-wrap a{
 	display: inline-block;
 	vertical-align: baseline;
@@ -293,13 +262,6 @@
     right: 0;
 	color: #003fa5;
 }
-
-
-
-
-
-
-
 .company-portfolio-innr{
 	max-width: 1280px;
 	margin: 0 auto;
@@ -318,7 +280,6 @@
   line-height: 29pxs;
   color: #5d5d5d;
 }
-
 .companyPortfolioSlider-item{
 	width:33.333%;
 	float: left;
@@ -373,9 +334,6 @@
 .companyPortfolioSlider-item img{
 	margin-bottom: 22px;
 }
-
-
-
 .portfolio-arrows span.rightArrow svg,
 .portfolio-arrows span.leftArrow svg{
     -ms-transition: all 0.5s;
@@ -387,7 +345,6 @@
 .portfolio-arrows span.leftArrow:hover svg{
 	fill: #003fa5!important;
 }
-
 .portfolio-arrows{
 	position: relative;
 	padding: 20px 0;
@@ -408,7 +365,6 @@
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
-
 .portfolio-arrows span.rightArrow {
     position: absolute;
     right: 45.8%;
@@ -429,5 +385,36 @@
 
 
 
+
+
+
+
+@media(max-width: 1199px){
+
+}
+
+@media(max-width: 991px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 639px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+
+}
+
+@media(max-width: 359px){
+
+}
 
 
