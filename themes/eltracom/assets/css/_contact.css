@@ -168,7 +168,6 @@ ec-contact-frm-sec-wrp
     width: 100%;
     height: 60px;
     font-style: normal;
-    font-weight: 900;
     font-size: 13px !important;
     line-height: 15px;
     text-align: center;
@@ -361,10 +360,12 @@ ec-contact-frm-sec-wrp
 
 .ec-contact-frm-dsc {
     font-size: 18px;
-    line-height: 32px;
     color: #000417;
     padding-bottom: 50px;
     padding-right: 20px;
+}
+.ec-contact-frm-dsc p{
+	line-height: 34px;
 }
 .ec-contact-frm-dsc h1,
 .ec-contact-frm-dsc h3{
@@ -457,7 +458,7 @@ ec-contact-frm-sec-wrp
 	.addr-box {
 	    max-width: 400px;
 	    width: 100%;
-	    padding: 62px 40px 45px;
+	    padding: 57px 40px 45px;
 	}
 	.ec-contact-frm-sec-bg {
 	    max-width: 450px;
@@ -589,8 +590,6 @@ ec-contact-frm-sec-wrp
 	}
 	.ec-contact-frm-dsc h1,
 	.ec-contact-frm-dsc h3{
-		font-size: 27px;
-		line-height: 29px;
 		margin-bottom: 20px;
 	}
 	.ec-contact-frm-dsc {
@@ -599,6 +598,9 @@ ec-contact-frm-sec-wrp
 	}
 	.message-title {
 	    padding-top: 30px;
+	}
+	.ec-contact-frm-dsc p{
+		line-height: 30px;
 	}
 }
 
@@ -640,11 +642,7 @@ ec-contact-frm-sec-wrp
 	    font-size: 17px;
 	    line-height: 30px;
 	}
-	.ec-contact-frm-dsc h1,
-	.ec-contact-frm-dsc h3{
-		font-size: 26px;
-		line-height: 28px;
-	}
+	
 
 }
 
