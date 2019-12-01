@@ -194,6 +194,9 @@
 					if(this.config.scrollChange) {
 						this.config.scrollChange($parent);
 					}
+					$(".logo div.section-logo ").attr('id',position+'_active');
+  					$(".logo div.section-logo ").removeClass('active');
+					$('.header-wrrp').attr('id',position);
 				}
 			}
 		},
