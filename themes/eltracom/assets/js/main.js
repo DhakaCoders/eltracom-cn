@@ -278,6 +278,12 @@ if (windowWidth > 767) {
   });
 }
 
+$('.bnr-sidebar-links-inner ul').onePageNav({
+   currentClass: 'current',
+   changeHash: false,
+   scrollSpeed: 500
+  });
+
 
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);

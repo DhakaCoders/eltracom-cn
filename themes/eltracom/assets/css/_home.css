@@ -85,7 +85,7 @@ a.home-bnr-logo{
 	height: 100%;
 	width: 100%;
 }
-.bnr-sidebar-links strong{
+strong.sec-title-show{
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: 1.2px;
@@ -100,7 +100,10 @@ a.home-bnr-logo{
 	left: -20px;
 }
 .bnr-sidebar-links ul li:not(:last-child){
-	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.bnr-sidebar-links ul li{
+	height: 10px;
 }
 .bnr-sidebar-links ul li a{
 	color: #fff;
@@ -109,6 +112,73 @@ a.home-bnr-logo{
     font-family: 'RobotoBlack';
     display: inline-block;
     vertical-align: baseline;
+    position: relative;
+}
+.bnr-sidebar-links ul li a span{
+	position: relative;
+	display: block;
+}
+
+.bnr-sidebar-links ul li a strong{
+	text-transform: uppercase;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+    filter: alpha(opacity=0);
+    zoom: 1;
+
+}
+.bnr-sidebar-links ul li a{
+	width: 13px;
+	height: 10px;
+}
+
+.bnr-sidebar-links ul li a span:after,
+.bnr-sidebar-links ul li a span,
+.bnr-sidebar-links ul li a strong{
+	width: 13px;
+	height: 10px;
+	position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.bnr-sidebar-links ul li a span:after {
+    content: "\f0d8";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 16px;
+    line-height: 9px;
+    opacity: 1;
+}
+.bnr-sidebar-links ul li a:hover span{
+	opacity: 0;
+}
+.bnr-sidebar-links ul li a:hover strong{
+	opacity: 1;
+}
+
+.bnr-sidebar-links li.current a:after {
+    content: '';
+    height: 2px;
+    width: 20px;
+    right: -33px;
+    top: 50%;
+    z-index: 20;
+    position: absolute;
+    margin-top: -1px;
+    margin-right: 0;
+} 
+.bnr-sidebar-links li.current a:after, 
+.bnr-sidebar-links li a:after,
+.bnr-sidebar-links ul li a:hover:after {
+    background: #fff;
 }
 
 
@@ -197,17 +267,17 @@ a.home-bnr-logo{
     font-family: 'RobotoBlack';
 }
 
-#perfection-sec-2{
+.perfection-section.perfection-sec-2{
 	padding: 56px 60px 70px;
 }
-#perfection-sec-2 .perfection-sec-fea-img{
+.perfection-section.perfection-sec-2 .perfection-sec-fea-img{
 	right: 0;
 	left: initial;
 }
-#perfection-sec-2  .perfection-sec-des-bx{
+.perfection-section.perfection-sec-2  .perfection-sec-des-bx{
 	float: left;
 }
-#perfection-sec-2 .perfection-sec-des-bx-inner{
+.perfection-section.perfection-sec-2 .perfection-sec-des-bx-inner{
 	float: right;
 }
 
