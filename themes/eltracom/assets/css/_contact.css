@@ -603,6 +603,15 @@ ec-contact-frm-sec-wrp
 	#contactMap {
 	    height: 380px;
 	}
+	.ec-csr-popup-sec-wrp .contact-form .wpforms-submit-container button[type="submit"],
+	.ec-csr-popup-sec-wrp .contact-form .wpforms-submit-container input[type="submit"] {
+	    max-width: 110px;
+	    width: 100%;
+	    height: 40px;
+	}
+	.ec-csr-popup-sec-wrp .contact-form-text {
+	    padding-top: 18px;
+	}
 
 }
 
