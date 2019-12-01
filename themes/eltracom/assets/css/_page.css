@@ -88,10 +88,20 @@ h1.banner-page-title,
 .modal-page-controller button{
     margin-right: 15px;
 }
-#teamModal .modal-content button span {
+#teamModal .modal-content button span{
     position: absolute;
     top: -52px;
     right: -60px;
+    background: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+}
+#teamModal .modal-content button span:hover{
+    background: url(../images/close-hover.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
 }
 #teamModal .modal-content button.close{
     opacity: 1;
@@ -122,6 +132,7 @@ h1.banner-page-title,
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 15px;
+    font-weight: 400;
 }
 .ec-more-popup-dsc p strong{
     display: inline-block;
@@ -133,7 +144,7 @@ h1.banner-page-title,
     text-align: right;
     font-size: 11px;
     line-height: 13px;
-    font-weight: 700;
+    font-weight: 400;
     color: #003fa5;
     padding-right: 18px;
     position: relative;
@@ -183,6 +194,16 @@ h1.banner-page-title,
     position: absolute;
     top: -50px;
     right: -60px;
+    background: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+}
+#moreModal .modal-content button span:hover{
+    background: url(../images/close-hover.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
 }
 #moreModal .modal-content button.close{
     opacity: 1;
