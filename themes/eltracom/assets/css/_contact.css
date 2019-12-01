@@ -371,6 +371,7 @@ ec-contact-frm-sec-wrp
 	margin: 0;
 	color: #003fa5;
 	font-weight: 300;
+	font-size: 30px;
 	line-height: 32px;
 	margin-bottom: 30px;
 }
@@ -491,6 +492,11 @@ ec-contact-frm-sec-wrp
 	    max-width: 330px;
 	    width: 100%;
 	}
+	.ec-contact-frm-dsc h1,
+	.ec-contact-frm-dsc h3{
+		font-size: 29px;
+		line-height: 30px;
+	}
 
 }
 
@@ -522,6 +528,11 @@ ec-contact-frm-sec-wrp
 	.map-address{
 		position: relative;
 		overflow: hidden;
+	}
+	.ec-contact-frm-dsc h1,
+	.ec-contact-frm-dsc h3{
+		font-size: 28px;
+		line-height: 30px;
 	}
 
 }
@@ -576,8 +587,11 @@ ec-contact-frm-sec-wrp
 	    padding-top: 50px;
 	    padding-bottom: 50px;
 	}
-	.ec-contact-frm-dsc h3 {
-	    margin-bottom: 20px;
+	.ec-contact-frm-dsc h1,
+	.ec-contact-frm-dsc h3{
+		font-size: 27px;
+		line-height: 29px;
+		margin-bottom: 20px;
 	}
 	.ec-contact-frm-dsc {
 	    padding-bottom: 30px;
@@ -626,6 +640,11 @@ ec-contact-frm-sec-wrp
 	    font-size: 17px;
 	    line-height: 30px;
 	}
+	.ec-contact-frm-dsc h1,
+	.ec-contact-frm-dsc h3{
+		font-size: 26px;
+		line-height: 28px;
+	}
 
 }
 
@@ -641,6 +660,15 @@ ec-contact-frm-sec-wrp
 	    height: 40px;
 	}
 	.ec-csr-popup-sec-wrp .contact-form-text {
+	    padding-top: 18px;
+	}
+	#teamModal .contact-form .wpforms-submit-container button[type="submit"],
+	#teamModal .contact-form .wpforms-submit-container input[type="submit"] {
+	    max-width: 110px;
+	    width: 100%;
+	    height: 40px;
+	}
+	#teamModal .contact-form-text {
 	    padding-top: 18px;
 	}
 
