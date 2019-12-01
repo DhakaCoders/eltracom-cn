@@ -1,0 +1,32 @@
+Contact Page
+---------------------
+
+Desktop-------
+1.https://www.screencast.com/t/zVSRxFeSW
+	font-family mileni
+	ata daw -- font-family: 'RobotoBlack';
+2. https://www.screencast.com/t/N3B6obnSN
+	type mileni- email hobe
+3. https://www.screencast.com/t/yEaDCqO6QJg
+	img ta missing
+4. https://www.screencast.com/t/n3D0KF0hAbf2
+	ai gap 4/5 px komay daw
+5. https://www.screencast.com/t/z26RkykiOlr
+	top a gap besi hobe
+
+Responsive-------------
+1. 
+
+
+Career page 
+-----------------------
+
+Desktop-----
+1. https://www.screencast.com/t/N3B6obnSN
+	type mileni- email hobe
+2. https://www.screencast.com/t/RcFzJ3Dn
+	h1 hobe
+
+Responsive--------
+1. https://www.screencast.com/t/62NQiMOo4rss
+	575px a font-size 17 daw
