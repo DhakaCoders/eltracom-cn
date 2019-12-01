@@ -187,6 +187,7 @@ ec-contact-frm-sec-wrp
     margin-top: 10px;
     letter-spacing: 1.3px;
     float: left;
+    font-family: 'RobotoBlack';
 }
 .contact-form-text{
 	float: right;
@@ -216,13 +217,14 @@ ec-contact-frm-sec-wrp
 	font-weight: 400 !important;
 	padding-top: 10px;
 }
-.google-map-sec-wrp{
-	position: relative;
+.google-map-sec-wrp {
+    position: relative;
+    padding-bottom: 40px;
 }
 #contactMap{
 	height: 636px;
 }
-.map-address{
+.addr-box{
 	position: absolute;
 	right: 175px;
 	top: -55px;
@@ -231,8 +233,12 @@ ec-contact-frm-sec-wrp
     border-radius: 12px;
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.16);
     background: #fff;
-    padding: 62px 55px 45px;
+    padding: 57px 55px 45px;
     z-index: 5;
+}
+.addr-box-inner{
+	position: relative;
+	z-index: 3;
 }
 .addr-box-inner h3{
 	margin: 0;
@@ -338,6 +344,21 @@ ec-contact-frm-sec-wrp
     min-height: 637px !important;
 	background-size: 100% 100%;
 }
+.map-address-bg {
+    background-image: url(../images/map-address-bg.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    position: absolute !important;
+    right: -20px !important;
+    bottom: -32px !important;
+    max-width: 160px !important;
+    width: 100% !important;
+    z-index: 1 !important;
+    min-height: 215px !important;
+    background-size: 100% 100%;
+}
+
+
 .ec-contact-frm-dsc {
     font-size: 18px;
     line-height: 32px;
@@ -345,6 +366,7 @@ ec-contact-frm-sec-wrp
     padding-bottom: 50px;
     padding-right: 20px;
 }
+.ec-contact-frm-dsc h1,
 .ec-contact-frm-dsc h3{
 	margin: 0;
 	color: #003fa5;
@@ -352,6 +374,7 @@ ec-contact-frm-sec-wrp
 	line-height: 32px;
 	margin-bottom: 30px;
 }
+.ec-contact-frm-dsc h1 strong,
 .ec-contact-frm-dsc h3 strong{
 	display: inline-block;
 	vertical-align: baseline;
@@ -424,13 +447,13 @@ ec-contact-frm-sec-wrp
 	}
 }
 @media(max-width:1499px){
-	.map-address {
+	.addr-box {
 	    position: absolute;
 	    right: 100px;
 	}
 }
 @media(max-width: 1399px){
-	.map-address {
+	.addr-box {
 	    max-width: 400px;
 	    width: 100%;
 	    padding: 62px 40px 45px;
@@ -454,7 +477,7 @@ ec-contact-frm-sec-wrp
 	.show-md{
 		display: block!important;
 	}
-	.map-address {
+	.addr-box {
 	    max-width: 380px;
 	    width: 100%;
 	    padding: 50px 35px 35px;
@@ -479,7 +502,7 @@ ec-contact-frm-sec-wrp
 	.show-sm{
 		display: block!important;
 	}
-	.map-address {
+	.addr-box {
 	    max-width: 100%;
 	    width: 100%;
 	    padding: 50px 30px 50px;
@@ -495,6 +518,10 @@ ec-contact-frm-sec-wrp
 	.career-frm-sec-wrp {
 	    padding-top: 100px;
 	    padding-bottom: 70px;
+	}
+	.map-address{
+		position: relative;
+		overflow: hidden;
 	}
 
 }
@@ -525,9 +552,9 @@ ec-contact-frm-sec-wrp
 	}
 	.ec-contact-frm-sec-wrp {
 	    padding-top: 50px;
-	    padding-bottom: 60px;
+	    padding-bottom: 40px;
 	}
-	.map-address {
+	.addr-box {
 	    max-width: 100%;
 	    width: 100%;
 	    padding: 30px 30px 30px;
@@ -589,11 +616,15 @@ ec-contact-frm-sec-wrp
 	    width: 100%;
 	    height: 50px;
 	}
-	.map-address {
+	.addr-box {
 	    padding: 30px 15px 30px;
 	}
 	#contactMap {
 	    height: 450px;
+	}
+	.ec-contact-frm-dsc {
+	    font-size: 17px;
+	    line-height: 30px;
 	}
 
 }
@@ -602,6 +633,15 @@ ec-contact-frm-sec-wrp
 @media(max-width: 479px){
 	#contactMap {
 	    height: 380px;
+	}
+	.ec-csr-popup-sec-wrp .contact-form .wpforms-submit-container button[type="submit"],
+	.ec-csr-popup-sec-wrp .contact-form .wpforms-submit-container input[type="submit"] {
+	    max-width: 110px;
+	    width: 100%;
+	    height: 40px;
+	}
+	.ec-csr-popup-sec-wrp .contact-form-text {
+	    padding-top: 18px;
 	}
 
 }

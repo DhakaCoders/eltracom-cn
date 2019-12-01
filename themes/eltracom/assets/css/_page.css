@@ -169,8 +169,7 @@ h1.banner-page-title,
     margin: 0 auto;
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.08);
     background: #fff;
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding: 60px 80px 50px;
     position: relative;
 }
 .ec-csr-popup-sec-wrp .ec-contact-frm-dsc {
@@ -188,6 +187,21 @@ h1.banner-page-title,
         padding-left: 15px;
         padding-right: 15px;
     }
+    .ec-csr-popup-sec-wrp {
+        padding: 60px 0;
+    }
+    .ec-csr-popup-sec-wrp .ec-contact-frm-wrp {
+        padding: 50px 40px 40px;
+    }
+    .ec-more-popup-wrp {
+        padding: 55px 50px 45px;
+    }
+    .ec-more-popup-dsc {
+        padding-bottom: 30px;
+    }
+    .ec-more-popup-dsc h4 {
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 575px){
@@ -199,5 +213,22 @@ h1.banner-page-title,
     }
     .page-banner-des-inner{
         min-height: 360px!important;
+    }
+    .ec-csr-popup-sec-wrp .ec-contact-frm-wrp {
+        padding: 50px 30px 40px;
+    }
+    .ec-more-popup-wrp {
+        padding: 55px 30px 45px;
+    }
+    .ec-more-popup-dsc h4 {
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 479px){
+   .ec-csr-popup-sec-wrp .ec-contact-frm-wrp {
+        padding: 50px 15px 40px;
+    } 
+    .ec-more-popup-wrp {
+        padding: 55px 15px 45px;
     }
 }
