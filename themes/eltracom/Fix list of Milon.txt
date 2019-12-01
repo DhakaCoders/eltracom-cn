@@ -54,8 +54,8 @@ Career page
 	ai font-weight lagteche ki?
 Contact Page
 ---------------
-ager fix 4. https://www.screencast.com/t/n3D0KF0hAbf2
-	ai gap 4/5 px komay daw. ata komao ni keno
+(ata fix missing) 4. https://www.screencast.com/t/n3D0KF0hAbf2
+	ai gap 4/5 px komay daw. 
 
 
 Modal
