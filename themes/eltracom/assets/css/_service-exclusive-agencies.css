@@ -2,7 +2,7 @@
     margin-top: -33px;
     position: relative;
     z-index: 2;
-}
+} 
 .service-ex-agenc-grd-wrp li:not(:last-child) {
 	margin-bottom: 30px;
 }
