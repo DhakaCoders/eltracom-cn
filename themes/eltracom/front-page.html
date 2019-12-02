@@ -29,12 +29,66 @@
 <body>
 
 
+<div class="sticky-header" id="branding">
+    <div class="header-inr clearfix">
+      <div class="hdr-lft">
+        <div class="logo">
+          <a href="#"><img src="assets/images/logo.png"></a>
+        </div>
+      </div>
+      <div class="hdr-rgt">
+        <div class="hdr-humberger-btn">
+          <div class="hdr-humberger-btn-inr">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-scroll-numbers">
+        <strong id="sticky-astitle">About</strong>
+        <ul class="clearfix ulc">
+            <li>
+              <a title="About" href="#aboutId">
+                <span></span>
+                <strong>01</strong> 
+              </a>
+            </li>
+            <li>
+              <a title="Our Products" href="#ourProductId">
+                <span></span>
+                <strong>02</strong> 
+              </a>
+            </li>
+            <li>
+              <a title="Key Figures" href="#keyFiguresId">
+                <span></span>
+                <strong>03</strong> 
+              </a>
+            </li>
+            <li>
+              <a title="Core Values" href="#coreValuesId">
+                <span></span>
+                <strong>04</strong> 
+              </a>
+            </li>
+            <li>
+              <a title="Contact" href="#footer">
+                <span></span>
+                <strong>05</strong> 
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+</div>
+
 <section class="home-page-bnr" style="background: url(assets/images/burger-manu-bg-layer-1.jpg);">
   <span class="home-page-bnr-overlay-bg"></span>
   <a class="home-bnr-logo" href="#">
     <img src="assets/images/home-bnr-logo.png">
   </a>
-  <span class="scroll-btn" data-to="#welcome-sec">
+  <span class="scroll-btn" data-to="#aboutId">
     <img src="assets/images/scroll.png">
   </span>
   <div class="home-bnr-sidebar">
@@ -54,13 +108,38 @@
       </div>
       <div class="bnr-sidebar-links">
         <div class="bnr-sidebar-links-inner">
-          <strong>INTRODUCTION</strong>
+          <strong class="sec-title-show" id="astitle">INTRODUCTION</strong>
           <ul class="clearfix ulc">
-            <li><a href="#">01</a></li>
-            <li><a href="#">02</a></li>
-            <li><a href="#">03</a></li>
-            <li><a href="#">04</a></li>
-            <li><a href="#">05</a></li>
+            <li>
+              <a title="About" href="#aboutId">
+                <span></span>
+                <strong>01</strong> 
+              </a>
+            </li>
+            <li>
+              <a title="Our Products" href="#ourProductId">
+                <span></span>
+                <strong>02</strong> 
+              </a>
+            </li>
+            <li>
+              <a title="Key Figures" href="#keyFiguresId">
+                <span></span>
+                <strong>03</strong> 
+              </a>
+            </li>
+            <li>
+              <a title="Core Values" href="#coreValuesId">
+                <span></span>
+                <strong>04</strong> 
+              </a>
+            </li>
+            <li>
+              <a title="Contact" href="#footer">
+                <span></span>
+                <strong>05</strong> 
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -261,7 +340,7 @@
 </div>
 
 
-<section class="perfection-section" id="welcome-sec">
+<section class="perfection-section" id="aboutId">
   <span class="perfection-sec-btm-rgt-img"><img src="assets/images/perfection-sec-btm-rgt-img.png"></span>
   <div class="perfection-sec-inner clearfix">
     <div class="perfection-sec-fea-img" style="background: url(assets/images/perfection-sec-fea-img.jpg);"></div>
@@ -304,7 +383,7 @@
   </div>   
 </section>
 
-<section class="h-products-section" style="background: #dfe0e6">
+<section class="h-products-section" id="ourProductId" style="background: #dfe0e6">
   <div class="container-md-2">
       <div class="row">
         <div class="col-sm-12">
@@ -322,7 +401,7 @@
               </li>
               <li>
                 <div class="h-pro-grd-item">
-                  <h4>Corrugated <span>Case</span> </h4>
+                  <h4><a href="#">Corrugated <span>Case</span></a> </h4>
                   <div class="h-pro-grd-item-des">
                     <i><img src="assets/images/h-pro-grd-item-01.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
@@ -332,7 +411,7 @@
               </li>
               <li>
                 <div class="h-pro-grd-item">
-                  <h4>Food <span>Packaging</span> </h4>
+                  <h4><a href="#">Food <span>Packaging</span></a> </h4>
                   <div class="h-pro-grd-item-des">
                     <i><img src="assets/images/h-pro-grd-item-02.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
@@ -342,7 +421,7 @@
               </li>
               <li>
                 <div class="h-pro-grd-item">
-                  <h4>Carton<span>board</span></h4>
+                  <h4><a href="#">Carton<span>board</span></a></h4>
                   <div class="h-pro-grd-item-des">
                     <i><img src="assets/images/h-pro-grd-item-03.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
@@ -352,7 +431,7 @@
               </li>
               <li>
                 <div class="h-pro-grd-item">
-                  <h4>Specialty <span>Papers</span> </h4>
+                  <h4><a href="#">Specialty <span>Papers</span></a> </h4>
                   <div class="h-pro-grd-item-des">
                     <i><img src="assets/images/h-pro-grd-item-04.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
@@ -362,7 +441,7 @@
               </li>
               <li>
                 <div class="h-pro-grd-item">
-                  <h4>Cupstock</h4>
+                  <h4><a href="#">Cupstock</a></h4>
                   <div class="h-pro-grd-item-des">
                     <i><img src="assets/images/h-pro-grd-item-05.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
@@ -380,7 +459,7 @@
   </div>    
 </section>
 
-<section class="company-counter-sec" style="background:url(assets/images/counter-bg.jpg);">
+<section class="company-counter-sec" id="keyFiguresId" style="background:url(assets/images/counter-bg.jpg);">
   <div class="counter-overlay-spn"></div>
   <div class="container-lg">
     <div class="row">
@@ -427,7 +506,7 @@
 </section>
 
 
-<section class="perfection-section" id="perfection-sec-2">
+<section class="perfection-section perfection-sec-2" id="coreValuesId">
   <span class="perfection-sec-btm-rgt-img-2"><img src="assets/images/perfection-sec-btm-rgt-img-2.png"></span>
   <div class="perfection-sec-inner clearfix">
     <div class="perfection-sec-fea-img" style="background: url(assets/images/perfection-sec-fea-img-02.jpg);"></div>
@@ -477,7 +556,7 @@
 </section>
 
 
-<footer class="footer-wrap">
+<footer class="footer-wrap" id="footer">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">

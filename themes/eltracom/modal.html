@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Career</title>
+	<title>Modal</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
@@ -26,6 +27,8 @@
 
 </head>
 <body>
+
+
 <header class="header">
     <div class="header-inr clearfix">
       <div class="hdr-lft">
@@ -247,7 +250,8 @@
           <div class="col-sm-12">
             <div class="page-banner-des-inner">
               <div>
-                <strong class="banner-page-title"><span>Career</span> Opportunities</strong>
+                
+                <strong class="banner-page-title">Our <span>Company</span></strong>
               </div>
             </div>
           </div>
@@ -257,97 +261,140 @@
   </div>
 </section>
 
-<section class="career-frm-sec-wrp">
-  <div class="career-frm-sec-bg hide-sm"></div>
+<section class="main-content" style="padding: 150px;">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="ec-contact-frm-wrp">
-           <div class="contact-form">
-            <div class="ec-contact-frm-dsc">
-              <h1>Join Our <strong>Team</strong></h1>
-              <p>We offer equal opportunities, continuous development and training so that you can develop your career with us. If you are interested in joining Eltracom do not hesitate to submit your application below:</p>
-            </div>
-            <form class="wpforms-form">
-              <div class="wpforms-field-container">
-                <div class="wpforms-field">
-                  <div class="wpforms-field-row">
-                    <div class="wpforms-one-half">
-                      <label class="wpforms-field-label">Name *</label>
-                      <input type="text" name="" class="wpforms-field-required">
-                    </div>
-                    <div class="wpforms-one-half">
-                      <label class="wpforms-field-label">Surname *</label>
-                      <input type="text" name="" class="wpforms-field-required">
-                    </div>
-                  </div>
-                </div>
-                <div class="wpforms-field">
-                  <div class="wpforms-field-row">
-                    <div class="wpforms-one-half">
-                      <label class="wpforms-field-label">Mail *</label>
-                      <input type="email" name="" class="wpforms-field-required">
-                    </div>
-                    <div class="wpforms-one-half">
-                      <label class="wpforms-field-label">Telephone Number</label>
-                      <div class="select-box check-box">
-                        <select class="round">
-                          <option>Wat voor type evenement organiseert u?</option>
-                          <option>Wat voor type evenement organiseert u?</option>
-                          <option>Wat voor type evenement organiseert u?</option>
-                        </select>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="modal-page-controller">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#teamModal">Csr Popup</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#moreModal">More Popup</button>
+
+              <!-- start modal content -->
+              <div class="modal fade team-modal" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                      </button>
+                      <div class="team-modal-con-controller">
+                        <div class="ec-contact-frm-wrp clearfix">
+                           <div class="contact-form clearfix">
+                            <div class="ec-contact-frm-dsc">
+                              <h1><strong>CSR</strong> Request form</h1>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan urna quis tempor dictum. Mauris laoreet est euismod, ullamcorper ante vel.</p>
+                            </div>
+                            <form class="wpforms-form">
+                              <div class="wpforms-field-container">
+                                <div class="wpforms-field">
+                                  <div class="wpforms-field-row">
+                                    <div class="wpforms-one-half">
+                                      <label class="wpforms-field-label">Name *</label>
+                                      <input type="text" name="" class="wpforms-field-required">
+                                    </div>
+                                    <div class="wpforms-one-half">
+                                      <label class="wpforms-field-label">Surname *</label>
+                                      <input type="text" name="" class="wpforms-field-required">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wpforms-field">
+                                  <div class="wpforms-field-row">
+                                    <div class="wpforms-one-half">
+                                      <label class="wpforms-field-label">Mail *</label>
+                                      <input type="email" name="" class="wpforms-field-required">
+                                    </div>
+                                    <div class="wpforms-one-half">
+                                      <label class="wpforms-field-label">Telephone Number</label>
+                                      <div class="select-box check-box">
+                                        <select class="round">
+                                          <option>Telephone Number</option>
+                                          <option>Telephone Number</option>
+                                          <option>Telephone Number</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wpforms-field">
+                                  <div class="wpforms-field-row">
+                                    <div class="wpforms-one-half">
+                                      <label class="wpforms-field-label">Select Department</label>
+                                      <div class="select-box check-box">
+                                        <select class="round">
+                                          <option>Select Department</option>
+                                          <option>Select Department</option>
+                                          <option>Select Department</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="wpforms-one-half">
+                                      <label class="wpforms-field-label">Subject</label>
+                                      <input type="text" name="" class="wpforms-field-required">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wpforms-field">
+                                  <div class="wpforms-one-half">
+                                    <label class="wpforms-field-label">Message *</label>
+                                    <textarea></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wpforms-submit-container"><input name="wpforms[id]" type="hidden" value="723" />
+                                <input name="wpforms[author]" type="hidden" value="2" />
+                                <input name="wpforms[post_id]" type="hidden" value="14" />
+                                <button id="wpforms-submit-723" class="wpforms-submit " name="wpforms[submit]" type="submit" value="wpforms-submit" data-alt-text="Sending..." data-submit-text="Verzenden">SUBMIT</button>
+                              </div>
+                              <div class="contact-form-text">
+                                <p> * Υποχρεωτικά Πεδία </p>
+                              </div>
+                              <div class="message-title">
+                                <p>Thank you for contacting us. A representative will contact you soon.</p>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="wpforms-field">
-                  <div class="wpforms-field-row">
-                    <div class="wpforms-one-half">
-                      <label class="wpforms-field-label">Position of Interest</label>
-                      <div class="select-box check-box">
-                        <select class="round">
-                          <option>Wat voor type evenement organiseert u?</option>
-                          <option>Wat voor type evenement organiseert u?</option>
-                          <option>Wat voor type evenement organiseert u?</option>
-                        </select>
+
+              </div><!-- end of modal content -->
+              <!-- start modal content -->
+              <div class="modal fade team-modal" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                      </button>
+                      <div class="team-modal-con-controller">
+                        <div class="ec-more-popup-wrp">
+                          <div class="ec-more-popup-dsc">
+                            <h4>White Lined Chipboard (WLC)</h4>
+                            <p><strong>Benefits of our recycled cartonboard:</strong> <br> Brilliant printability, Consistent and reliable quality, Perfect runnability, High thickness and very good stiffness</p>
+                            <p><strong>Grade: </strong> Duplex coated board grey back (GD)</p>
+                            <p><strong>Gsm Range:</strong> 250 - 550 (g/m²)</p>
+                            <p><strong>Applications:</strong> Detergents &amp; cleaning, Cereals, Snacks, Toys, Long <br> shelf life foods, Chilled food (secondary packaging), Blisters</p>
+                            <em></em>
+                          </div>
+                          <div class="ec-more-btn">
+                            <a href="#">NEXT MATERIAL</a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="wpforms-one-half">
-                      <label class="wpforms-field-label">Upload CV (pdf file)</label>
-                      <div class="contact-cv-upload">
-                        <input type="file" id="myfile" name="file" class="file-input">
-                        <div class="file-input-div">
-                          <input type="text" class="file-picker" name="" readonly="">
-                        </div> 
-                      </div>     
-                    </div>
                   </div>
                 </div>
-                <div class="wpforms-field">
-                  <div class="wpforms-one-half">
-                    <label class="wpforms-field-label">Message *</label>
-                    <textarea></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="wpforms-submit-container"><input name="wpforms[id]" type="hidden" value="723" />
-                <input name="wpforms[author]" type="hidden" value="2" />
-                <input name="wpforms[post_id]" type="hidden" value="14" />
-                <button id="wpforms-submit-723" class="wpforms-submit " name="wpforms[submit]" type="submit" value="wpforms-submit" data-alt-text="Sending..." data-submit-text="Verzenden">SUBMIT</button>
-              </div>
-              <div class="contact-form-text">
-                <p> * Υποχρεωτικά Πεδία </p>
-              </div>
-              <div class="message-title">
-                <p>Thank you for contacting us. A representative will contact you soon.</p>
-              </div>
-            </form>
+
+              </div><!-- end of modal content -->
+
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section><!-- end of contact-frm-sec-wrp -->
+  </div>    
+</section><!-- end of .main-content -->
 
 
 <section class="ftr-top-wrp text-center" id="ftr-top-">
@@ -361,7 +408,7 @@
 </section>
 
 
-<footer class="footer-wrap">
+<footer class="footer-wrap" id="footer">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -422,7 +469,7 @@
             <div class="ftr-btm-rgt text-right">
               <a href="#">
                 <span class="creation-with-txt">Creation with <i class="fa fa-heart"></i> by </span>
-                <img src="assets/images/ftr-btm-logo.png" alt="" />                
+                <img src="assets/images/ftr-btm-logo.png" alt="" />                 
               </a>
             </div>
           </div>
@@ -431,6 +478,7 @@
     </div>
   </div>     
 </footer>
+
 
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>

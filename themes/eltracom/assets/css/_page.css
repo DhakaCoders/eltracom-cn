@@ -10,9 +10,10 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(0,26,36,.4);
+    background: rgba(0,26,36,.5);
     z-index: 2;
 }
+
 .page-banner-bg{
 	position: absolute;
 	left: 0;
@@ -65,26 +66,45 @@ h1.banner-page-title,
  Popup  Css
 -------------------
 */
-.ec-more-popup-sec-wrp{
-    padding: 270px 0;
-}
-.ec-more-popup-wrp{
-    max-width: 700px;
-    width: 100%;
+#teamModal .modal-content{
+    max-width: 815px !important;
+    width: 100% !important;
     margin: 0 auto;
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.08);
     background: #fff;
     padding: 65px 75px 55px;
     position: relative;
+    border-radius: 0;
 }
-.ec-csr-popup-sec-wrp .ec-contact-frm-wrp span,
-.ec-more-popup-wrp span {
+#moreModal .modal-dialog,
+#teamModal .modal-dialog{
+    width: auto !important;
+    margin: 10px !important;
+}
+#moreModal .modal-body,
+#teamModal .modal-body {
+    padding: 0;
+}
+.modal-page-controller button{
+    margin-right: 15px;
+}
+#teamModal .modal-content button span{
     position: absolute;
-    top: 18px;
-    right: 20px;
-    color: #8e8e8e;
-    font-size: 12px;
-    line-height: 14px;
+    top: -52px;
+    right: -60px;
+    background: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+}
+#teamModal .modal-content button span:hover{
+    background: url(../images/close-hover.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+#teamModal .modal-content button.close{
+    opacity: 1;
 }
 .ec-more-popup-dsc{
     position: relative;
@@ -112,6 +132,7 @@ h1.banner-page-title,
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 15px;
+    font-weight: 400;
 }
 .ec-more-popup-dsc p strong{
     display: inline-block;
@@ -159,18 +180,33 @@ h1.banner-page-title,
  Csr popup
 -----------------
 */
-.ec-csr-popup-sec-wrp{
-    padding: 100px 0;
-}
-.ec-csr-popup-sec-wrp .ec-contact-frm-wrp{
-    max-width: 820px;
+#moreModal .modal-content{
+    max-width: 700px;
     width: 100%;
     margin: 0 auto;
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.08);
     background: #fff;
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding: 65px 80px 55px;
     position: relative;
+    border-radius: 0;
+}
+#moreModal .modal-content button span{
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    background: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+}
+#moreModal .modal-content button span:hover{
+    background: url(../images/close-hover.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+#moreModal .modal-content button.close{
+    opacity: 1;
 }
 .ec-csr-popup-sec-wrp .ec-contact-frm-dsc {
     padding-bottom: 35px;
@@ -187,6 +223,28 @@ h1.banner-page-title,
         padding-left: 15px;
         padding-right: 15px;
     }
+    #teamModal .modal-content {
+        padding: 40px 30px 30px;
+    }
+    #moreModal .modal-content {
+        padding: 55px 30px 45px;
+    }
+    .ec-more-popup-dsc {
+        padding-bottom: 30px;
+    }
+    .ec-more-popup-dsc h4 {
+        margin-bottom: 30px;
+    }
+    #teamModal .modal-content button span {
+        position: absolute;
+        top: -30px;
+        right: -15px;
+    }
+    #moreModal .modal-content button span {
+        position: absolute;
+        top: -45px;
+        right: -15px;
+    }
 }
 
 @media(max-width: 575px){
@@ -199,4 +257,34 @@ h1.banner-page-title,
     .page-banner-des-inner{
         min-height: 360px!important;
     }
+    .ec-more-popup-dsc h4 {
+        margin-bottom: 20px;
+    }
+    .main-content{
+        padding: 50px 20px !important;
+    }
+    .ec-more-popup-dsc p {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 479px){
+   #teamModal .modal-content{
+        padding: 50px 15px 40px;
+    } 
+    #moreModal .modal-content {
+        padding: 55px 15px 45px;
+    }
+    #teamModal .modal-content button span {
+        position: absolute;
+        top: -40px;
+        right: 0px;
+    }
+    #moreModal .modal-content button span {
+        position: absolute;
+        top: -45px;
+        right: 0px;
+    }
+
 }

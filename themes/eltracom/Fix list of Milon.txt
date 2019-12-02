@@ -1,0 +1,75 @@
+Contact Page
+---------------------
+
+Desktop-------
+1.https://www.screencast.com/t/zVSRxFeSW
+	font-family mileni
+	ata daw -- font-family: 'RobotoBlack';
+2. https://www.screencast.com/t/N3B6obnSN
+	type mileni- email hobe
+3. https://www.screencast.com/t/yEaDCqO6QJg
+	img ta missing
+4. https://www.screencast.com/t/n3D0KF0hAbf2
+	ai gap 4/5 px komay daw
+5. https://www.screencast.com/t/z26RkykiOlr
+	top a gap besi hobe
+
+Responsive-------------
+1. 
+
+
+Career page 
+-----------------------
+
+Desktop-----
+1. https://www.screencast.com/t/N3B6obnSN
+	type mileni- email hobe
+2. https://www.screencast.com/t/RcFzJ3Dn
+	h1 hobe
+
+Responsive--------
+1. https://www.screencast.com/t/62NQiMOo4rss
+	575px a font-size 17 daw
+
+
+
+
+
+
+
+
+
+
+
+
+new----------------
+
+Career page 
+-----------------------
+1.https://www.screencast.com/t/0ExpQTDj4
+	line-height 34px; hobe
+2. https://www.screencast.com/t/C2W8VPB0hvN
+	atar font-size 991px thake 320px pojonto 28px rakho
+3. https://www.screencast.com/t/0FfVaBOO9X
+	ai font-weight lagteche ki?
+Contact Page
+---------------
+(ata fix missing) 4. https://www.screencast.com/t/n3D0KF0hAbf2
+	ai gap 4/5 px komay daw. 
+
+
+Modal
+------------------
+1. https://www.screencast.com/t/egeoRGMoUc7
+	font-family mileni
+
+	ata hobe google font -- font-family: 'Roboto Condensed', sans-serif;
+	then font-weight bolte hobe jar joto lage
+
+2. https://www.screencast.com/t/RZyZgeWOuwP
+	hover korle blue color daw
+
+3.https://www.screencast.com/t/1bhHxh6xSkWf
+	line-height 34px hobe
+4. https://www.screencast.com/t/tLAKw8gIs
+	type thik nai. mail hobe
