@@ -2,15 +2,34 @@
     margin-top: -33px;
     position: relative;
     z-index: 2;
+    overflow: hidden;
 } 
+.company-inc-logo {
+    position: absolute;
+    top: 174px;
+    right: -126px;
+    z-index: 3;
+}
+.company-inc-logo-2 {
+    position: absolute;
+    top: 59%;
+    left: 48%;
+    z-index: 2;
+}
+.company-inc-logo-2 img{
+    max-width: 365px;
+    width:100%;
+}
 .service-ex-agenc-grd-wrp li:not(:last-child) {
-	margin-bottom: 30px;
+	margin-bottom: 44px;;
 }
 .service-ex-agenc-grd-wrp li{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
+	position: relative;
+	z-index:4;
+} 
 .service-ex-agenc-grd-wrp li .service-ex-img{
 	width:59.48%;
 	float: left;
@@ -35,7 +54,7 @@
 .service-ex-agenc-grd-wrp li .service-ex-des{
 	width:40.52%;
 	order: 2;
-	padding-left: 100px;
+	padding-left: 110px;
 	padding-top: 75px;
 	padding-bottom: 75px;
 }
@@ -45,16 +64,17 @@
 .service-ex-agenc-grd-wrp li:nth-child(2n+2) .service-ex-des{
 	order:1;
 	padding-left: 0;
-	padding-right: 100px
+	padding-right: 110px
 }
 .service-ex-agenc-grd-wrp li .service-ex-des h4{
-	font-weight: 300;
+	font-weight: 900;
 	line-height: 1.14;
 	color: #000417;
 	margin-bottom: 17px;
 }
 .service-ex-agenc-grd-wrp li .service-ex-des h4 span{
-	font-weight: 900;
+	font-weight: 300;
+	font-size: 25px;
 }
 .service-ex-agenc-grd-wrp li .service-ex-des p{
  	line-height:25px;
@@ -63,19 +83,23 @@
 	text-align: center;
 	padding: 55px 0 0;
 }
-.service-ex-btm-lnc a{
+.service-ex-btm-lnc a {
 	text-align: center;
 	display: inline-block;
 	vertical-align: baseline;
-	padding: 21px 42px;
+	padding: 19px 38px 20px;
 	background-color: #003fa5;
-	color:#fff;
+	color: #fff;
 	font-size: 13px;
 	font-weight: 900;
 	line-height: 15px;
 	letter-spacing: 1.3px;
+	border: 2px solid #003fa5;
 }
-
+.service-ex-btm-lnc a:hover {
+	background-color: #fff;
+	color: #003fa5;
+}
 #ftr-top-service-ex img{
 	margin-top: -97px;
 }
@@ -143,6 +167,12 @@ section{
 	.service-ex-agenc-grd-wrp li .service-ex-des h4 br{
 	    display: none;
 	}
+	#ftr-top-service-ex img {
+	    margin-top: 0;
+	}
+	.service-ex-btm-lnc {
+	    padding: 20px 0 0;
+	}
 }
 
 @media(max-width: 639px){
@@ -162,6 +192,10 @@ section{
 @media(max-width: 479px){
 	.ftr-btm-rgt a {
 	    min-width: 133px;
+	}
+	.service-ex-btm-lnc a {
+	   	width: 100%;
+	   	padding: 19px 10px 20px;
 	}
 }
 
