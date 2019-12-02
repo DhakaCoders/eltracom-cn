@@ -1,5 +1,5 @@
 .companyPage-aboutUs-sec{
-	padding: 100px 0 95px;
+	padding: 106px 0 98px;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
@@ -118,6 +118,7 @@
 	line-height: 50px;
 	font-size: 42px;
 	color: #fff;
+	margin-bottom: 5px;
 }
 .counter-main span{
 	display: inline-block;
@@ -130,7 +131,7 @@
 	font-size: 15px;
 	font-weight: normal;
 	font-style: normal;
-	line-height: 23px;
+	line-height: 18px;
 	letter-spacing: 1.2px;
 	color: #b4b4b4;
 	text-transform: uppercase;
@@ -164,7 +165,7 @@
     left: 49%;
 }
 .ourValue-hdr{
-	padding: 60px 0 60px;
+	padding: 60px 0 63px;
 }
 .ourValue-hdr h3{
 	font-size: 45px;
@@ -173,7 +174,7 @@
 	font-weight: 300;
 }
 .ourValue-grd-wrp {
-    padding-bottom: 120px;
+    padding-bottom: 122px;
 }
 .ourValue-grd-wrp li {
     display: flex;
@@ -229,6 +230,17 @@
 .ourValue-grd-wrp li:nth-child(2n+2) .ourValue-des .ourValue-des-innr{
 	float: right;
 	padding: 20px 112px 20px 15px
+}
+.ourValue-des .ourValue-des-innr h3{
+	font-weight: 900;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.6px;
+	color: #000417;
+}
+
+.ourValue-des .ourValue-des-innr h3 span {
+  font-weight: 400;
 }
 
 /*.weOffer-sec-innr{
@@ -308,11 +320,11 @@
 */
 
 .company-portfolio-innr{
-	max-width: 1280px;
+	max-width: 1380px;
 	margin: 0 auto;
 }
 .company-portfolio-head{
-	padding: 90px 0 62px;
+	padding-top: 90px;
 }
 .company-portfolio-head h3{
 	font-size: 45px;
@@ -349,6 +361,30 @@
 	-ms-transform: scale(1.03);
 	transform: scale(1.03);
 }
+
+.companyPortfolioSlider .slick-active {
+	padding-top:70px;
+	padding-bottom:70px;
+}
+
+
+/*.companyPortfolioSlider .slick-current {
+	padding-left: 70px;
+}*/
+
+
+.companyPortfolioSlider .slick-active + .slick-active + .slick-active {
+	padding-right: 100px;	
+}
+
+
+
+
+
+
+
+
+
 .slick-current.slick-active .companyPortfolioSlider-item{
 	border-left: 0;
 }
