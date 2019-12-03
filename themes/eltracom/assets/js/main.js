@@ -225,8 +225,12 @@ if (windowWidth > 768) {
   };
 }
 
-if($('.companyPortfolioSlider-item').length){
-  $('.companyPortfolioSlider-item').matchHeight();
+// if($('.companyPortfolioSlider-item').length){
+//   $('.companyPortfolioSlider-item').matchHeight();
+// };
+
+if($('.food-Packag-part').length){
+    $('.food-Packag-part').matchHeight();
 };
 
 /**
