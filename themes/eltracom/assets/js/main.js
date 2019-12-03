@@ -1,6 +1,6 @@
 (function($) {
 var windowWidth = $(window).width();
-if (windowWidth < 768) {
+if (windowWidth > 768) {
   if($('.matchHeightCol').length){
     $('.matchHeightCol').matchHeight();
   };
