@@ -109,10 +109,9 @@ ec-product-details-sec-wrp
 .ec-product-icon span{
 	display: inline-block;
 	vertical-align: baseline;
+	padding-right: 28px;
 }
-.ec-product-icon span:last-child{
-	padding-left: 28px;
-}
+
 .ec-product-details-btn{
 	float: left;
 	padding-top: 30px;
