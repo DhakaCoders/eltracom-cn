@@ -6,9 +6,10 @@ if (windowWidth > 768) {
   };
 }
 
-if($('.matchHeightCol').length){
+/*if($('.matchHeightCol').length){
     $('.matchHeightCol').matchHeight();
-};
+};*/
+
 $('.scroll-btn').on('click', function(e){
   e.preventDefault();
   var togo = $(this).data('to');
