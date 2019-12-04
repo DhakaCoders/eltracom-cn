@@ -290,14 +290,14 @@
 }
 
 
-/*.companyPortfolioSlider .slick-current {
+.companyPortfolioSlider .slick-current {
 	padding-left: 70px;
-}*/
+}
 
-/*
+
 .companyPortfolioSlider .slick-active + .slick-active + .slick-active {
 	padding-right: 100px;	
-}*/
+}
 
 
 
