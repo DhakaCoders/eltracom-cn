@@ -213,6 +213,7 @@ strong.sec-title-show{
 	position: relative;
 	z-index: 2;
 	padding: 41px 0;
+	min-height: 
 }
 .perfection-sec-fea-img{
 	background-size: cover!important;

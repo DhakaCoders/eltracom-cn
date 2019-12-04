@@ -98,6 +98,28 @@ Desktop---
 6.https://www.screencast.com/t/rzULHoDZDQ
 	boro window te text img ar upore uthe jay
 
+new--->>
+B.N. (1 and 2 jodi copy kore thako . tahole pd fix korar por milay nite hobe j thik ache kina)
+1. https://www.screencast.com/t/fVQRn8qk9q
+	ai link ar kono kichu mil nai
+2. https://www.screencast.com/t/UjNGCM5Hz
+	i) arrow ar positon ta thik nai. r aktu boro hobe ata
+	ii) text ar letter-spacing missing and font-fmaily mileni
+ 	iii) select box a click korle niche dhakka dey
+ 	https://www.screencast.com/t/BW3Xuft8YlmN
+ 	ai rokom hobe look ta
+3. https://www.screencast.com/t/amtdymsAGrfk
+   https://www.screencast.com/t/MiOeXtziZTH1
+	ata solve hoyni. container badh diye korle ata fix hobe. ata solve korar jonno home page thake idea nite paro. 
+4. https://www.screencast.com/t/0QKXU2mUMqlh
+	i) aigulo hobe.  
+
+5. https://www.screencast.com/t/oSKcgpTXls
+  text ar color 2 ta ache maybe. 000417 and 000000
+  Zp thake check kore sob page a thik thak bosate hobe
+
+
+
 product-page-paperboard.html
 -----------------------------
 Desktop----
@@ -106,10 +128,20 @@ Desktop----
 2. https://www.screencast.com/t/g1i72L5e9Fbo
 	boro window te text img ar upore uthe jay
 
+new--->>
+1. ager fix ar moddhe ja ja pore
+2. https://www.screencast.com/t/A6jB8dDX
+	font-family ata hobe
+
 product-page-containerboard.html
 ---------------------------------
 Desktop----
 1. ager fix ar moddhe ja ja pore . 
+
+new--->>
+1. ager fix ar moddhe ja ja pore
+
+
 
 
 product-page-solid-boards.html
@@ -117,11 +149,17 @@ product-page-solid-boards.html
 Desktop----
 1. ager fix ar moddhe ja ja pore . 
 
+new--->>
+1. ager fix ar moddhe ja ja pore
 
 product-page-premium-paperboard.html
 -------------------------------------
 Desktop----
 1. ager fix ar moddhe ja ja pore . 
+
+new--->>
+1. ager fix ar moddhe ja ja pore
+
 
 
 product-page-tissue-semi.html
@@ -132,3 +170,6 @@ Desktop----
 	nicher text gulo ai borabor thakbe
 3.https://prnt.sc/q5q6d1
 	gap besi
+
+new--->>
+1. ager fix ar moddhe ja ja pore
