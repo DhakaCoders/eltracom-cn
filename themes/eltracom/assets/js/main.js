@@ -234,6 +234,11 @@ if($('.food-Packag-part').length){
     $('.food-Packag-part').matchHeight();
 };
 
+if($('.pro-page-top-con').length){
+    $('.pro-page-top-con').matchHeight();
+};
+
+
 /**
 Slick slider
 */

@@ -79,7 +79,6 @@
 .pro-select-des h2,
 .food-Packag-des h2,
 .cupstock-des h2{
-	font-size: 39px;
 	font-weight: 900;
 	line-height: 45px;
 	letter-spacing: 0.78px;
@@ -263,23 +262,36 @@
 
 
 
+@media(max-width: 1499px){
+    .pro-page-logo-img{
+        max-width: 255px;
+    }
+    .food-Packag-main-sec .pro-page-logo-img {
+        bottom: -174px;
+    }
+    .pro-select-main-sec .pro-page-logo-img {
+        bottom: -173px;
+    }
+} 
+
+
 @media(max-width: 1399px){
     .pro-select-des, 
     .food-Packag-des, 
     .cupstock-des {
         padding-top: 85px;
     }
-
-}
-
-@media(max-width: 1299px){
     .pro-page-logo-img{
-    	max-width: 290px;
+        max-width: 210px;
     }
     .food-Packag-main-sec .pro-page-logo-img {
-        bottom: -204px;
+        bottom: -144px;
     }
-} 
+    .pro-select-main-sec .pro-page-logo-img {
+        bottom: -144px;
+    }
+
+}
 
 @media(max-width: 1199px){
     .pro-page-logo-img {
@@ -292,7 +304,18 @@
     .food-Packag-main-sec .pro-page-logo-img {
         bottom: -147px;
     }
-
+    .pro-select-main-sec .pro-page-logo-img {
+        bottom: -143px;
+    }
+    .pro-select-des .pro-select-des-innr, 
+    .food-Packag-des .food-Packag-des-innr, 
+    .cupstock-des .cupstock-des-innr {
+        padding: 20px 65px 20px 0;
+    }
+    .pro-select-img-innr, 
+    .food-Packag-img-inner {
+        min-height: 510px;
+    }
 } 
 
 @media(max-width: 991px){
@@ -306,6 +329,7 @@
     .cupstock-img {
         width: 100%;
         float: left;
+        padding-top: 50px;
     }
     .pro-select-des, 
     .food-Packag-des, 
@@ -346,18 +370,27 @@
     .cupstock-block-wrp {
         padding-bottom: 50px;
     }
-    .pro-select-des h2, 
-    .food-Packag-des h2, 
-    .cupstock-des h2 {
-        font-size: 32px;
-        line-height: 40px;
-        margin-bottom: 16px;
-    }
+
 
 }
 
 @media(max-width: 767px){
-
+    .pro-select-des p, 
+    .food-Packag-des p, 
+    .cupstock-des p {
+        line-height: 25px;
+        margin-bottom: 16px;
+    }
+    .pro-select-block-wrp {
+        padding-bottom: 25px;
+    }
+    .pro-select-des h2, 
+    .food-Packag-des h2, 
+    .cupstock-des h2 {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 16px;
+    }
 }
 
 @media(max-width: 639px){
@@ -365,7 +398,12 @@
 }
 
 @media(max-width: 575px){
-
+    .pro-select-des h2, 
+    .food-Packag-des h2, 
+    .cupstock-des h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
 
 }
 
