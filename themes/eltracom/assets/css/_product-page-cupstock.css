@@ -76,9 +76,9 @@
 	float: right;
 	padding: 20px 110px 20px 0;
 }
-.pro-select-des h1,
-.food-Packag-des h1,
-.cupstock-des h1{
+.pro-select-des h2,
+.food-Packag-des h2,
+.cupstock-des h2{
 	font-size: 39px;
 	font-weight: 900;
 	line-height: 45px;
@@ -170,7 +170,6 @@
 	font-weight: 900;
 	font-size: 13px;
 	line-height: 2.31;
-	/*letter-spacing: 1.3px;*/
 	color: #fff;
 	text-transform: uppercase;
 }

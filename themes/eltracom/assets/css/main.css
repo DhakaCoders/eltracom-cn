@@ -21,11 +21,10 @@
 
 /*Prashanto*/
 
-
 @import url('_footer.css');
 @import url('_service-exclusive-agencies.css');
 @import url('_our-company.css');
+@import url('_portfolio.css');
 @import url('_product-page-cupstock.css');
 @import url('_product-page-food-packaging.css');
-@import url('_portfolio.css');
-@import url('_product-selection.css');
+@import url('_product-page-product-selection.css');

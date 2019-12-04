@@ -8,7 +8,7 @@
 	max-width: 820px;
 	margin: 0 auto;
 }
-.portfolio-intro-sec-innr h1{
+.portfolio-intro-sec-innr h2{
 	font-size: 30px;
 	font-weight: 300;
 	line-height: 50px;
@@ -19,20 +19,12 @@
 	font-size: 18px;
 	line-height: 34px;
 }
-
 .portfolio-intro-logo{
 	position: absolute;
 	top:0;
 	right: -45px;
 	z-index: 2;
 }
-
-
-
-
-
-
-
 .portfolio-main-sec-wrp{
 	max-width: 1850px;
 	margin: 0 auto;
@@ -41,8 +33,6 @@
 	position: relative;
 	z-index: 3;
 }
-
-
 .portfolio-main-item{
 	min-height: 400px;
 	background-size: cover !important;
@@ -62,6 +52,7 @@
 	margin-right: -20px;
 	margin-top: -1px;
 	border-bottom:0;
+	z-index: 2;
 	-ms-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.23);
 	-webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.23);
 	box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.23);
@@ -74,7 +65,7 @@
 	right: 0;
 	opacity: 0.83;
 	background-color: #333342;
-	z-index: 2
+	z-index: 3;
 }
 .portfolio-main-item:hover .portfolio-main-item-overlay{
 	opacity: 0.87;
@@ -117,7 +108,7 @@
 }
 .portfolio-main-item-des-head {
     position: relative;
-    padding-left: 95px;
+    padding-left: 82px;
     margin-bottom: 25px;
 }
 .portfolio-main-item-des-head i{
@@ -130,15 +121,12 @@
 	     -o-transform: translateY(-50%);
 	        transform: translateY(-50%);
 }
-
-
-
 .portfolio-main-item:nth-child(2n+2) .portfolio-main-item-des{
 	text-align: right;
 }
 .portfolio-main-item:nth-child(2n+2) .portfolio-main-item-des-head {
     padding-left: 0;
-    padding-right: 95px;
+    padding-right: 82px;
 }
 .portfolio-main-item:nth-child(2n+2) .portfolio-main-item-des-head i{
 	position: absolute;

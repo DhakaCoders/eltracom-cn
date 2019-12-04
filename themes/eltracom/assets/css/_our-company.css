@@ -4,12 +4,13 @@
 	overflow: hidden;
 	z-index: 1;
 }
-
-.companyPage-about-innr{
-	max-width: 830px;
-	margin: 0 auto;
+.companyPage-about-innr {
+    max-width: 830px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
 }
-.companyPage-about-innr h1{
+.companyPage-about-innr h2{
 	font-size: 30px;
 	font-weight: 300;
 	line-height: 50px;
@@ -120,6 +121,7 @@
 	margin-bottom: 5px;
 }
 .counter-main span{
+	font-family: 'Roboto Condensed', sans-serif;
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 66px;
@@ -148,8 +150,6 @@
 .counter-col-5 small{
 	right:55px;
 }
-
-
 .ourValue-sec{
     position: relative;
     z-index: 1;
@@ -256,7 +256,7 @@
 }
 .company-portfolio-head p{
 	font-size: 22px;
-	line-height: 29pxs;
+	line-height: 29px;
 	color: #5d5d5d;
 }
 .companyPortfolioSlider-item{
@@ -283,30 +283,16 @@
 	-ms-transform: scale(1.03);
 	transform: scale(1.03);
 }
-
 .companyPortfolioSlider .slick-active {
 	padding-top:70px;
 	padding-bottom:70px;
 }
-
-
 .companyPortfolioSlider .slick-current {
 	padding-left: 70px;
 }
-
-
 .companyPortfolioSlider .slick-active + .slick-active + .slick-active {
 	padding-right: 100px;	
 }
-
-
-
-
-
-
-
-
-
 .slick-current.slick-active .companyPortfolioSlider-item{
 	border-left: 0;
 }
@@ -376,9 +362,6 @@
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
-
-
-
 
 
 

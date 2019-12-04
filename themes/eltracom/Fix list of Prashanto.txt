@@ -2,68 +2,68 @@ Footer
 --------------
 Desktop---
 1.https://www.screencast.com/t/n2CPYRcPWI5f
-	ai text ta chenge hobe
+	ai text ta chenge hobe --done
 2.https://www.screencast.com/t/AAPDFM22
-	r aktu niche nambe. logo ar maj borabor thakbe
+	r aktu niche nambe. logo ar maj borabor thakbe --done
 3. https://www.screencast.com/t/gFnvw9TTuMq3
-	ata daw
+	ata daw --done
 
 
 COMPANY
 -------------
 1. https://www.screencast.com/t/hheFIj6EyufE
-	ai site a banner a sudhu h1 thakbe. h1 badhe, page ar content a jkono heading use kora jabe
+	ai site a banner a sudhu h1 thakbe. h1 badhe, page ar content a jkono heading use kora jabe --done
 2. https://www.screencast.com/t/eIZoZXh7
-	i) ai img ta xd thake export kore bosao.  
-	ii) img text ar upore uthe jay
+	i) ai img ta xd thake export kore bosao. --done  
+	ii) img text ar upore uthe jay --done
 3. https://www.screencast.com/t/iicci79VxSP
 	ata mone koray dio j fix korte hobe
 	r slider ta
 4. https://www.screencast.com/t/58MQBUTq
-	wrong code
+	wrong code --done 
 5. https://www.screencast.com/t/h381e2nTg5q8
    https://www.screencast.com/t/Xsk00hpuOIi
-	font-family missing
+	font-family missing >> 2nd no. ta thik ache deckteci
 
 PORFOLIO
 -----------------------
 1. https://www.screencast.com/t/3psbbj3y6rL7
-	hover korle niche akta shadow hobe maybe. valo kore dekhle buja jay
+	hover korle niche akta shadow hobe maybe. valo kore dekhle buja jay --done 
 2. https://www.screencast.com/t/53AAMe5CXs
-	font-family missing
+	font-family missing --done 
 3.https://www.screencast.com/t/hPinPanF03fZ
-	gap besi mone hosche
+	gap besi mone hosche --done 
 
 
 product-page-food-packaging.html
 ----------------------------------
 1. https://www.screencast.com/t/UjNGCM5Hz
-	i) arrow ar positon ta thik nai. r aktu boro hobe ata
-	ii) text ar letter-spacing missing and font-fmaily mileni
- 	iii) select box a click korle niche dhakka dey
+	i) arrow ar positon ta thik nai. r aktu boro hobe ata --done
+	ii) text ar letter-spacing missing and font-fmaily mileni --done
+ 	iii) select box a click korle niche dhakka dey >>>>>red
 
-2. https://www.screencast.com/t/v64ZfaPuVHuT 
-	i) ai site a banner a sudhu h1 thakbe. h1 badhe, page ar content a jkono heading use kora jabe
-	sob page guloteo same hobe
-	ii) font-family missing
+2. https://www.screencast.com/t/v64ZfaPuVHuT
+	i) ai site a banner a sudhu h1 thakbe. h1 badhe, page ar content a jkono heading use kora jabe --done
+	sob page guloteo same hobe --done
+	ii) font-family missing --done
 3. https://www.screencast.com/t/EtUtXb3FB
-	ai bg ta missing 
+	ai bg ta missing >>>>>red
 4. https://www.screencast.com/t/PS2UrDatpnca
 	font-family and color potita element valo kore check kore update korte hobe.
-	varient ache aikhane.
+	varient ache aikhane. >>>>>red
 5. https://www.screencast.com/t/DC4yoMM2
-	window boro hole bg o barbe
+	window boro hole bg o barbe --done
 
 product-page-selection.html
 -----------------------------
 1. https://www.screencast.com/t/lUF9k2qouhG
-	prduct ar pore page daw
+	prduct ar pore page daw --done
 2. ager fix ar moddhe ja ja pore
 
 product-page-cupstock.html
 ---------------------------
 1. ager fix ar moddhe ja ja pore
 2. https://www.screencast.com/t/rX5Ot173Q
-	ai img gulo te link hobena. bcoz ata details page. portfolio page a click korle ai page gulote asbe. onno page guloteo fix kore felio
+	ai img gulo te link hobena. bcoz ata details page. portfolio page a click korle ai page gulote asbe. onno page guloteo fix kore felio --done
 
  	

@@ -79,6 +79,7 @@
 	border: solid 1px #343434;
 	padding: 20px 72px 20px 35px;
 	font-style: italic;
+	font-weight: 300;
 }
 .ftr-nl-from-wrp input::-webkit-input-placeholder { /* Edge */
 	color: #fff;
@@ -170,6 +171,7 @@
 }
 .creation-with-txt {
     position: relative;
+    top:1px;
     color: #003fa5;
     font-size: 11px;
 	line-height: 32px;
