@@ -73,3 +73,62 @@ Modal
 	line-height 34px hobe
 4. https://www.screencast.com/t/tLAKw8gIs
 	type thik nai. mail hobe
+
+
+
+
+
+
+
+product-page-specialty-papers.html
+-----------------------------------
+Desktop---
+
+1.https://www.screencast.com/t/obdJGGUP
+	ata select hobe. Select ar dropdown kemon hobe. khuje dekhle paba. Pd ar page ao ache. oi kore thakle copy kore dite parba. or nije korte hobe
+2.https://www.screencast.com/t/vI9f4sO5Roa
+	i)sob gap gulo aktu valo kore dekhe fix korte hobe.
+	ii) font-family mil nai. sob page a aktu check kore dekhio. kothay ki font ache. zeplin thake dekhe font gulo bosate hobe
+3.https://www.screencast.com/t/RMvJGhB7x
+	ata link hobe
+4.https://www.screencast.com/t/ocat14cTa60A
+	ata upore uthbe
+5.https://www.screencast.com/t/4vi9h7lP
+	ai page a ata hobena
+6.https://www.screencast.com/t/rzULHoDZDQ
+	boro window te text img ar upore uthe jay
+
+product-page-paperboard.html
+-----------------------------
+Desktop----
+1. https://www.screencast.com/t/wiKgoje6
+	upore uthbe. ai part tuku potita page a check kore fix kore felte hobe
+2. https://www.screencast.com/t/g1i72L5e9Fbo
+	boro window te text img ar upore uthe jay
+
+product-page-containerboard.html
+---------------------------------
+Desktop----
+1. ager fix ar moddhe ja ja pore . 
+
+
+product-page-solid-boards.html
+-------------------------------
+Desktop----
+1. ager fix ar moddhe ja ja pore . 
+
+
+product-page-premium-paperboard.html
+-------------------------------------
+Desktop----
+1. ager fix ar moddhe ja ja pore . 
+
+
+product-page-tissue-semi.html
+-------------------------------
+Desktop----
+1. ager fix ar moddhe ja ja pore . 
+2. https://www.screencast.com/t/DZG44SSR7
+	nicher text gulo ai borabor thakbe
+3.https://prnt.sc/q5q6d1
+	gap besi

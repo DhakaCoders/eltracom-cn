@@ -1,8 +1,14 @@
 (function($) {
 var windowWidth = $(window).width();
-if($('.matchHeightCol').length){
+if (windowWidth > 768) {
+  if($('.matchHeightCol').length){
     $('.matchHeightCol').matchHeight();
-};
+  };
+}
+
+/*if($('.matchHeightCol').length){
+    $('.matchHeightCol').matchHeight();
+};*/
 
 $('.scroll-btn').on('click', function(e){
   e.preventDefault();
