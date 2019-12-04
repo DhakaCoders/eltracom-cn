@@ -1,7 +1,7 @@
 .pro-select-two-part-con{
 	position: relative;
 }
-
+ 
 .pro-select-rgt-part span,
 .pro-select-left-des span{ 
 	display: block;
@@ -35,6 +35,7 @@
 	font-weight: 900;
 	line-height: 25px;
 	color: #002854;
+    font-family: 'Roboto', sans-serif;
 }
 .pro-select-rgt-des p,
 .pro-select-left-des p{
@@ -45,6 +46,7 @@
 }
 .pro-select-left-part {
     padding: 83px 226px 128px 15px !important;
+    padding: 83px 195px 128px 15px !important;
 }
 .pro-select-rgt-part{
 	padding: 83px 15px 110px 355px;
@@ -58,6 +60,7 @@
 	font-weight: 900;
 	line-height: 25px;
 	color: #a5c8ff;
+    font-family: 'Roboto', sans-serif;
 }
 .pro-select-application p{
 	font-weight: 700!important;
@@ -67,6 +70,7 @@
 	position: absolute;
 	top:-75px;
 	left:50%;
+    z-index: 2;
 	-webkit-transform: translateX(-50%);
 	   -moz-transform: translateX(-50%);
 	    -ms-transform: translateX(-50%);
@@ -75,6 +79,7 @@
 }
 .pro-select-left-des-top{
 	padding-right: 93px;
+	padding-right: 130px;
 }
 .pro-select-top-spn{
 	font-size: 13px!important;

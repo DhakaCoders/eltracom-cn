@@ -1,5 +1,5 @@
 Footer
---------------
+-------------- 
 Desktop---
 1.https://www.screencast.com/t/n2CPYRcPWI5f
 	ai text ta chenge hobe --done
@@ -23,7 +23,7 @@ COMPANY
 	wrong code --done 
 5. https://www.screencast.com/t/h381e2nTg5q8
    https://www.screencast.com/t/Xsk00hpuOIi
-	font-family missing >> 2nd no. ta thik ache deckteci
+	font-family missing --done
 
 PORFOLIO
 -----------------------
@@ -40,14 +40,14 @@ product-page-food-packaging.html
 1. https://www.screencast.com/t/UjNGCM5Hz
 	i) arrow ar positon ta thik nai. r aktu boro hobe ata --done
 	ii) text ar letter-spacing missing and font-fmaily mileni --done
- 	iii) select box a click korle niche dhakka dey >>>>>red
+ 	iii) select box a click korle niche dhakka dey --done
 
 2. https://www.screencast.com/t/v64ZfaPuVHuT
 	i) ai site a banner a sudhu h1 thakbe. h1 badhe, page ar content a jkono heading use kora jabe --done
 	sob page guloteo same hobe --done
 	ii) font-family missing --done
 3. https://www.screencast.com/t/EtUtXb3FB
-	ai bg ta missing >>>>>red
+	ai bg ta missing --done
 4. https://www.screencast.com/t/PS2UrDatpnca
 	font-family and color potita element valo kore check kore update korte hobe.
 	varient ache aikhane. >>>>>red
