@@ -1,6 +1,6 @@
 
 .portfolio-intro-sec-wrp{
-	padding: 120px 0 125px;
+	padding:115px 0 125px;
 	position: relative;
 	z-index: 1;
 }
@@ -88,6 +88,11 @@
 	color:#fff;
 	position: relative;
 	z-index: 3;
+}
+.portfolio-main-item-des p{
+	font-size: 20px;
+	font-weight: 300;
+	line-height:31px;
 }
 .portfolio-main-item-des a{
 	display: inline-block;

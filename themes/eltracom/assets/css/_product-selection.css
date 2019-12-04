@@ -46,7 +46,7 @@
 }
 
 
-.food-Packag-left-part {
+.pro-select-left-part {
     padding: 83px 226px 128px 15px !important;
 }
 
@@ -109,10 +109,9 @@
 }
 
 
-.pro-select-options{
-	
+.pro-select-options {
+    padding-top: 25px;
 }
-
 
 
 
