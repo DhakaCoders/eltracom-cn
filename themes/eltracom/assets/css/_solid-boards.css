@@ -8,7 +8,7 @@ ec-product-details-sec-wrp
     min-height: 1065px;
     overflow: hidden;
     margin-top: -14px;
-    margin-bottom: -70px;
+    margin-bottom: -65px;
     z-index: 5;
 }
 .pm-product-details {
@@ -51,13 +51,12 @@ ec-product-details-sec-wrp
 }
 .ec-product-details-dsc {
     padding-top: 165px;
-    max-width: 85%;
-    width: 100%;
     float: left;
-    padding-right: 0;
+    padding-right: 120px;
 }
-.ec-product-details-left{
-	width: 36%;
+.ec-product-details-left {
+    width: 40%;
+    float: left;
 }
 .ec-product-details-dsc p{
 	font-weight: 400;
@@ -110,7 +109,7 @@ ec-product-details-sec-wrp
 	margin-bottom: 30px;
 }
 .sb-product-sec .ec-product-icon {
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .ec-product-details-dsc strong,
 .ec-product-details-dsc p > strong{
@@ -151,7 +150,7 @@ ec-product-details-sec-wrp
 }
 .ec-product-icon{
 	border-top: 1px solid #c7c7c7;
-	padding-top: 15px;
+	padding-top: 30px;
 	margin-right: 35px;
 }
 .ec-product-icon span{
@@ -159,58 +158,14 @@ ec-product-details-sec-wrp
 	vertical-align: baseline;
 	padding-right: 28px;
 }
-
-.ec-product-details-btn{
+.ec-product-details-sec-wrp .productPage-slc-wrp{
 	float: left;
 	padding-top: 30px;
-}
-.ec-product-details-btn a{
-	display:block;
-	text-decoration: none;
-	color: #fff;
-	font-size: 13px;
-	line-height: 15px;
-	font-weight: 900;
-	text-align: center;
-	background: #003fa5;
-	padding: 24px 70px;
-	position: relative;
-	text-transform: uppercase;
-}
-.ec-product-details-btn a:hover{
-	background: #022a6b;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-}
-.ec-product-details-btn a:after{
-	content: "";
-	position: absolute;
-	right: 37px;
-	top: 27px;
-	background: url(../images/dropdown-icon.png);
-	background-repeat: no-repeat;
-	background-size: 10px 8px;
-	width: 10px;
-	height: 8px;
-}
-.ec-product-details-btn span{
-	display:block;
-	font-size: 13px;
-	line-height: 15px;
-	font-weight: 700;
-	color: #002854;
-	text-align: center;
-	text-transform: uppercase;
-	padding-top: 25px;
-	letter-spacing: 0.65px;
 }
 
 @media(max-width: 1399px){
 	.ec-product-details-dsc {
 	    padding-top: 130px;
-	    max-width: 485px;
-	    width: 100%;
 	    padding-right: 50px;
 	}
 }
@@ -257,6 +212,17 @@ ec-product-details-sec-wrp
 	    max-width: 100%;
 	    width: 100%;
 	    padding-right: 50px;
+	}
+	.ec-product-details-sec-wrp .productPage-slc-wrp {
+	    float: none;
+	    padding-top: 30px;
+	}
+	.ec-product-details-left {
+	    width: 100%;
+	    float: left;
+	}
+	.ec-product-details-dsc p br{
+		display: none;
 	}
 
 }
