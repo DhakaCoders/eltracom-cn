@@ -41,7 +41,7 @@
 .food-pack-pic{
 	position: absolute;
 	top:50%;
-	left:0;
+	left:-116px;
 	-webkit-transform: translateY(-50%);
 	   -moz-transform: translateY(-50%);
 	    -ms-transform: translateY(-50%);
@@ -112,9 +112,14 @@
 
 
 
+.pro-select-main-sec .dropdown.bootstrap-select,
 .food-Packag-main-sec .dropdown.bootstrap-select{
 	margin-top: -30px;
 }
+
+
+
+
 
 
 
