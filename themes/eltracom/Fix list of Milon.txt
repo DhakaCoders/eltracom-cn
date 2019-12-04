@@ -37,11 +37,6 @@ Responsive--------
 
 
 
-
-
-
-
-
 new----------------
 
 Career page 
@@ -118,6 +113,16 @@ B.N. (1 and 2 jodi copy kore thako . tahole pd fix korar por milay nite hobe j t
   text ar color 2 ta ache maybe. 000417 and 000000
   Zp thake check kore sob page a thik thak bosate hobe
 
+Responsive---->
+1.https://www.screencast.com/t/2hbha0k58M1
+	gap komay 992 pojonto rakhon, then 991px a width 100% daw
+2. https://www.screencast.com/t/O9IPibjkZT
+	1199px a gap daw. nicher content borabor
+3. https://www.screencast.com/t/4ypXmQQItm3f
+	ata des ar pore hobe
+
+
+
 
 
 product-page-paperboard.html
@@ -133,6 +138,22 @@ new--->>
 2. https://www.screencast.com/t/A6jB8dDX
 	font-family ata hobe
 
+
+Responsive-->
+1. ager fix ar moddhe ja ja pore.
+2. https://www.screencast.com/t/6ErvIUMI
+	text img ar sathe lege jay
+3. https://www.screencast.com/t/6v3GJCdkGfP
+	logo ta text ar upore chole ase. logo ta choto kore dite paro. 1399px a
+4. https://www.screencast.com/t/9hRigXPyxNP
+	1199px ai img tar width ata daw
+5. https://www.screencast.com/t/nkPR9CTm5
+	767 te top and bottom a gap komate hobe
+6. https://www.screencast.com/t/6ndSYWqGUT
+	767 te ai gap ta hobena. sob pae ai
+
+
+
 product-page-containerboard.html
 ---------------------------------
 Desktop----
@@ -140,6 +161,11 @@ Desktop----
 
 new--->>
 1. ager fix ar moddhe ja ja pore
+
+
+Responsive-->
+1. ager fix ar moddhe ja ja pore . 
+
 
 
 
@@ -152,6 +178,10 @@ Desktop----
 new--->>
 1. ager fix ar moddhe ja ja pore
 
+Responsive-->
+1. ager fix ar moddhe ja ja pore . 
+
+
 product-page-premium-paperboard.html
 -------------------------------------
 Desktop----
@@ -160,6 +190,8 @@ Desktop----
 new--->>
 1. ager fix ar moddhe ja ja pore
 
+Responsive-->
+1. ager fix ar moddhe ja ja pore . 
 
 
 product-page-tissue-semi.html
@@ -173,3 +205,6 @@ Desktop----
 
 new--->>
 1. ager fix ar moddhe ja ja pore
+
+Responsive-->
+1. ager fix ar moddhe ja ja pore . 

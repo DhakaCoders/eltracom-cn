@@ -111,6 +111,9 @@ ec-product-details-sec-wrp
 .sb-product-sec .ec-product-icon {
     padding-top: 15px;
 }
+.ec-product-details-dsc p{
+	color: #000;
+}
 .ec-product-details-dsc strong,
 .ec-product-details-dsc p > strong{
 	display: inline-block;
@@ -118,9 +121,10 @@ ec-product-details-sec-wrp
 }
 .ec-product-details-dsc h2{
 	margin: 0;
-	font-weight: 900;
 	color: #000417;
 	margin-bottom: 30px;
+	letter-spacing: 0.78px;
+	font-family: 'RobotoBlack';
 }
 .ec-product-details-dsc ul{
 	list-style: none;
