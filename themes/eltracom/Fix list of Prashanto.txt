@@ -1,4 +1,69 @@
 Footer
 --------------
-Desktop
-1.
+Desktop---
+1.https://www.screencast.com/t/n2CPYRcPWI5f
+	ai text ta chenge hobe
+2.https://www.screencast.com/t/AAPDFM22
+	r aktu niche nambe. logo ar maj borabor thakbe
+3. https://www.screencast.com/t/gFnvw9TTuMq3
+	ata daw
+
+
+COMPANY
+-------------
+1. https://www.screencast.com/t/hheFIj6EyufE
+	ai site a banner a sudhu h1 thakbe. h1 badhe, page ar content a jkono heading use kora jabe
+2. https://www.screencast.com/t/eIZoZXh7
+	i) ai img ta xd thake export kore bosao.  
+	ii) img text ar upore uthe jay
+3. https://www.screencast.com/t/iicci79VxSP
+	ata mone koray dio j fix korte hobe
+	r slider ta
+4. https://www.screencast.com/t/58MQBUTq
+	wrong code
+5. https://www.screencast.com/t/h381e2nTg5q8
+   https://www.screencast.com/t/Xsk00hpuOIi
+	font-family missing
+
+PORFOLIO
+-----------------------
+1. https://www.screencast.com/t/3psbbj3y6rL7
+	hover korle niche akta shadow hobe maybe. valo kore dekhle buja jay
+2. https://www.screencast.com/t/53AAMe5CXs
+	font-family missing
+3.https://www.screencast.com/t/hPinPanF03fZ
+	gap besi mone hosche
+
+
+product-page-food-packaging.html
+----------------------------------
+1. https://www.screencast.com/t/UjNGCM5Hz
+	i) arrow ar positon ta thik nai. r aktu boro hobe ata
+	ii) text ar letter-spacing missing and font-fmaily mileni
+ 	iii) select box a click korle niche dhakka dey
+
+2. https://www.screencast.com/t/v64ZfaPuVHuT 
+	i) ai site a banner a sudhu h1 thakbe. h1 badhe, page ar content a jkono heading use kora jabe
+	sob page guloteo same hobe
+	ii) font-family missing
+3. https://www.screencast.com/t/EtUtXb3FB
+	ai bg ta missing 
+4. https://www.screencast.com/t/PS2UrDatpnca
+	font-family and color potita element valo kore check kore update korte hobe.
+	varient ache aikhane.
+5. https://www.screencast.com/t/DC4yoMM2
+	window boro hole bg o barbe
+
+product-page-selection.html
+-----------------------------
+1. https://www.screencast.com/t/lUF9k2qouhG
+	prduct ar pore page daw
+2. ager fix ar moddhe ja ja pore
+
+product-page-cupstock.html
+---------------------------
+1. ager fix ar moddhe ja ja pore
+2. https://www.screencast.com/t/rX5Ot173Q
+	ai img gulo te link hobena. bcoz ata details page. portfolio page a click korle ai page gulote asbe. onno page guloteo fix kore felio
+
+ 	
