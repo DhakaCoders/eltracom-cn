@@ -1,9 +1,11 @@
+.pro-select-main-sec,
 .food-Packag-main-sec,
 .cupstock-main-sec {
     margin-top: -17px;
     position: relative;
     z-index: 2;
 }
+
 .food-Packag-block-wrp,
 .cupstock-block-wrp{	
 	padding-bottom: 85px;	
@@ -11,12 +13,17 @@
 .food-Packag-block-wrp{	
 	padding-bottom: 55px;	
 }
+.pro-select-block-wrp{
+	padding-bottom: 65px;
+}
+.pro-select-img,
 .food-Packag-img,
 .cupstock-img {
     width: 56.77%;
     position: relative;
     float: right;
 }
+.pro-select-des,
 .food-Packag-des,
 .cupstock-des {
     width: 43.23%;
@@ -24,11 +31,19 @@
     padding-top: 150px;
     padding-left: 15px;
 }
+.food-Packag-des{
+    padding-top: 135px;
+}
+.pro-select-des{
+    padding-top: 155px;
+}
+.pro-select-img-inner-wrp,
 .food-Packag-img-inner-wrp,
 .cupstock-img-inner-wrp{
     overflow: hidden;
     border-radius: 14px 0 0 14px;	
 }
+.pro-select-img-innr,
 .food-Packag-img-inner,
 .cupstock-img-inner{
 	min-height: 760px;
@@ -39,6 +54,11 @@
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
+.pro-select-img-innr,
+.food-Packag-img-inner{
+	min-height: 560px;
+}
+
 .food-Packag-img:hover .food-Packag-img-inner,
 .cupstock-img:hover .cupstock-img-inner{
     -ms-transform: scale(1.03);
@@ -46,23 +66,30 @@
     -o-transform: scale(1.03);
     transform: scale(1.03);
 }
+.pro-select-img .pro-select-img-innr > img,
 .food-Packag-img .food-Packag-img-inner > img,
 .cupstock-img .cupstock-img-inner > img{
     display: none;
 }
+
+.pro-select-des .pro-select-des-innr,
 .food-Packag-des .food-Packag-des-innr,
 .cupstock-des .cupstock-des-innr{
 	max-width: 550px;
 	float: right;
 	padding: 20px 110px 20px 0;
 }
+
+.pro-select-des h1,
 .food-Packag-des h1,
 .cupstock-des h1{
 	font-size: 39px;
 	font-weight: 900;
 	line-height: 45px;
 	letter-spacing: 0.78px;
+	margin-bottom: 25px;
 }
+.pro-select-des p,
 .food-Packag-des p,
 .cupstock-des p{
   line-height: 25px;
@@ -91,22 +118,22 @@
 .cupstock-des-spn-wrp{
 	padding-bottom: 15px;
 }
-.food-Packag-des-imh-inc-wrp,
+.food-Packag-des-img-inc-wrp,
 .cupstock-des-imh-inc-wrp {
 	padding-top: 32px;
 	border-top: 1px solid #c7c7c7;
 }
-.food-Packag-des-imh-inc-wrp a,
+.food-Packag-des-img-inc-wrp a,
 .cupstock-des-imh-inc-wrp a{
 	display: inline-block;
 	vertical-align: baseline;
 	margin-right: 15px;
 }
-.pro-cupstock-img{
-	position: absolute;
-	bottom:-60px;
-	left:-80px;
-	z-index: 2;
+.pro-cupstock-img {
+    position: absolute;
+    bottom: -83px;
+    left: -95px;
+    z-index: 2;
 }
 .pro-page-logo-img{
 	position: absolute;
@@ -123,22 +150,23 @@
 	margin-bottom: 25px;
 }
 .pro-select-main .bootstrap-select .dropdown-toggle .filter-option {
-	font-size: 13px;
-	font-weight: 900;
-	line-height: 2.31;
-	letter-spacing: 1.3px;
 	text-align: center;
-	color: #fff;
 	border:0;
 	padding-top: 14px;
+	color: #fff;
 }
 .pro-select-main .btn-default {
-	color: #fff;
 	background-color:#003fa5;
 	border:0;
 	outline: 0;
 	height: 100%;
-	border-radius: 0
+	border-radius: 0;
+	font-weight: 900;
+	font-size: 13px;
+	line-height: 2.31;
+	/*letter-spacing: 1.3px;*/
+	color: #fff;
+	text-transform: uppercase;
 }
 .pro-select-main .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
 	width: 255px;
@@ -154,18 +182,21 @@
 .pro-select-main .dropdown-menu > li > a:focus, 
 .pro-select-main .dropdown-menu > li > a:hover {
     color: #fff;
-	background-color: #003586;
+	background-color: #003fa5;
 }
 .pro-select-main .dropdown-menu > li > a {
 	color: #a5c8ff;
-    padding: 3px 20px;
+    padding:6px 14px;
     font-weight: 400;
     line-height: 1.42857143;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 .pro-select-main .dropdown-menu > .active > a, 
 .pro-select-main .dropdown-menu > .active > a:focus, 
 .pro-select-main .dropdown-menu > .active > a:hover {
-    background-color: #003586;
+    background-color: #003fa5;
+    color: #fff;
 }
 .pro-select-main .btn-default.active, 
 .pro-select-main .btn-default:active, 
@@ -175,16 +206,21 @@
 	border: 0;
 }
 .pro-select-main .dropdown-menu.open{
+	background-color: #003fa5;
 	border-radius: 0;
-	padding: 0;
+	padding: 3px 0 13px;
     margin: 0;
     border:0;
 }
 
 
+.pro-select-main-sec .pro-page-logo-img {
+    bottom: -224px;
+}
 
-
-
+.pro-select-main-sec .pro-select-properties {
+    padding: 30px 0 52px!important;
+}
 
 
 

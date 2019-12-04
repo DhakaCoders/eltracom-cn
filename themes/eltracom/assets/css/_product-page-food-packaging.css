@@ -1,16 +1,7 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
+.food-Packag-main-sec{
+	margin-bottom: 135px;
+}
 .pro-page-logo-img{
 	position: absolute;
 	bottom:-20px;
@@ -20,33 +11,26 @@
 
 
 
-
-
-
-
-
-
-
-
+.pro-select-two-part-con,
 .food-Packag-two-part-con{
 	max-width: 1800px;
 	margin: 0 auto;
 }
-
-
-
+.pro-select-left-part,
 .food-Packag-left-part{
 	width:50%;
 	float: left;
 	background: #e8e9ed;
 	overflow: hidden;
-	padding: 120px 150px 120px 15px;
+	padding: 120px 220px 133px 15px;
 	border-radius: 14px 0 0 14px;
 }
+.pro-select-left-part-innr,
 .food-Packag-left-part-innr{
 	max-width:455px;
 	float: right;
 }
+.pro-select-rgt-part,
 .food-Packag-rgt-part{
 	width:50%;
 	float: left;
@@ -54,48 +38,88 @@
 	border-radius: 0 14px 14px 0;
 	position: relative;
 }
-
-
-
 .food-pack-pic{
 	position: absolute;
 	top:50%;
-	left:0;
+	left:-116px;
 	-webkit-transform: translateY(-50%);
 	   -moz-transform: translateY(-50%);
 	    -ms-transform: translateY(-50%);
 	     -o-transform: translateY(-50%);
 	        transform: translateY(-50%);
 }
-
-
 .food-pack-pic img{
 	max-width: 668px;
 	width:100%;
 }
-
-
-
-
-
-
-
-
-
-.food-Packag-des span:nth-child(1){
-  margin-bottom: 30px;
+.food-Packag-left-des-top{
+	padding-right: 30px;
 }
-.food-Packag-des span:nth-child(2){
-  margin-bottom: 6px;
-}
-.food-Packag-des span:nth-child(3){
-  margin-bottom: 18px;
+.food-Packag-left-des-top .food-Packag-properties{
+	border-bottom: 1px solid #c7c7c7;
+	padding-bottom: 18px;
 }
 
 
+
+.food-Packag-left-des span{
+	display: block;
+	font-weight: 400;
+	margin-bottom: 18px;  
+	font-size: 16px;
+	font-stretch: condensed;
+	line-height: 25px;
+}
+.food-Packag-properties li{
+	padding-left: 22px;
+	position: relative;
+	margin-bottom: 6px;
+	line-height: 1.53;
+}
+
+.food-Packag-properties li:after,
+.pro-select-properties li:after{
+	content: "";
+    position: absolute;
+    width: 12px;
+    height: 10px;
+    background-image: url(../images/pro-property-li.png);
+    background-repeat: no-repeat;
+    background-size: 12px 10px;
+    left: 0;
+    top: 4px;
+}
+
+.food-Packag-left-des h6{
+	font-weight: 900;
+	line-height: 25px;
+	color: #002854;
+}
+.food-Packag-left-des p{
+	line-height: 23px;
+}
+
+.food-Packag-left-des-btm{
+	padding-top: 28px;
+}
+.food-Packag-left-des-btm .food-Packag-properties {
+    padding: 5px 0 40px;
+}
+
+
+
+
+
+
+
+.pro-select-main-sec .dropdown.bootstrap-select,
 .food-Packag-main-sec .dropdown.bootstrap-select{
 	margin-top: -30px;
 }
+
+
+
+
 
 
 
