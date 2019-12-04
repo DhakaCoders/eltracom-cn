@@ -1,9 +1,11 @@
+.pro-select-main-sec,
 .food-Packag-main-sec,
 .cupstock-main-sec {
     margin-top: -17px;
     position: relative;
     z-index: 2;
 }
+
 .food-Packag-block-wrp,
 .cupstock-block-wrp{	
 	padding-bottom: 85px;	
@@ -11,12 +13,17 @@
 .food-Packag-block-wrp{	
 	padding-bottom: 55px;	
 }
+.pro-select-block-wrp{
+	padding-bottom: 65px;
+}
+.pro-select-img,
 .food-Packag-img,
 .cupstock-img {
     width: 56.77%;
     position: relative;
     float: right;
 }
+.pro-select-des,
 .food-Packag-des,
 .cupstock-des {
     width: 43.23%;
@@ -24,11 +31,13 @@
     padding-top: 150px;
     padding-left: 15px;
 }
+.pro-select-img-inner-wrp,
 .food-Packag-img-inner-wrp,
 .cupstock-img-inner-wrp{
     overflow: hidden;
     border-radius: 14px 0 0 14px;	
 }
+.pro-select-img-innr,
 .food-Packag-img-inner,
 .cupstock-img-inner{
 	min-height: 760px;
@@ -46,23 +55,30 @@
     -o-transform: scale(1.03);
     transform: scale(1.03);
 }
+.pro-select-img .pro-select-img-innr > img,
 .food-Packag-img .food-Packag-img-inner > img,
 .cupstock-img .cupstock-img-inner > img{
     display: none;
 }
+
+.pro-select-des .pro-select-des-innr,
 .food-Packag-des .food-Packag-des-innr,
 .cupstock-des .cupstock-des-innr{
 	max-width: 550px;
 	float: right;
 	padding: 20px 110px 20px 0;
 }
+
+.pro-select-des h1,
 .food-Packag-des h1,
 .cupstock-des h1{
 	font-size: 39px;
 	font-weight: 900;
 	line-height: 45px;
 	letter-spacing: 0.78px;
+	margin-bottom: 25px;
 }
+.pro-select-des p,
 .food-Packag-des p,
 .cupstock-des p{
   line-height: 25px;
@@ -91,22 +107,22 @@
 .cupstock-des-spn-wrp{
 	padding-bottom: 15px;
 }
-.food-Packag-des-imh-inc-wrp,
+.food-Packag-des-img-inc-wrp,
 .cupstock-des-imh-inc-wrp {
 	padding-top: 32px;
 	border-top: 1px solid #c7c7c7;
 }
-.food-Packag-des-imh-inc-wrp a,
+.food-Packag-des-img-inc-wrp a,
 .cupstock-des-imh-inc-wrp a{
 	display: inline-block;
 	vertical-align: baseline;
 	margin-right: 15px;
 }
-.pro-cupstock-img{
-	position: absolute;
-	bottom:-60px;
-	left:-80px;
-	z-index: 2;
+.pro-cupstock-img {
+    position: absolute;
+    bottom: -83px;
+    left: -95px;
+    z-index: 2;
 }
 .pro-page-logo-img{
 	position: absolute;
