@@ -106,6 +106,8 @@ B.N. (1 and 2 jodi copy kore thako . tahole pd fix korar por milay nite hobe j t
 	i) arrow ar positon ta thik nai. r aktu boro hobe ata
 	ii) text ar letter-spacing missing and font-fmaily mileni
  	iii) select box a click korle niche dhakka dey
+ 	https://www.screencast.com/t/BW3Xuft8YlmN
+ 	ai rokom hobe look ta
 3. https://www.screencast.com/t/amtdymsAGrfk
    https://www.screencast.com/t/MiOeXtziZTH1
 	ata solve hoyni. container badh diye korle ata fix hobe. ata solve korar jonno home page thake idea nite paro. 
