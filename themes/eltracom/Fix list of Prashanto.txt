@@ -50,7 +50,7 @@ product-page-food-packaging.html
 	ai bg ta missing --done
 4. https://www.screencast.com/t/PS2UrDatpnca
 	font-family and color potita element valo kore check kore update korte hobe.
-	varient ache aikhane. >>>>>red
+	varient ache aikhane. >>>>>change korchi but temon mil lagche na ekhon
 5. https://www.screencast.com/t/DC4yoMM2
 	window boro hole bg o barbe --done
 

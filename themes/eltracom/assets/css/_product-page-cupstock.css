@@ -154,6 +154,9 @@
 }
 .pro-select-main{
 	margin-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 5;
 }
 .pro-select-main .bootstrap-select .dropdown-toggle .filter-option {
 	text-align: center;
