@@ -180,14 +180,9 @@ ec-product-details-sec-wrp
 	.show-md{
 		display: block!important;
 	}
-	.ec-product-details-rgt {
-	    width: 100%;
-	    position: static;
-	}
-	.ec-product-details-sec-wrp {
-	    margin-top: 0;
-	    margin-bottom: 0;
-	    padding: 50px 0;
+	.ec-product-details-dsc {
+	    padding-top: 50px;
+	    padding-right: 30px;
 	}
 	.ec-product-details-btn {
 	    float: none;
@@ -196,38 +191,17 @@ ec-product-details-sec-wrp
 	    width: 100%;
 	    margin: 0 auto;
 	}
-	.pm-product-details .ec-product-details-img {
-	    min-height: 980px !important;
-	}
-	.sp-product-details .ec-product-details-img {
-	    min-height: 800px !important;
-	}
-	.ec-product-details-img {
-	    min-height: 700px !important;
-	}
+	
 	.ec-product-rgt-bg-icon {
 	    right: -15px;
 	    bottom: -144px;
 	    width: 280px;
 	    height: 270px;
 	}
-	.ec-product-details-dsc {
-	    padding-top: 100px;
-	    max-width: 100%;
-	    width: 100%;
-	    padding-right: 50px;
+	.sp-product-details-dsc > strong {
+	    padding-top: 25px;
 	}
-	.ec-product-details-sec-wrp .productPage-slc-wrp {
-	    float: none;
-	    padding-top: 30px;
-	}
-	.ec-product-details-left {
-	    width: 100%;
-	    float: left;
-	}
-	.ec-product-details-dsc p br{
-		display: none;
-	}
+	
 
 }
 
@@ -241,6 +215,44 @@ ec-product-details-sec-wrp
 	}
 	.pm-product-details .ec-product-details-img {
 	    min-height: 880px !important;
+	}
+	.ec-product-details-sec-wrp {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    padding: 50px 0 0;
+	}
+	.ec-product-details-rgt {
+	    width: 100%;
+	    position: static;
+	    padding: 0 30px;
+	}
+	.pm-product-details .ec-product-details-img {
+	    min-height: 980px !important;
+	}
+	.sp-product-details .ec-product-details-img {
+	    min-height: 800px !important;
+	}
+	.ec-product-details-img {
+	    min-height: 700px !important;
+	}
+	.ec-product-details-left {
+	    width: 100%;
+	    float: left;
+	}
+	.ec-product-details-sec-wrp .productPage-slc-wrp {
+	    float: none;
+	    padding-top: 30px;
+	}
+	.ec-product-details-dsc p br{
+		display: none;
+	}
+	.ec-product-details-dsc {
+	    padding-top: 100px;
+	    max-width: 100%;
+	    width: 100%;
+	}
+	.ec-product-rgt-bg-icon {
+	    right: -45px;
 	}
 
 }
@@ -284,14 +296,13 @@ ec-product-details-sec-wrp
 	    min-height: 600px !important;
 	}
 	.ec-product-rgt-bg-icon {
-	    right: -18px;
 	    bottom: -100px;
 	    width: 200px;
-	    height: 190px;
+	    height: 190px !important;
 	}
 	.ec-product-details-dsc {
 	    padding-right: 0;
-	    padding-top: 60px;
+	    padding-top: 50px;
 	}
 
 }
