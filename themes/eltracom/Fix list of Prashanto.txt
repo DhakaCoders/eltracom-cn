@@ -18,7 +18,7 @@ Responsive
 	ai text 2 ta upore niche mone hosche. 479px thake buja jasche 
 3. https://www.screencast.com/t/GWTKiroz
 	ai icon ta center a nai
-4.
+
 
 
 COMPANY
@@ -36,6 +36,31 @@ COMPANY
 5. https://www.screencast.com/t/h381e2nTg5q8
    https://www.screencast.com/t/Xsk00hpuOIi
 	font-family missing --done
+
+new
+-------------------
+1. https://www.screencast.com/t/vd9E8djOQfV5
+	ai img ta 2 ta layer niye hobe.
+2. https://www.screencast.com/t/tI3IejOafKdV
+	slider ar design last jeta korchila oita kore rakho. bakita pore fix kora jabe
+
+
+Responsive
+-----------------
+1.https://www.screencast.com/t/4q7UyoqH
+	ai img tar upore text jaoa jabena. img ta choto koro. akta time a mange na kora gele. kharap lagle none kore dite paro
+2.https://www.screencast.com/t/b3v8c5gSB
+	top and bottom gap komate hobe. 767px a akbar and 575px a akbar. jemon ta valo lage
+3. https://www.screencast.com/t/DpUuZrDmNy
+  ai logo ta jokhon lege jasche . tar upore midea niye logo ta choto kore daw. text ar sathe lage jabena. then niche manage korte na parle 1199px a none kore dite paro. but 1999 px ar age none kora jabena
+4. https://www.screencast.com/t/tMQsBmnpVN
+	1500px ar niche namle ai arrow ta niche dhuke jay. kono kichu komale onno kichur upore kono effect porlo kina setao kheyal rakhte hobe. khara dekhale setao choto korte hobe
+	r 1199px a gie then none kore dite paro
+5. https://www.screencast.com/t/PAuSeXefPsZ
+	jokohon break hoye jay tokhon line height onek besi . kharap lagteche
+6. https://www.screencast.com/t/alKjRWX8Q
+	jokhon full-width hoy . tokhon 2 pase gap daw 15px kore
+7. 
 
 PORFOLIO
 -----------------------
