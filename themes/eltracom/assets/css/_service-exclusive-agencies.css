@@ -9,6 +9,10 @@
     top: 174px;
     right: -126px;
     z-index: 3;
+    max-width: 482px;
+}
+.company-inc-logo img{
+    max-width: 100%;
 }
 .company-inc-logo-2 {
     position: absolute;
