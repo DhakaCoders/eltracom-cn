@@ -36,12 +36,15 @@ COMPANY
    https://www.screencast.com/t/Xsk00hpuOIi
 	font-family missing --done
 
+
+
 new--------->
 1. https://www.screencast.com/t/vd9E8djOQfV5
 	ai img ta 2 ta layer niye hobe.
 2. https://www.screencast.com/t/tI3IejOafKdV
 	slider ar design last jeta korchila oita kore rakho. bakita pore fix kora jabe
-
+3. https://www.screencast.com/t/77SSytSnT
+	ata home thake dekhe niye try koro. j paro kina
 
 Responsive------->
 1.https://www.screencast.com/t/4q7UyoqH
@@ -122,4 +125,13 @@ product-page-cupstock.html
 Responsive--->
 1. ager fix ar moddhe ja ja pore
 
+
+
+
+
+Extra
+---------------
+1. https://www.screencast.com/t/A9kNbLRene5
+	ai seclect box ta milon ar page a mileni.  r click korle dhakka dey. tomar ta copy korchilo.
+	to aita fix kore or sob page a diye dio
  	
