@@ -351,7 +351,14 @@ tsf-two-grid-dsc-lft
     	padding-left: 0;
     	position: absolute;
 	}
-
+	.ec-product-details-rgt{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+/*	.cb-two-grid-dsc-rgt-con,
+	.cb-two-grid-dsc-lft-con{
+		display: none!important;
+	}*/
 }
 
 
@@ -395,7 +402,9 @@ tsf-two-grid-dsc-lft
 	    max-width: 415px;
 	    width: 100%;
 	}
-
+	.cb-product-details-sec-wrp .ec-product-rgt-bg-icon{
+		display: none;
+	}
 }
 
 
