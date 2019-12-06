@@ -9,8 +9,7 @@ Desktop---
 	ata daw --done
 
 
-Responsive
-----------------
+Responsive------------>
 1. https://www.screencast.com/t/qqqhdwSAzd4C
    https://www.screencast.com/t/DSeAo0Nink
 	aigulo text align center daw. 767 te
@@ -37,16 +36,14 @@ COMPANY
    https://www.screencast.com/t/Xsk00hpuOIi
 	font-family missing --done
 
-new
--------------------
+new--------->
 1. https://www.screencast.com/t/vd9E8djOQfV5
 	ai img ta 2 ta layer niye hobe.
 2. https://www.screencast.com/t/tI3IejOafKdV
 	slider ar design last jeta korchila oita kore rakho. bakita pore fix kora jabe
 
 
-Responsive
------------------
+Responsive------->
 1.https://www.screencast.com/t/4q7UyoqH
 	ai img tar upore text jaoa jabena. img ta choto koro. akta time a mange na kora gele. kharap lagle none kore dite paro
 2.https://www.screencast.com/t/b3v8c5gSB
@@ -71,6 +68,12 @@ PORFOLIO
 3.https://www.screencast.com/t/hPinPanF03fZ
 	gap besi mone hosche --done 
 
+Responsive------->
+1. https://www.screencast.com/t/mBTcRDHjxm
+	ai img tao ager fix ar moto choto kore fix korte hobe
+2. https://www.screencast.com/t/NLNhmCRu
+	text align center kore daw
+
 
 product-page-food-packaging.html
 ----------------------------------
@@ -91,16 +94,32 @@ product-page-food-packaging.html
 5. https://www.screencast.com/t/DC4yoMM2
 	window boro hole bg o barbe --done
 
+
+Responsive--->
+1. https://www.screencast.com/t/7kJKmlm7n
+	left and right a 15px gap daw. full width hole
+2. https://www.screencast.com/t/NLgkzl75vv3
+	ai img ta choto koro.  2 side ar text gulo onek long hoye jasche
+
+
+
 product-page-selection.html
 -----------------------------
 1. https://www.screencast.com/t/lUF9k2qouhG
 	prduct ar pore page daw --done
 2. ager fix ar moddhe ja ja pore
 
+Responsive-->
+1. ager fix ar moddhe ja ja pore
+
 product-page-cupstock.html
 ---------------------------
 1. ager fix ar moddhe ja ja pore
 2. https://www.screencast.com/t/rX5Ot173Q
 	ai img gulo te link hobena. bcoz ata details page. portfolio page a click korle ai page gulote asbe. onno page guloteo fix kore felio --done
+
+
+Responsive--->
+1. ager fix ar moddhe ja ja pore
 
  	
