@@ -1,7 +1,7 @@
 .pro-select-two-part-con{
 	position: relative;
 }
- 
+  
 .pro-select-rgt-part span,
 .pro-select-left-des span{ 
 	display: block;
@@ -118,22 +118,25 @@
 
 @media(max-width: 1299px){
 	.pro-select-left-des-top {
-	    padding-right: 105px;
+	    padding-right: 65px;
 	}
 	.pro-select-rgt-part {
-	    padding: 83px 15px 110px 318px;
+	    padding: 83px 15px 110px 280px;
+	}	
+	.food-pack-pic-mini{
+		max-width: 550px;
 	}
 } 
 
 @media(max-width: 1199px){
 	.food-pack-pic-mini{
-		max-width: 550px;
+		max-width: 470px;
 	}
 	.pro-select-rgt-part {
-	    padding: 83px 15px 110px 270px;
+	    padding: 83px 15px 110px 235px;
 	}
 	.pro-select-left-des-top {
-	    padding-right: 65px;
+	    padding-right: 25px;
 	}
 } 
 
