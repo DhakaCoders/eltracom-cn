@@ -241,10 +241,16 @@
 	}
 	.ftr-main-lft .ftr-addr {
 	    margin-bottom: 30px;
+	    text-anchor: ;
+	    text-align: center;
 	}
 	.ftr-main-lft .ftr-addr li:first-child {
 	    margin-bottom: 12px;
 	}
+	.ftr-rgt-links ul {
+	    display: table;
+	    margin: 0 auto;
+	}	
 	.ftr-rgt-links li {
 	    margin-right: 15px;
 	}
