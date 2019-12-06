@@ -1,12 +1,12 @@
-
-
-
 .home-page-bnr{
-	min-height: 1080px;
+	min-height: 100vh;
 	background-size: cover!important;
 	background-position: center center!important;
 	background-repeat: no-repeat!important;
 	position: relative;
+}
+.home-page-bnr.applyCommonHeight{
+	min-height: 762px;
 }
 .home-page-bnr-overlay-bg{
 	position: absolute;
@@ -161,13 +161,14 @@ strong.sec-title-show{
     line-height: 9px;
     opacity: 1;
 }
-.bnr-sidebar-links ul li a:hover span{
+.bnr-sidebar-links ul li a:hover span,
+.bnr-sidebar-links ul li.current a span{
 	opacity: 0;
 }
-.bnr-sidebar-links ul li a:hover strong{
+.bnr-sidebar-links ul li a:hover strong,
+.bnr-sidebar-links ul li.current a strong{
 	opacity: 1;
 }
-
 
 .bnr-sidebar-links li a:after {
     content: '';
