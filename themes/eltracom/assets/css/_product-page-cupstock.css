@@ -4,7 +4,7 @@
     margin-top: -17px;
     position: relative;
     z-index: 2;
-}
+} 
 .food-Packag-block-wrp, 
 .cupstock-block-wrp{	
 	padding-bottom: 85px;	
@@ -349,11 +349,14 @@
     .pro-select-img-inner-wrp, 
     .food-Packag-img-inner-wrp, 
     .cupstock-img-inner-wrp {
-        border-radius: 14px;
+        border-radius: 0;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .pro-select-img-innr, 
     .food-Packag-img-inner, 
     .cupstock-img-inner {
+        border-radius: 14px;
         background: none !important;
         min-height: initial;
     }
@@ -361,6 +364,7 @@
     .food-Packag-img .food-Packag-img-inner > img, 
     .cupstock-img .cupstock-img-inner > img {
         display: inline-block;
+        border-radius: 14px;
     }
     .pro-page-logo-img,
     .pro-cupstock-img {
