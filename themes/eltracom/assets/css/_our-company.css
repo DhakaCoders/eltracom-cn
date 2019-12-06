@@ -27,6 +27,10 @@
     top: -62px;
     left: -222px;
     z-index: 2;
+    max-width: 532px;
+}
+.obutus-inc-logo img{
+    width: 100%;
 }
 .company-counter-sec{
 	position: relative;
@@ -51,8 +55,12 @@
 .counter-inc-logo {
     position: absolute;
     right: -144px;
-    bottom: -98px;
+    bottom: -37px;
     z-index: 3;
+    max-width: 385px;
+}
+.counter-inc-logo img{
+    width: 100%;
 }
 .company-counter-innr{
 	position: relative;
@@ -287,12 +295,12 @@
 	padding-top:70px;
 	padding-bottom:70px;
 }
-.companyPortfolioSlider .slick-current {
+/*.companyPortfolioSlider .slick-current {
 	padding-left: 70px;
 }
 .companyPortfolioSlider .slick-active + .slick-active + .slick-active {
 	padding-right: 100px;	
-}
+}*/
 .slick-current.slick-active .companyPortfolioSlider-item{
 	border-left: 0;
 }
@@ -375,11 +383,20 @@
 
 
 
-
+@media(max-width: 1699px){
+	.counter-inc-logo {
+	    max-width: 300px;
+	}
+}
 
 
 @media(max-width: 1499px){
-
+	.obutus-inc-logo {
+	    max-width: 440px;
+	}
+	.counter-inc-logo {
+	    max-width: 280px;
+	}
 	.counter-col-4,
 	.counter-col-5{
 		text-align: center;
@@ -405,20 +422,35 @@
 	.ourValue-img-inner {
 	    min-height: 410px;
 	}
+	.companyPortfolioSlider-item {
+	    padding: 35px 45px 82px;
+	}
+	.ourValue-grd-wrp {
+	    padding-bottom: 80px;
+	}
+	.ourValue-sec .company-inc-logo {
+	    top: 375px !important;
+	    right: -133px !important;
+	    max-width: 380px;
+	}
 
-.companyPortfolioSlider-item {
-    padding: 35px 45px 82px;
 }
-.ourValue-grd-wrp {
-    padding-bottom: 80px;
+
+@media(max-width: 1299px){
+	.obutus-inc-logo {
+	    max-width: 390px;
+	}
+	.counter-inc-logo {
+	    max-width: 250px;
+	    right: -120px;
+	}
 }
-
-
-}
-
 @media(max-width: 1199px){
-
-
+	.ourValue-sec .company-inc-logo 
+	.counter-inc-logo,
+	.obutus-inc-logo {
+	   	display: none;
+	}
 	.counter-des {
 	    padding: 50px 35px 50px 10px;
 	}	
@@ -451,8 +483,10 @@
 }
 
 @media(max-width: 991px){
-
-
+	.ourValue-des .ourValue-des-innr h3 {
+	    line-height: 1.1;
+	    margin-bottom: 15px;
+	}
 	.company-counter-innr {
 	    display: block;
 	}
@@ -494,7 +528,8 @@
 
 	.companyPortfolioSlider-item {
 	    padding: 30px 20px 50px;
-	}		
+	}
+
 }
 
 @media(max-width: 879px){
@@ -513,6 +548,9 @@
 }
 
 @media(max-width: 767px){
+	.companyPage-aboutUs-sec {
+	    padding: 60px 0;
+	}
 	.counter-main span {
 	    font-size: 38px;
 	    line-height: 45px;
@@ -538,7 +576,8 @@
 	}
 	.ourValue-grd-wrp li .ourValue-img {
 	    width: 100%;
-	    border-radius: 14px;
+	    padding-left: 15px;
+	    padding-right: 15px;
 	}
 	.ourValue-grd-wrp li:nth-child(2n+2) .ourValue-img{
 	    border-radius: 14px;
@@ -559,9 +598,12 @@
 	.ourValue-img-inner{
 		min-height: initial;
 		background: none !important;
+	    border-radius: 14px !important;		
 	}
+
 	.ourValue-img .ourValue-img-inner > img{
 	    display: inline-block;
+	    border-radius: 14px !important;		
 	}	
 	.ourValue-grd-wrp {
 	    padding-bottom: 50px;
@@ -573,6 +615,9 @@
 }
 
 @media(max-width: 575px){
+	.companyPage-aboutUs-sec {
+	    padding: 45px 0;
+	}
 	.counter-col-1,
 	.counter-col-2,
 	.counter-col-3,
