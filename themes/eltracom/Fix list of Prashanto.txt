@@ -9,6 +9,18 @@ Desktop---
 	ata daw --done
 
 
+Responsive
+----------------
+1. https://www.screencast.com/t/qqqhdwSAzd4C
+   https://www.screencast.com/t/DSeAo0Nink
+	aigulo text align center daw. 767 te
+2. https://www.screencast.com/t/ev6VI2XGI
+	ai text 2 ta upore niche mone hosche. 479px thake buja jasche 
+3. https://www.screencast.com/t/GWTKiroz
+	ai icon ta center a nai
+4.
+
+
 COMPANY
 -------------
 1. https://www.screencast.com/t/hheFIj6EyufE

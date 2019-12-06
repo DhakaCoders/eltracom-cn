@@ -430,7 +430,23 @@ strong.sec-title-show{
 	background-size: cover!important;
 	background-position: center center!important;
 	background-repeat: no-repeat!important;
-	padding: 115px 0 75px;	
+	padding: 115px 0 75px;
+	position: relative;
+}
+.home-sec-wave{
+	z-index: 1;
+	width: 728px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
+	background-size: cover!important;
+}
+.h-products-sec-grd-controller{
+	position: relative;
+	z-index: 2;
 }
 .h-products-sec-grd-controller ul li{
 	float: left;
@@ -445,7 +461,7 @@ strong.sec-title-show{
 	top: 0;
 	height: 165px;
 	width: 1px;
-	background: #ccc;
+	background: #dadbdb;
 	z-index: 1;
 }
 .h-products-sec-grd-controller ul li:nth-child(3n+3):after{
@@ -747,9 +763,15 @@ strong.sec-title-show{
 	.h-products-section{
 		padding-top: 60px;
 	}
+	.home-2-plate-grd-controller ul{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.home-2-plate-grd-controller ul li{
 		width: 100%;
 		padding-bottom: 40px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.home-2-plate-grd-item strong{
@@ -791,7 +813,7 @@ strong.sec-title-show{
 	}
 	.perfection-sec-des-bx p {
 	    font-size: 17px;
-	    line-height: 30px;
+	    line-height: 27px;
 	}
 	.perfection-sec-des-bx a {
 	    height: 50px;
@@ -851,6 +873,10 @@ strong.sec-title-show{
 	.h-pro-more-btn a {
 	    height: 50px;
 	    max-width: 240px;
+	}
+	.bnr-sidebar-links li a:after {
+	    width: 16px;
+	    right: -23px;
 	}
 }
 
