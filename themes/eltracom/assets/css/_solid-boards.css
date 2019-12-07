@@ -32,7 +32,6 @@ ec-product-details-sec-wrp
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 	background-position: center center !important;
-	min-height: 908px !important;
 	position: relative;
 	border-radius: 10px 0 0 10px;
 }
@@ -40,9 +39,7 @@ ec-product-details-sec-wrp
 	position: relative;
 	height: 100%;
 }
-.pm-product-details .ec-product-details-img{
-	min-height: 1080px !important;
-}
+
 .ec-product-rgt-bg-icon {
     position: absolute;
     right: -52px;
@@ -218,9 +215,6 @@ ec-product-details-sec-wrp
 	.show-sm{
 		display: block!important;
 	}
-	.pm-product-details .ec-product-details-img {
-	    min-height: 880px !important;
-	}
 	.ec-product-details-sec-wrp {
 	    margin-top: 0;
 	    margin-bottom: 0;
@@ -233,12 +227,6 @@ ec-product-details-sec-wrp
 	}
 	.productPage-slc-wrp-2{
 		padding-top: 40px;
-	}
-	.pm-product-details .ec-product-details-img {
-	    min-height: 980px !important;
-	}
-	.ec-product-details-img {
-	    min-height: 700px !important;
 	}
 	.ec-product-details-left {
 	    width: 100%;
@@ -259,7 +247,13 @@ ec-product-details-sec-wrp
 	.ec-product-rgt-bg-icon {
 	    right: -45px;
 	}
-
+	.sp-product-details .ec-product-details-img{
+		background: transparent!important;
+		height: auto!important;
+	}
+	.mt--50 {
+	    margin-top: 0;
+	}
 
 }
 
@@ -270,15 +264,6 @@ ec-product-details-sec-wrp
 	}
 	.show-xs{
 		display: block!important;
-	}
-	.ec-product-details-img {
-	    min-height: 600px !important;
-	}
-	.sp-product-details .ec-product-details-img {
-	    min-height: 700px !important;
-	}
-	.pm-product-details .ec-product-details-img {
-	    min-height: 780px !important;
 	}
 	.ec-product-details-dsc h2{
 		margin-bottom: 25px;
@@ -294,15 +279,6 @@ ec-product-details-sec-wrp
 
 
 @media(max-width: 575px){
-	.ec-product-details-img {
-	    min-height: 500px !important;
-	}
-	.sp-product-details .ec-product-details-img {
-	    min-height: 600px !important;
-	}
-	.pm-product-details .ec-product-details-img {
-	    min-height: 600px !important;
-	}
 	.ec-product-rgt-bg-icon {
 	    bottom: -100px;
 	    width: 200px;
@@ -317,12 +293,7 @@ ec-product-details-sec-wrp
 
 
 @media(max-width: 479px){
-	.ec-product-details-img {
-	    min-height: 400px !important;
-	}
-	.sp-product-details .ec-product-details-img {
-	    min-height: 500px !important;
-	}
+
 }
 
 
