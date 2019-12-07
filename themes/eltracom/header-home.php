@@ -24,13 +24,22 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+<?php 
+  $logoObj = get_field('logo_header', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+?>
 
 <div class="sticky-header" id="branding">
     <div class="header-inr clearfix">
       <div class="hdr-lft">
         <div class="logo">
-          <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
+          <a href="<?php echo esc_url(home_url('/')); ?>">
+            <?php echo $logo_tag; ?>
+          </a>
         </div>
       </div>
       <div class="hdr-rgt">

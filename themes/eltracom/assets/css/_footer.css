@@ -160,7 +160,9 @@
 .ftr-btm-lft{
 	text-align: left;
 }
-
+.ftr-btm-lft span p {
+    margin: 0;
+}
 .ftr-btm-rgt a {
     text-decoration: none;
     min-width: 160px;
