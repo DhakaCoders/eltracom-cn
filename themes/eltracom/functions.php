@@ -22,15 +22,7 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-		add_image_size( 'srchgrid', 324, 206, true );
-		add_image_size( 'hmslgrid', 376, 240, true );
-		add_image_size( 'hmbbox', 480, 250, true );
-		add_image_size( 'fttopbox', 660, 408, true );
-		add_image_size( 'introgird', 556, 474, true );
-		add_image_size( 'bloggrid', 556, 360, true );
-		add_image_size( 'pgprodgrid', 440, 280, true );
-		add_image_size( 'prodgallery', 222, 152, true );
-		
+		//add_image_size( 'srchgrid', 324, 206, true );
 
 		
 		// add size to media uploader
@@ -46,10 +38,7 @@ if( !function_exists('cbv_theme_setup') ){
 		) );
 
 		register_nav_menus( array(
-			'cbv_top_menu' => __( 'Top Menu', THEME_NAME ),
-			'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-			'cbv_ftr_menu' => __( 'Footer Menu', THEME_NAME ),
-			'cbv_sp_menu' => __( 'Services & Products Menu', THEME_NAME ),
+			'cbv_main_menu' => __( 'Header Menu', THEME_NAME ),
 			'cbv_pc_menu' => __( 'Product Categories Menu', THEME_NAME ),
 			'cbv_ftb_menu' => __( 'Copyright Menu', THEME_NAME ),
 		) );

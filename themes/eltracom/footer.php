@@ -1,3 +1,17 @@
+<?php 
+
+  $spacialArry = array(".", "/", "+", " ");$replaceArray = '';
+  $adres = get_field('address', 'options');
+  $gmapsurl = get_field('google_maps', 'options');
+  $e_mailadres = get_field('emailaddress', 'options');
+  $show_telefoon = get_field('telephone', 'options');
+  $telefoon = trim(str_replace($spacialArry, $replaceArray, $show_telefoon));
+  $copyright_text = get_field('copyright_text', 'options');
+  $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
+
+  $fburl = get_field('facebook_url', 'options');
+  $link_url = get_field('linkedin_url', 'options');
+?>
 <footer class="footer-wrap">
   <div class="container">
     <div class="row">
@@ -8,24 +22,23 @@
               <h6>Get in Touch</h6>
               <div class="ftr-addr">
                 <ul class="ulc">
-                  <li>
-                    <a href="#" target="_blank">11, 25th Martiou Str. <br/>17121 N. Smyrni,  Athens, GR</a>
-                  </li>              
-                  <li>
-                    <a href="tel:+302109333305">T. +30 210 9333305</a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@eltracom.gr">E. info@eltracom.gr</a>
-                  </li>
+                  <?php 
+                  if( !empty( $adres ) ) printf('<li><a href="%s" target="_blank">%s</a></li>', $gmaplink, $adres); 
+                  if( !empty( $show_telefoon ) ) printf('<li><a href="tel:%s">T. %s</a></li>', $telefoon, $show_telefoon); 
+                  if( !empty( $e_mailadres ) ) printf('<li><a href="mailto:%s">E. %s</a></li>', $e_mailadres, $e_mailadres); 
+                  ?>             
                 </ul>              
               </div>
               <div class="ftr-social">
-                <a href="#" target="_blank">
+                <?php if(!empty($fburl)): ?>
+                <a href="<?php echo esc_url($fburl); ?>" target="_blank">
                   <i class="fa fa-facebook"></i>
                 </a>
-                <a href="#" target="_blank">
+                <?php endif; if(!empty($link_url)): ?>
+                <a href="<?php echo esc_url($link_url); ?>" target="_blank">
                   <i class="fa fa-linkedin"></i>
                 </a>
+              <?php endif; ?>
               </div>
             </div>
             <div class="ftr-main-rgt">
@@ -54,7 +67,7 @@
           </div>
           <div class="ftr-btm-con clearfix">
             <div class="ftr-btm-lft">
-              <span>COPYRIGHT ©2019</span>
+              <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text); ?>
             </div>
             <div class="ftr-btm-rgt text-right">
               <a href="#">
@@ -68,12 +81,6 @@
     </div>
   </div>     
 </footer>
-
-
-<script src="<?php echo THEME_URI; ?>/assets/js/jquery.nav.js"></script>
-
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/jquery.counterup.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
