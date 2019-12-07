@@ -1,7 +1,11 @@
-<?php get_header(); ?>
+<?php 
+/*  
+  Template Name: Terms
+*/
+get_header(); ?>
 <section class="page-banner">
   <div class="page-banner-controller" style="position: relative; overflow: hidden;">
-    <div class="page-banner-bg" style="background-image:url(assets/images/page-banner.jpg);"></div>
+    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-banner.jpg);"></div>
     <div class="page-banner-des">
       <div class="container-lg">
         <div class="row">
@@ -20,7 +24,7 @@
 
 <section class="article-wrap">
   <span class="terms-page-rgt-bg-txt">
-    <img src="assets/images/terms-page-rgt-bg-txt.png">
+    <img src="<?php echo THEME_URI; ?>/assets/images/terms-page-rgt-bg-txt.png">
   </span>
   <div class="container">
     <div class="row">
@@ -75,7 +79,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <img src="assets/images/ftr-top-bg-2.png" alt="" />
+        <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-bg-2.png" alt="" />
       </div>
     </div>
   </div>

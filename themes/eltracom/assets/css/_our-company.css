@@ -370,12 +370,29 @@
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+#companySidebar.home-bnr-sidebar {
+    background-color: #fff;
+}
+#companySidebar .bnr-sidebar-links{
+	background: #fff;
+}
 
+#companySidebar .bnr-sidebar-links ul li a {
+    color: #000;
+}
+#companySidebar .bnr-sidebar-links ul li a span::after {
+    color: #000;
+}
+#companySidebar .bnr-sidebar-links li a:after {
+    background: #000;
+}
+#companySidebar strong.sec-title-show {
+    color: #000;
+}
 
-
-
-
-
+#companySidebar .bnr-sidebar-links {
+    top: 30%;
+}
 
 
 
@@ -385,7 +402,9 @@
 
 @media(max-width: 1699px){
 	.counter-inc-logo {
-	    max-width: 300px;
+		max-width: 300px;
+		right: -139px;
+		bottom: -84px;
 	}
 }
 
@@ -441,12 +460,12 @@
 	    max-width: 390px;
 	}
 	.counter-inc-logo {
-	    max-width: 250px;
+	    max-width: 277px;
 	    right: -120px;
 	}
 }
 @media(max-width: 1199px){
-	.ourValue-sec .company-inc-logo 
+	.ourValue-sec .company-inc-logo,
 	.counter-inc-logo,
 	.obutus-inc-logo {
 	   	display: none;
