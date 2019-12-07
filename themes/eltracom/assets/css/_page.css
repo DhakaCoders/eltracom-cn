@@ -90,7 +90,7 @@ Start sitemap
     justify-content: center;
     color: #fff;
 }
-.page-banner-des-inner div > span{
+.page-banner-des-inner span.banner-page-subtitle{
     display: block;
     font-size: 13px;
     line-height: 15px;
@@ -98,6 +98,13 @@ Start sitemap
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 15px;
+}
+.page-banner-des-inner span.banner-page-icon{
+    display: block;
+    margin-bottom: 18px;    
+}
+.page-banner-des-inner span.banner-page-icon img{
+    
 }
 strong.banner-page-title, 
 h1.banner-page-title,
@@ -110,11 +117,19 @@ h1.banner-page-title,
     position: relative;
     display: block;
 }
-.banner-page-title span{
+.banner-page-title strong{
     display: inline-block;
     vertical-align: baseline;
     font-weight: 700;
 }
+.banner-page-title span{
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
 
 /*
 -------------------
