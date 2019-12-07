@@ -244,6 +244,20 @@
     top: 47% !important;
 	right: 17px !important;
 }
+.productPage-slc-wrp > a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    font-stretch: condensed;
+    line-height: 16px;
+    letter-spacing: 0.65px;
+    text-align: center;
+    color: #002854;
+    text-transform: uppercase;  
+}
+.productPage-slc-wrp > a:hover{
+    color: #003fa5;
+}
 #ftr-top-cupstock img{
 	margin-top: -24px;
 }
