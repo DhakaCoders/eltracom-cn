@@ -5,9 +5,6 @@ ec-product-details-sec-wrp
 */
 .ec-product-details-sec-wrp {
     position: relative;
-    min-height: 1065px;
-    overflow: hidden;
-    margin-top: -14px;
     margin-bottom: -65px;
     z-index: 5;
 }
@@ -34,6 +31,7 @@ ec-product-details-sec-wrp
 	background-position: center center !important;
 	position: relative;
 	border-radius: 10px 0 0 10px;
+	height: 100%;
 }
 .sp-product-details .ec-product-details-img{
 	position: relative;
@@ -42,10 +40,10 @@ ec-product-details-sec-wrp
 
 .ec-product-rgt-bg-icon {
     position: absolute;
-    right: -52px;
+    right: 0;
     bottom: -170px;
     background-repeat: no-repeat !important;
-    background-position: center center !important;
+    background-position: right -56px center!important;
     background-size: cover !important;
     width: 384px;
     height: 319px;
