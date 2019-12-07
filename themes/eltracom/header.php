@@ -56,4 +56,4 @@
       </div>
     </div>
 </header>
-<?php get_template_parts('templates/burger', 'menu'); ?>
+<?php get_template_part('templates/burger', 'menu'); ?>
