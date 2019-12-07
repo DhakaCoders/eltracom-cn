@@ -1,8 +1,15 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: CRS
+*/
+
+get_header(); 
+$thisID = get_the_ID();
+?>
 
 <section class="page-banner">
   <div class="page-banner-controller" style="position: relative; overflow: hidden;">
-    <div class="page-banner-bg" style="background-image:url(assets/images/crs-banner.jpg);"></div>
+    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/crs-banner.jpg);"></div>
     <div class="page-banner-des">
       <div class="container-lg">
         <div class="row">
@@ -19,44 +26,57 @@
   </div>
 </section>
 
-
+<?php 
+$show_hide = get_field('show_hide', $thisID);
+if($show_hide):
+  $intro = get_field('intro', $thisID);
+?>
 <section class="crs-page-con-wrap">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <div class="crs-page-entry-hdr">
-          <h1>Corporate Social Responsibility</h1>
-          <p>Being aware of <strong>Eltracom’s</strong> responsibility towards society and the environment, Corporate Social Responsibility is a key determinant for our company’s activities and goals.</p>
+          <?php 
+            if( !empty( $intro['title'] ) ) printf( '<h1>%s</h1>', $intro['title']); 
+            if( !empty( $intro['content'] ) ) echo wpautop($intro['content']);
+          ?>
         </div>
       </div>
     </div>
   </div>
+  <?php 
+  $box = $intro['box_content'];
+  if($box):
+  $posterr = '';
+  if(!empty($box['image'])){
+    $posterr = cbv_get_image_src($box['image']);
+  }
+  $link = $box['link'];
+  ?>
   <div class="crs-gray-box">
     <div class="crs-gray-box-container clearfix">
       <div class="crs-gray-box-grd-lft">
-        <div class="crs-gray-box-grd-lft-img" style="background: url(assets/images/crs-gray-box-grd-lft-img.png);"></div>
+        <div class="crs-gray-box-grd-lft-img" style="background: url(<?php echo $posterr; ?>);"></div>
       </div>
       <div class="crs-gray-box-grd-rgt">
-        <h6>Eltracom focuses on:</h6>
-        <ul class="clearfix ulc">
-          <li>The support of vulnerable social groups such as children and the elderly;</li>
-          <li>The creation of new jobs, providing opportunities to young scientists;</li>
-          <li>The continuous training of staff by organizing educational seminars;</li>
-          <li>The improvement of quality of life and the support of societies’ vulnerable groups through on-going projects in collaboration with NGO’s and other entities of the public and private sector;</li>
-          <li>The support of research projects at Universities;</li>
-        </ul>
-        <a href="#"><span>SOLUTIONS TOGETHER</span></a>
+        <?php 
+            if( !empty( $box['content'] ) ) echo wpautop($box['content']);
+            if( is_array( $link ) &&  !empty( $link['url'] ) ){
+              printf('<a href="%s" target="%s"><span>%s</span></a>', $link['url'], $link['target'], $link['title']); 
+            }
+          ?>
       </div>
     </div>
   </div>
+  <?php endif; ?>
 </section>
-
+<?php endif; ?>
 
 <section class="ftr-top-wrp text-center" id="ftr-top-">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <img src="assets/images/ftr-top-bg-2.png" alt="" />
+        <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-bg-2.png" alt="" />
       </div>
     </div>
   </div>

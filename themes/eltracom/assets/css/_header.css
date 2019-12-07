@@ -60,7 +60,7 @@ header.header{
 }
 .language a.active {
     position: static;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
     opacity: 1;
     color: #fff!important;
 }
@@ -84,7 +84,7 @@ header.header{
     position: absolute;
     font-family: FontAwesome;
     right: 3px;
-    bottom: 0;
+    bottom: 21px;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
