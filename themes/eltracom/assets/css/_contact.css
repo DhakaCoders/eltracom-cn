@@ -367,7 +367,7 @@ ec-contact-frm-sec-wrp
 .ec-contact-frm-dsc p{
 	line-height: 34px;
 }
-.ec-contact-frm-dsc h1,
+.ec-contact-frm-dsc h3,
 .ec-contact-frm-dsc h3{
 	margin: 0;
 	color: #003fa5;
@@ -376,7 +376,7 @@ ec-contact-frm-sec-wrp
 	line-height: 32px;
 	margin-bottom: 30px;
 }
-.ec-contact-frm-dsc h1 strong,
+.ec-contact-frm-dsc h3 strong,
 .ec-contact-frm-dsc h3 strong{
 	display: inline-block;
 	vertical-align: baseline;
@@ -493,7 +493,7 @@ ec-contact-frm-sec-wrp
 	    max-width: 330px;
 	    width: 100%;
 	}
-	.ec-contact-frm-dsc h1,
+	.ec-contact-frm-dsc h3,
 	.ec-contact-frm-dsc h3{
 		font-size: 29px;
 		line-height: 30px;
@@ -530,7 +530,7 @@ ec-contact-frm-sec-wrp
 		position: relative;
 		overflow: hidden;
 	}
-	.ec-contact-frm-dsc h1,
+	.ec-contact-frm-dsc h3,
 	.ec-contact-frm-dsc h3{
 		font-size: 28px;
 		line-height: 30px;
@@ -588,7 +588,7 @@ ec-contact-frm-sec-wrp
 	    padding-top: 50px;
 	    padding-bottom: 50px;
 	}
-	.ec-contact-frm-dsc h1,
+	.ec-contact-frm-dsc h3,
 	.ec-contact-frm-dsc h3{
 		margin-bottom: 20px;
 	}
