@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 
 <section id="intro" class="home-page-bnr" style="background: url(<?php echo THEME_URI; ?>/assets/images/burger-manu-bg-layer-1.jpg);">
   <span class="home-page-bnr-overlay-bg"></span>
