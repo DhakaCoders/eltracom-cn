@@ -1,105 +1,12 @@
-<!DOCTYPE html>
-<html> 
-<head>
-	<title>Home page</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php get_header(); ?>
 
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
-<svg style="display: none;">
-
-  <symbol id="right-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="30.693" height="22.459" viewBox="0 0 30.693 22.459">
-    <path id="Path_142" d="M56.161 37.924l-10.48-10.48a.749.749 0 0 0-1.059 1.056l9.2 9.2H26.436a.749.749 0 0 0 0 1.5h27.388l-9.2 9.2a.749.749 0 1 0 1.059 1.059l10.48-10.481a.749.749 0 0 0-.002-1.054z" data-name="Path 142" transform="translate(-25.687 -27.225)"/>
-  </symbol>
-
-  <symbol id="left-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="30.693" height="22.459" viewBox="0 0 30.693 22.459">
-    <path id="Path_143" d="M30.474 10.7L19.994.219a.748.748 0 1 0-1.059 1.059l9.2 9.2H.749a.749.749 0 0 0 0 1.5h27.388l-9.2 9.2a.749.749 0 1 0 1.059 1.059l10.48-10.481a.749.749 0 0 0-.002-1.056z" data-name="Path 143" transform="rotate(180 15.347 11.23)"/>
-  </symbol>
-
-</svg>
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->  
-
-</head> 
-<body>
-
-
-<div class="sticky-header" id="branding">
-    <div class="header-inr clearfix">
-      <div class="hdr-lft">
-        <div class="logo">
-          <a href="#"><img src="assets/images/logo.png"></a>
-        </div>
-      </div>
-      <div class="hdr-rgt">
-        <div class="hdr-humberger-btn">
-          <div class="hdr-humberger-btn-inr">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <div class="sticky-scroll-numbers">
-        <strong id="sticky-astitle">INTRODUCTION</strong>
-        <ul class="clearfix ulc">
-            <li class="current" data-section="intro">
-              <a title="Introduction" href="#intro">
-                <span></span>
-                <strong>01</strong> 
-              </a>
-            </li>
-            <li data-section="about">
-              <a title="About" href="#aboutId">
-                <span></span>
-                <strong>02</strong> 
-              </a>
-            </li>
-            <li data-section="products">
-              <a title="Our Products" href="#ourProductId">
-                <span></span>
-                <strong>03</strong> 
-              </a>
-            </li>
-            <li data-section="figures">
-              <a title="Key Figures" href="#keyFiguresId">
-                <span></span>
-                <strong>04</strong> 
-              </a>
-            </li>
-            <li data-section="values">
-              <a title="Core Values" href="#coreValuesId">
-                <span></span>
-                <strong>05</strong> 
-              </a>
-            </li>
-          </ul>
-      </div>
-    </div>
-</div>
-
-<section id="intro" class="home-page-bnr" style="background: url(assets/images/burger-manu-bg-layer-1.jpg);">
+<section id="intro" class="home-page-bnr" style="background: url(<?php echo THEME_URI; ?>/assets/images/burger-manu-bg-layer-1.jpg);">
   <span class="home-page-bnr-overlay-bg"></span>
   <a class="home-bnr-logo" href="#">
-    <img src="assets/images/home-bnr-logo.png">
+    <img src="<?php echo THEME_URI; ?>/assets/images/home-bnr-logo.png">
   </a>
   <span class="scroll-btn" data-to="#aboutId">
-    <img src="assets/images/scroll.png">
+    <img src="<?php echo THEME_URI; ?>/assets/images/scroll.png">
   </span>
   <div class="home-bnr-sidebar">
     <div class="home-bnr-sidebar-inner clearfix">
@@ -154,7 +61,7 @@
         </div>
       </div>
       <div class="chat-box">
-        <img src="assets/images/Chat.png">
+        <img src="<?php echo THEME_URI; ?>/assets/images/Chat.png">
       </div>
     </div>
 
@@ -163,20 +70,20 @@
 <div class="burger-menu-wrap">
   <div class="burger-menu-inner clearfix">
     <div class="bm-lft-btm-lgo">
-      <img src="assets/images/bm-lft-btm-lgo.png">
+      <img src="<?php echo THEME_URI; ?>/assets/images/bm-lft-btm-lgo.png">
     </div>
     <div class="bm-close-btn">
-      <img src="assets/images/bm-close-btn-img.png">
+      <img src="<?php echo THEME_URI; ?>/assets/images/bm-close-btn-img.png">
     </div>
 
     <div class="burger-menu-parent-lft-grd">
       <div class="bm-content-center-logo">
-        <img src="assets/images/bm-content-center-logo.png">
+        <img src="<?php echo THEME_URI; ?>/assets/images/bm-content-center-logo.png">
       </div>
       <div class="burger-menu-parent-lft-grd-inner clearfix matchHeightCol">
         <div class="burger-menu-site-logo">
           <a href="#">
-            <img src="assets/images/burger-menu-site-logo.png">
+            <img src="<?php echo THEME_URI; ?>/assets/images/burger-menu-site-logo.png">
           </a>
         </div>
         <div class="clearfix">
@@ -247,8 +154,8 @@
                 <a class="overlay-link" href="#"></a>
                 <i>
                   <span>
-                    <img src="assets/images/pop-up-portfolio-img-01.png">
-                    <img src="assets/images/pop-up-portfolio-img-01-hover.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-01.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-01-hover.png">
                   </span>
                 </i>
                 <div>
@@ -263,8 +170,8 @@
                 <a class="overlay-link" href="#"></a>
                 <i>
                   <span>
-                    <img src="assets/images/pop-up-portfolio-img-02.png">
-                    <img src="assets/images/pop-up-portfolio-img-02-hover.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-02.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-02-hover.png">
                   </span>
                 </i>
                 <div> 
@@ -279,8 +186,8 @@
                 <a class="overlay-link" href="#"></a>
                 <i>
                   <span>
-                    <img src="assets/images/pop-up-portfolio-img-03.png">
-                    <img src="assets/images/pop-up-portfolio-img-03-hover.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-03.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-03-hover.png">
                   </span>
                 </i>
                 <div>
@@ -295,8 +202,8 @@
                 <a class="overlay-link" href="#"></a>
                 <i>
                   <span>
-                    <img src="assets/images/pop-up-portfolio-img-04.png">
-                    <img src="assets/images/pop-up-portfolio-img-04-hover.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-04.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-04-hover.png">
                   </span>
                 </i>
                 <div>
@@ -311,8 +218,8 @@
                 <a class="overlay-link" href="#"></a>
                 <i>
                   <span>
-                    <img src="assets/images/pop-up-portfolio-img-05.png">
-                    <img src="assets/images/pop-up-portfolio-img-05-hover.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-05.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-05-hover.png">
                   </span>
                 </i>
                 <div> 
@@ -327,8 +234,8 @@
                 <a class="overlay-link" href="#"></a>
                 <i>
                   <span>
-                    <img src="assets/images/pop-up-portfolio-img-06.png">
-                    <img src="assets/images/pop-up-portfolio-img-06-hover.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-06.png">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-06-hover.png">
                   </span>
                 </i>
                 <div> 
@@ -342,7 +249,7 @@
           </ul>
         </div>
         <div class="bmp-rgt-grd-btm-lgo">
-          <img src="assets/images/bmp-rgt-grd-btm-lgo.png">
+          <img src="<?php echo THEME_URI; ?>/assets/images/bmp-rgt-grd-btm-lgo.png">
         </div>
       </div>
     </div>
@@ -351,9 +258,9 @@
 
 
 <section class="perfection-section" id="aboutId">
-  <span class="perfection-sec-btm-rgt-img"><img src="assets/images/perfection-sec-btm-rgt-img.png"></span>
+  <span class="perfection-sec-btm-rgt-img"><img src="<?php echo THEME_URI; ?>/assets/images/perfection-sec-btm-rgt-img.png"></span>
   <div class="perfection-sec-inner clearfix">
-    <div class="perfection-sec-fea-img" style="background: url(assets/images/perfection-sec-fea-img.jpg);"></div>
+    <div class="perfection-sec-fea-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/perfection-sec-fea-img.jpg);"></div>
     <div class="perfection-sec-des-bx">
       <div class="perfection-sec-des-bx-inner">
         <h1>We Pursue <br>
@@ -373,7 +280,7 @@
         <div class="home-2-plate-grd-item">
           <div class="home-2-plate-grd-img">
             <a href="#">
-              <img src="assets/images/home-2-plate-grd-img-01.jpg">
+              <img src="<?php echo THEME_URI; ?>/assets/images/home-2-plate-grd-img-01.jpg">
             </a>
           </div>
           <strong><a href="#">Exclusive paper <span>&</span> board agencies</a></strong>
@@ -383,7 +290,7 @@
         <div class="home-2-plate-grd-item">
           <div class="home-2-plate-grd-img">
             <a href="#">
-              <img src="assets/images/home-2-plate-grd-img-02.jpg">
+              <img src="<?php echo THEME_URI; ?>/assets/images/home-2-plate-grd-img-02.jpg">
             </a>
           </div>
           <strong><a href="#">business brokerage</a></strong>
@@ -394,7 +301,7 @@
 </section>
 
 <section class="h-products-section" id="ourProductId" style="background: #e8e9ed">
-  <span class="home-sec-wave" style="background: url(assets/images/home-sec-wave.png);"></span>
+  <span class="home-sec-wave" style="background: url(<?php echo THEME_URI; ?>/assets/images/home-sec-wave.png);"></span>
   <div class="container-md-2">
       <div class="row">
         <div class="col-sm-12">
@@ -404,9 +311,9 @@
                 <div class="h-pro-grd-item-sec-hdr-wrap">
                   <h3><span>Our</span>Products</h3>
                   <div class="h-pro-grd-item-sec-hdr">
-                    <blockquote><sup><img src="assets/images/blockquote-top-icon.png"></sup> We are focused <br>
+                    <blockquote><sup><img src="<?php echo THEME_URI; ?>/assets/images/blockquote-top-icon.png"></sup> We are focused <br>
                     on creating an<br>  unbeatable portfolio <br>
-                    of <span>Paper Products</span> <sub><img src="assets/images/blockquote-btm-icon.png"></sub></blockquote>
+                    of <span>Paper Products</span> <sub><img src="<?php echo THEME_URI; ?>/assets/images/blockquote-btm-icon.png"></sub></blockquote>
                   </div>
                 </div>
               </li>
@@ -414,7 +321,7 @@
                 <div class="h-pro-grd-item">
                   <h4><a href="#">Corrugated <span>Case</span></a> </h4>
                   <div class="h-pro-grd-item-des">
-                    <i><img src="assets/images/h-pro-grd-item-01.png"></i>
+                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-01.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
                     <a href="#">READ MORE</a>
                   </div>
@@ -424,7 +331,7 @@
                 <div class="h-pro-grd-item">
                   <h4><a href="#">Food <span>Packaging</span></a> </h4>
                   <div class="h-pro-grd-item-des">
-                    <i><img src="assets/images/h-pro-grd-item-02.png"></i>
+                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-02.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
                     <a href="#">READ MORE</a>
                   </div>
@@ -434,7 +341,7 @@
                 <div class="h-pro-grd-item">
                   <h4><a href="#">Carton<span>board</span></a></h4>
                   <div class="h-pro-grd-item-des">
-                    <i><img src="assets/images/h-pro-grd-item-03.png"></i>
+                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-03.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
                     <a href="#">READ MORE</a>
                   </div>
@@ -444,7 +351,7 @@
                 <div class="h-pro-grd-item">
                   <h4><a href="#">Specialty <span>Papers</span></a> </h4>
                   <div class="h-pro-grd-item-des">
-                    <i><img src="assets/images/h-pro-grd-item-04.png"></i>
+                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-04.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
                     <a href="#">READ MORE</a>
                   </div>
@@ -454,7 +361,7 @@
                 <div class="h-pro-grd-item">
                   <h4><a href="#">Cupstock</a></h4>
                   <div class="h-pro-grd-item-des">
-                    <i><img src="assets/images/h-pro-grd-item-05.png"></i>
+                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-05.png"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
                     <a href="#">READ MORE</a>
                   </div>
@@ -470,9 +377,9 @@
   </div>    
 </section>
 
-<section class="company-counter-sec" id="keyFiguresId" style="background:url(assets/images/counter-bg.jpg);">
+<section class="company-counter-sec" id="keyFiguresId" style="background:url(<?php echo THEME_URI; ?>/assets/images/counter-bg.jpg);">
   <div class="counter-inc-logo">
-    <img src="assets/images/company-counter-sec-ing.png" alt="">
+    <img src="<?php echo THEME_URI; ?>/assets/images/company-counter-sec-ing.png" alt="">
   </div>  
   <div class="counter-overlay-spn"></div>
   <div class="container-lg">
@@ -517,9 +424,9 @@
 
 
 <section class="perfection-section perfection-sec-2" id="coreValuesId">
-  <span class="perfection-sec-btm-rgt-img-2"><img src="assets/images/perfection-sec-btm-rgt-img-2.png"></span>
+  <span class="perfection-sec-btm-rgt-img-2"><img src="<?php echo THEME_URI; ?>/assets/images/perfection-sec-btm-rgt-img-2.png"></span>
   <div class="perfection-sec-inner clearfix">
-    <div class="perfection-sec-fea-img" style="background: url(assets/images/perfection-sec-fea-img-02.jpg);"></div>
+    <div class="perfection-sec-fea-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/perfection-sec-fea-img-02.jpg);"></div>
     <div class="perfection-sec-des-bx">
       <div class="perfection-sec-des-bx-inner">
         <h1>Our<br>
@@ -532,7 +439,7 @@
 </section>
 
 
-<section class="get-in-touch-section" style="background: url(assets/images/get-in-touch-sec-bg.jpg);">
+<section class="get-in-touch-section" style="background: url(<?php echo THEME_URI; ?>/assets/images/get-in-touch-sec-bg.jpg);">
   <span class="get-in-touch-sec-overlay-bg"></span>
   <div class="container-xlg">
     <div class="row">
@@ -559,102 +466,9 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <img src="assets/images/ftr-top-bg-2.png" alt="" />
+        <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-bg-2.png" alt="" />
       </div>
     </div>
   </div>
 </section>
-
-
-<footer class="footer-wrap">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="footer-innr">
-          <div class="ftr-main-con clearfix">
-            <div class="ftr-main-lft">
-              <h6>Get in Touch</h6>
-              <div class="ftr-addr">
-                <ul class="ulc">
-                  <li>
-                    <a href="#" target="_blank">11, 25th Martiou Str. <br/>17121 N. Smyrni,  Athens, GR</a>
-                  </li>              
-                  <li>
-                    <a href="tel:+302109333305">T. +30 210 9333305</a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@eltracom.gr">E. info@eltracom.gr</a>
-                  </li>
-                </ul>              
-              </div>
-              <div class="ftr-social">
-                <a href="#" target="_blank">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
-            <div class="ftr-main-rgt">
-              <h6>Subscribe to our Newsletter</h6>
-              <p>By subscribing here, you will receive our newsletters. You can unsubscribe at any time by following the link at the bottom of each newsletter.</p>
-              <div class="ftr-nl-from-wrp">
-                <form action="">
-                  <input type="email" placeholder="Type your email here" >
-                  <button><span></span></button>
-                </form> 
-              </div>
-              <div class="ftr-rgt-links">
-                <ul class="ulc clearfix">
-                  <li>
-                    <a href="#">PRIVACY POLICY</a>
-                  </li>
-                  <li>
-                    <a href="#">TERMS OF USE</a>
-                  </li>
-                  <li>
-                    <a href="#">COOKIES POLICY</a>
-                  </li>
-                </ul>
-              </div>
-            </div>                
-          </div>
-          <div class="ftr-btm-con clearfix">
-            <div class="ftr-btm-lft">
-              <span>COPYRIGHT ©2019</span>
-            </div>
-            <div class="ftr-btm-rgt text-right">
-              <a href="#">
-                <span class="creation-with-txt">Creation with <i class="fa fa-heart"></i> by </span>
-                <img src="assets/images/ftr-btm-logo.png" alt="" />                 
-              </a>
-            </div>
-          </div>
-        </div>         
-      </div>
-    </div>
-  </div>     
-</footer>
-
-
-
-<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.js"></script>
-<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
-<script src="assets/js/jquery.sticky-sidebar.js"></script>
-<script src="assets/js/jquery.nav.js"></script>
-<script src="assets/slick.slider/slick.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo2-QJ7RdCkLw3NFZEu71mEKJ_8LczG-c"></script>
-<script src="assets/js/jquery.matchHeight-min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
-</html>
+<?php get_footer(); ?>
