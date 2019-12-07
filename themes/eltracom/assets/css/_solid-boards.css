@@ -5,21 +5,17 @@ ec-product-details-sec-wrp
 */
 .ec-product-details-sec-wrp {
     position: relative;
-    margin-bottom: -65px;
     z-index: 5;
 }
-.pm-product-details {
-    min-height: 1240px !important;
-}
-.sp-product-details{
-	padding-bottom: 130px;
+.pspecialty-papers-con-ctrl .sp-product-details{
+	padding-bottom: 85px;
 }
 .ec-product-details-rgt{
-	width: 57.77%;
+	width: 56.7%;
 	float: right;
 }
-.mt--50{
-	margin-top: -50px;
+.mt--65{
+	margin-top: -65px;
 }
 .productPage-slc-wrp{
 	position: relative;
@@ -49,15 +45,16 @@ ec-product-details-sec-wrp
     height: 319px;
 }
 .ec-product-details-left {
-    width: 42.23%;
+    width: 43.3%;
     float: left;
     padding-left: 15px;
 }
 .ec-product-details-dsc {
     padding-top: 165px;
     float: right;
-    max-width: 530px;
+    max-width: 500px;
     padding-right: 90px;
+    width: 100%;
 }
 .ec-product-details-dsc p{
 	font-weight: 400;
@@ -193,7 +190,7 @@ ec-product-details-sec-wrp
 	}
 	
 	.ec-product-rgt-bg-icon {
-	    right: -15px;
+	    right: 0;
 	    bottom: -144px;
 	    width: 280px;
 	    height: 270px;
@@ -238,21 +235,20 @@ ec-product-details-sec-wrp
 		display: none;
 	}
 	.ec-product-details-dsc {
-	    padding-top: 70px;
+	    padding-top: 50px;
 	    max-width: 100%;
 	    width: 100%;
-	}
-	.ec-product-rgt-bg-icon {
-	    right: -45px;
 	}
 	.sp-product-details .ec-product-details-img{
 		background: transparent!important;
 		height: auto!important;
 	}
-	.mt--50 {
+	.mt--65 {
 	    margin-top: 0;
 	}
-
+	.pspecialty-papers-con-ctrl .sp-product-details {
+	    padding-bottom: 40px;
+	}
 }
 
 
@@ -284,7 +280,7 @@ ec-product-details-sec-wrp
 	}
 	.ec-product-details-dsc {
 	    padding-right: 0;
-	    padding-top: 50px;
+	    padding-top: 30px;
 	}
 
 }
