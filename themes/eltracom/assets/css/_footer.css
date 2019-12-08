@@ -21,7 +21,9 @@
 	max-width: 1090px;
 	margin: 0 auto;
 }
-
+.company-ftr-top-logo img{
+	margin-top: -97px;
+}
 
 
 

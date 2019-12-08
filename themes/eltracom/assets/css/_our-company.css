@@ -267,10 +267,16 @@
 	line-height: 29px;
 	color: #5d5d5d;
 }
+.companyPortfolioSlider .slick-list{
+	padding: 40px 50px 70px;
+}
+.companyPortfolioSlider{
+	max-height: 508px;
+}
 .companyPortfolioSlider-item{
 	width:33.333%;
 	float: left;
-	background: #fff;
+	background: transparent;
 	padding: 35px 82px 82px;
 	position: relative;
 	border-left: 1px solid #e6e6e6;
@@ -287,21 +293,17 @@
 	-ms-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06); 
   	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.06);
 	z-index: 7;
-	-webkit-transform: scale(1.03);
-	-ms-transform: scale(1.03);
-	transform: scale(1.03);
+	-webkit-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	transform: scale(1.02);
+	background: #fff;
 }
-.companyPortfolioSlider .slick-active {
-	padding-top:70px;
-	padding-bottom:70px;
-}
-/*.companyPortfolioSlider .slick-current {
-	padding-left: 70px;
-}
+
+
 .companyPortfolioSlider .slick-active + .slick-active + .slick-active {
 	padding-right: 100px;	
-}*/
-.slick-current.slick-active .companyPortfolioSlider-item{
+}
+.companyPortfolioSlider .slick-current.slick-active .companyPortfolioSlider-item{
 	border-left: 0;
 }
 .companyPortfolioSlider-item img{
@@ -327,6 +329,10 @@
 .companyPortfolioSlider-item img{
 	margin-bottom: 22px;
 }
+.company-portfolio-sec{
+	position: relative;
+	z-index: 10;
+}
 .portfolio-arrows span.rightArrow svg,
 .portfolio-arrows span.leftArrow svg{
     -ms-transition: all 0.5s;
@@ -339,36 +345,28 @@
 	fill: #003fa5!important;
 }
 .portfolio-arrows{
-	position: relative;
-	padding: 20px 0;
+	position: absolute;
+	padding:  0;
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: 76px;
+	z-index: 15;
+}
+.portfolio-arrows span.leftArrow,
+.portfolio-arrows span.rightArrow{
+	bottom: 35px;
+    z-index: 25;
+    width: 31px;
+    height: 23px;
+    display: inline-block;
+    vertical-align: baseline;
 }
 .portfolio-arrows span.leftArrow{
-    position: absolute;
-    left: 45.8%;
-    bottom: 35px;
-    z-index: 25;
-    width: 31px;
-    height: 23px;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-    -ms-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    margin-right: 12px;
 }
 .portfolio-arrows span.rightArrow {
-    position: absolute;
-    right: 45.8%;
-    bottom: 35px;
-    z-index: 25;
-    width: 31px;
-    height: 23px;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-    -ms-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+	margin-left: 12px;
 }
 #companySidebar.home-bnr-sidebar {
     background-color: #fff;
