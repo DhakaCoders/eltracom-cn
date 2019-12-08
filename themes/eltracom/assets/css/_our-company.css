@@ -408,6 +408,9 @@
 
 
 @media(max-width: 1499px){
+	.companyPortfolioSlider .slick-list {
+	    padding: 40px 40px 70px;
+	}
 	.obutus-inc-logo {
 	    max-width: 440px;
 	}
@@ -463,6 +466,9 @@
 	}
 }
 @media(max-width: 1199px){
+	.companyPortfolioSlider .slick-list {
+	    padding: 40px 0 70px;
+	}
 	.ourValue-sec .company-inc-logo,
 	.counter-inc-logo,
 	.obutus-inc-logo {
@@ -504,6 +510,13 @@
 	    line-height: 1.1;
 	    margin-bottom: 15px;
 	}
+	.ourValue-grd-wrp {
+	    padding-bottom: 30px;
+	}
+	.company-portfolio-head {
+	    padding: 40px 0 20px;
+	}
+
 	.company-counter-innr {
 	    display: block;
 	}
@@ -531,7 +544,6 @@
 	    font-size: 50px;
 	    line-height: 55px;
 	}
-
 	.counter-main strong {
 	    line-height: 40px;
 	    font-size: 32px;
@@ -542,7 +554,6 @@
 	.ourValue-hdr {
 	    padding: 50px 0 22px;
 	}	
-
 	.companyPortfolioSlider-item {
 	    padding: 30px 20px 50px;
 	}
@@ -552,7 +563,7 @@
 @media(max-width: 879px){
 	.portfolio-arrows {
 	    position: relative;
-	    padding: 22px 0;
+	    padding: 15px 0 22px;
 	}
 	.portfolio-arrows span.leftArrow {
 	    left: 43%;
@@ -562,9 +573,23 @@
 	    right: 43%;
 	    /*bottom: 0;*/
 	}
+	.companyPortfolioSlider-item {
+	    padding: 30px 20px;
+	}
 }
 
 @media(max-width: 767px){
+	.company-portfolio-head {
+	    padding: 20px 0 10px;
+	}
+	.counter-des h3,
+	.ourValue-hdr h3,
+	.company-portfolio-head h3 {
+	    font-size: 40px;
+	}
+	.companyPortfolioSlider .slick-list {
+	    padding: 25px 0 70px;
+	}
 	.companyPage-aboutUs-sec {
 	    padding: 60px 0;
 	}
@@ -623,7 +648,16 @@
 	    border-radius: 14px !important;		
 	}	
 	.ourValue-grd-wrp {
-	    padding-bottom: 50px;
+	    padding-bottom: 20px;
+	}
+	.ourValue-hdr {
+	    padding: 45px 0 15px;
+	}
+	.counter-des h3 {
+	    margin-bottom: 25px;
+	}
+	.counter-main {
+	    padding: 20px 0 40px;
 	}
 }
 
@@ -634,6 +668,15 @@
 @media(max-width: 575px){
 	.companyPage-aboutUs-sec {
 	    padding: 45px 0;
+	}
+	.counter-des h3,
+	.ourValue-hdr h3,
+	.company-portfolio-head h3 {
+	    font-size: 35px;
+	    line-height: 40px;
+	}
+	.companyPortfolioSlider-item {
+	    padding: 10px 20px 30px;
 	}
 	.counter-col-1,
 	.counter-col-2,
@@ -648,7 +691,11 @@
 	    line-height: 40px;
 	}
 }
-
+@media(max-width: 549px){
+	.companyPortfolioSlider .slick-list {
+	    padding: 22px 0 70px;
+	}
+}
 @media(max-width: 479px){
 	
 }
