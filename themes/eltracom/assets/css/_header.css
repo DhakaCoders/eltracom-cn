@@ -416,9 +416,9 @@ body.body-scroll{
 .bmp-grd-item strong span{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-     transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
 }
 
 
@@ -427,9 +427,15 @@ body.body-scroll{
     background: #0041a3;
 }
 .bmp-grd-item:hover strong{
-    font-size: 24px;
+    transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -o-transform: scale(1.01);
 }
 .bmp-grd-item:hover strong span{
+/*    transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);*/
     display: none;
 }
 .bmp-grd-item:hover i span img:first-child{

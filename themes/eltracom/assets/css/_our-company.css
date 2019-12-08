@@ -267,11 +267,11 @@
 	line-height: 29px;
 	color: #5d5d5d;
 }
-.companyPortfolioSlider .slick-list{
-	padding: 40px 50px 70px;
-}
 .companyPortfolioSlider{
-	max-height: 508px;
+	overflow: hidden;
+}
+.companyPortfolioSlider .slick-list{
+	padding: 40px 55px 70px;
 }
 .companyPortfolioSlider-item{
 	width:33.333%;
@@ -300,8 +300,8 @@
 }
 
 
-.companyPortfolioSlider .slick-active + .slick-active + .slick-active {
-	padding-right: 100px;	
+.companyPortfolioSlider .slick-active + .slick-active + .slick-active + .slick-slide .companyPortfolioSlider-item{
+	border-left: none;
 }
 .companyPortfolioSlider .slick-current.slick-active .companyPortfolioSlider-item{
 	border-left: 0;
