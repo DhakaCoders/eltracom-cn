@@ -36,6 +36,9 @@ ec-contact-frm-sec-wrp
 .contact-form .wpforms-form{
 	width: 100%;
 }
+.contact-form .wpforms-form form .wpforms-one-half p{
+	margin: 0;
+}
 .contact-form .wpforms-form .wpforms-field-container .wpforms-field{
 	width: 100%;
 	margin-bottom: 20px;

@@ -181,6 +181,7 @@ if( $('#contactMap').length ){
   var longitude = $('#contactMap').data('longitude');
 
   var myCenter= new google.maps.LatLng(latitude,  longitude);
+  var iconBase = $('#googlemap').data('homeurl');
   function initialize(){
       var mapProp = {
         center:myCenter,
@@ -201,7 +202,7 @@ if( $('#contactMap').length ){
 
       var marker= new google.maps.Marker({
         position:myCenter,
-        icon: 'map-marker.png'
+        icon:iconBase + '/assets/images/map-marker.png'
         });
       marker.setMap(map);
   }
