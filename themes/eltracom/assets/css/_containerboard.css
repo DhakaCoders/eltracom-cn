@@ -211,8 +211,8 @@ tsf-two-grid-dsc-lft
 .tsf-two-grid-dsc-rgt h6:first-of-type{
 	margin-top: 0;
 }
-.cb-two-grid-dsc-rgt span,
-.pb-grid-dsc-lft span{
+.cb-two-grid-dsc-rgt p small,
+.pb-grid-dsc-lft p small{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 12px;
@@ -220,7 +220,7 @@ tsf-two-grid-dsc-lft
 	color: #000417;
 	font-weight: 400;
 }
-.cb-two-grid-dsc-rgt span{
+.cb-two-grid-dsc-rgt p small{
 	color: #fff;
 }
 .cb-two-grid-controller{
