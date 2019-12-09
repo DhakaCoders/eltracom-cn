@@ -90,29 +90,20 @@
   line-height: 25px;
   margin-bottom: 28px;
 }
-.cupstock-des-spn-wrp span{
-  display: block;
-  font-weight: 400;
-  margin-bottom: 18px;  
-  font-size: 16px;
-  font-stretch: condensed;
-  line-height: 25px;
+
+.pro-select-des p strong,
+.food-Packag-des p strong,
+.cupstock-des p strong{
+    font-size: 18px;
 }
-.cupstock-des-spn-wrp > span:nth-child(1){
-  margin-bottom: 30px;
+
+.cupstock-des-innr ul li{
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 25px;
 }
-.cupstock-des-spn-wrp > span:nth-child(2){
-  margin-bottom: 6px;
-}
-.cupstock-des-spn-wrp > span:nth-child(3){
-  margin-bottom: 18px;
-}
-.cupstock-des-spn-wrp > span:nth-child(2) span{
-  padding-left: 25px;
-  position: relative;
-}
-.cupstock-des-spn-wrp > span:nth-child(2) span:after{
-	content: "";
+.cupstock-des-innr ul li:after{
+    content: "";
     position: absolute;
     width: 12px;
     height: 10px;
@@ -122,9 +113,8 @@
     left: 0;
     top: 4px;
 }
-.cupstock-des-spn-wrp{
-	padding-bottom: 15px;
-}
+
+
 .food-Packag-des-img-inc-wrp,
 .cupstock-des-imh-inc-wrp {
 	padding-top: 32px;

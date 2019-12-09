@@ -3,9 +3,6 @@
 	margin-bottom: 135px;
 }
 
- 
- 
-
 .pro-select-two-part-con,
 .food-Packag-two-part-con{
 	padding-left: 60px;
@@ -67,17 +64,32 @@
 .food-pack-pic img{
 	width:100%;
 }
-.food-Packag-left-des-top{
-	padding-right: 30px;
+
+
+
+
+
+
+
+
+
+
+
+.food-Packag-left-des h6{
+	font-weight: 900;
+	line-height: 25px;
+	color: #002854;
+	padding-top: 7px;
 }
-.food-Packag-left-des-top .food-Packag-properties{
-	border-bottom: 1px solid #c7c7c7;
-	padding-bottom: 18px;
+.food-Packag-left-des p{	
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	line-height: 23px;
 }
 
-
-
-.food-Packag-left-des span{
+.food-Packag-left-des p span{
 	display: block;
 	font-weight: 400;
 	margin-bottom: 18px;  
@@ -85,15 +97,17 @@
 	font-stretch: condensed;
 	line-height: 25px;
 }
-.food-Packag-properties li{
+.food-Packag-left-des ul{	
+	margin-bottom: 25px;
+}
+.food-Packag-left-des li{	
+	font-family: 'Roboto Condensed', sans-serif;
 	padding-left: 22px;
 	position: relative;
-	margin-bottom: 6px;
-	line-height: 1.53;
+	line-height: 23px;
 }
-
-.food-Packag-properties li:after,
-.pro-select-properties li:after{
+.food-Packag-left-des li:after,
+.pro-select-left-des li:after{
 	content: "";
     position: absolute;
     width: 12px;
@@ -102,31 +116,20 @@
     background-repeat: no-repeat;
     background-size: 12px 10px;
     left: 0;
-    top: 4px;
+    top: 5px;
+}
+.food-Packag-left-des > hr {
+    border: none;
+    max-width: 422px;
+    width: 100%;
+    border-bottom: 1px solid #c7c7c7;
+    margin: 0 0 35px 0;
 }
 
-.food-Packag-left-des h6{
-	font-weight: 900;
-	line-height: 25px;
-	color: #002854;
-    font-family: 'Roboto', sans-serif;
-}
-.food-Packag-left-des p{
+.food-Packag-left-des p span {
+	font-size: 15px;
 	line-height: 23px;
 }
-
-.food-Packag-left-des-btm{
-	padding-top: 28px;
-}
-.food-Packag-left-des-btm .food-Packag-properties {
-    padding: 5px 0 40px;
-}
-
-
-
-
-
-
 
 .pro-select-main-sec .dropdown.bootstrap-select,
 .food-Packag-main-sec .dropdown.bootstrap-select{
@@ -150,6 +153,7 @@
 	    padding-left: 15px;
 	    padding-right: 15px;
 	}
+
 } 
 
 
@@ -195,8 +199,8 @@
 	    -o-transform: initial;
 	    transform: initial;
 	}
-	.food-Packag-left-des-top {
-	     padding-right: 0; 
+	.food-Packag-left-des br{
+		display: none
 	}
 }
 
