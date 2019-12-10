@@ -1,9 +1,19 @@
-<?php get_header('home'); ?>
-
-<section id="intro" class="home-page-bnr" style="background: url(<?php echo THEME_URI; ?>/assets/images/burger-manu-bg-layer-1.jpg);">
+<?php 
+get_header('home'); 
+$bannersec = get_field('bannersec', HOMEID);
+$bannerposter = '';
+if(!empty($bannersec['image'])){
+  $bannerposter = cbv_get_image_src($bannersec['image']);
+}
+$bannerlogotag = '';
+if(!empty($bannersec['logo'])){
+  $bannerlogotag = cbv_get_image_tag($bannersec['logo']);
+}
+?>
+<section id="intro" class="home-page-bnr" style="background: url(<?php echo $bannerposter ; ?>);">
   <span class="home-page-bnr-overlay-bg"></span>
-  <a class="home-bnr-logo" href="#">
-    <img src="<?php echo THEME_URI; ?>/assets/images/home-bnr-logo.png">
+  <a class="home-bnr-logo" href="<?php echo esc_url(home_url('/')); ?>">
+    <?php echo $bannerlogotag; ?>
   </a>
   <span class="scroll-btn" data-to="#aboutId">
     <img src="<?php echo THEME_URI; ?>/assets/images/scroll.png">
@@ -67,52 +77,78 @@
 
   </div>
 </section>
-<?php get_template_part('templates/burger', 'menu'); ?>
+<?php 
+get_template_part('templates/burger', 'menu'); 
 
-
+$show_hidehintro = get_field('show_hidehintro', HOMEID);
+if($show_hidehintro):
+  $introsec = get_field('introsec', HOMEID);
+  $introposter = '';
+  if(!empty($introsec['image'])){
+    $introposter = cbv_get_image_src($introsec['image']);
+  } 
+  $link = $introsec['link'];
+?>
 <section class="perfection-section" id="aboutId">
   <span class="perfection-sec-btm-rgt-img"><img src="<?php echo THEME_URI; ?>/assets/images/perfection-sec-btm-rgt-img.png"></span>
   <div class="perfection-sec-inner clearfix">
-    <div class="perfection-sec-fea-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/perfection-sec-fea-img.jpg);"></div>
+    <div class="perfection-sec-fea-img" style="background: url(<?php echo $introposter; ?>);"></div>
     <div class="perfection-sec-des-bx">
       <div class="perfection-sec-des-bx-inner">
-        <h1>We Pursue <br>
-          <strong>Paper</strong>fection</h1>
-        <p><strong>ELTRACOM</strong> has grown over the last years to be one of the most trusted names in paper & paperboard sales with an emphasis on customer service and highest quality standards. Cras maximus nisl blandit tristique condimentum. Cras justo risus, tempus id eros ac, finibus aliquam risus.</p>
-        <a href="#">ABOUT US</a>
+        <?php 
+        if( !empty( $introsec['content'] ) ) echo wpautop($introsec['content']); 
+        if( is_array( $link ) &&  !empty( $link['url'] ) ){
+          printf('<a href="%s" target="%s">%s</a>', $link['url'], $link['target'], $link['title']); 
+        }
+        ?>
       </div>
     </div>
   </div>    
 </section>
+<?php endif; 
 
+$show_hidehfea = get_field('show_hidehfea', HOMEID);
+if($show_hidehfea):
+  $featuressec = get_field('featuressec', HOMEID);
+  $features = $featuressec['featuresrep'];
+  
+?>
 
 <section class="home-2-plate-grd-section">
   <div class="home-2-plate-grd-controller">
+    <?php if($features): ?>
     <ul class="clearfix ulc">
+      <?php foreach($features as $feature): 
+        $feapostertag = '';
+          if(!empty($feature['image'])){
+            $feapostertag = cbv_get_image_tag($feature['image']);
+          } 
+          $link1 = !empty($feature['link'])? $feature['link']: '#';
+
+        ?>
       <li>
         <div class="home-2-plate-grd-item">
           <div class="home-2-plate-grd-img">
-            <a href="#">
-              <img src="<?php echo THEME_URI; ?>/assets/images/home-2-plate-grd-img-01.jpg">
+            <a href="<?php echo $link1; ?>">
+              <?php echo $feapostertag; ?>
             </a>
           </div>
-          <strong><a href="#">Exclusive paper <span>&</span> board agencies</a></strong>
+          <?php if( !empty( $feature['title'] ) ) printf( '<strong><a href="%s">%s</a></strong>', $link1, $feature['title']); ?>
         </div>
       </li>
-      <li>
-        <div class="home-2-plate-grd-item">
-          <div class="home-2-plate-grd-img">
-            <a href="#">
-              <img src="<?php echo THEME_URI; ?>/assets/images/home-2-plate-grd-img-02.jpg">
-            </a>
-          </div>
-          <strong><a href="#">business brokerage</a></strong>
-        </div>
-      </li>
+    <?php endforeach; ?>
     </ul>
+  <?php endif; ?>
   </div>   
 </section>
+<?php endif; 
 
+$show_hidehprod = get_field('show_hidehprod', HOMEID);
+if($show_hidehprod):
+  $hproductsec = get_field('hproductsec', HOMEID);
+  $products = $hproductsec['products'];
+  $link4 = $hproductsec['portfolio_link'];
+?>
 <section class="h-products-section" id="ourProductId" style="background: #e8e9ed">
   <span class="home-sec-wave" style="background: url(<?php echo THEME_URI; ?>/assets/images/home-sec-wave.png);"></span>
   <div class="container-md-2">
@@ -122,75 +158,68 @@
             <ul class="clearfix ulc">
               <li>
                 <div class="h-pro-grd-item-sec-hdr-wrap">
-                  <h3><span>Our</span>Products</h3>
+                  <?php 
+                    if( !empty( $hproductsec['title'] ) ) printf( '<h3>%s</h3>', $hproductsec['title']);
+                    if( !empty( $hproductsec['product_quote'] ) ):
+                  ?>
                   <div class="h-pro-grd-item-sec-hdr">
-                    <blockquote><sup><img src="<?php echo THEME_URI; ?>/assets/images/blockquote-top-icon.png"></sup> We are focused <br>
-                    on creating an<br>  unbeatable portfolio <br>
-                    of <span>Paper Products</span> <sub><img src="<?php echo THEME_URI; ?>/assets/images/blockquote-btm-icon.png"></sub></blockquote>
+                    <blockquote><sup><img src="<?php echo THEME_URI; ?>/assets/images/blockquote-top-icon.png"></sup> 
+                    <?php  echo $hproductsec['product_quote']; ?>
+                    <sub><img src="<?php echo THEME_URI; ?>/assets/images/blockquote-btm-icon.png"></sub></blockquote>
                   </div>
+                  <?php endif; ?>
                 </div>
               </li>
+              <?php
+              if($products):
+                foreach ($products as $product):
+                  $link3 = $product['link'];
+                  $linkurl = !empty($link3['url'])? $link3['url']: '#';
+                  $ppostertag = '';
+                  if(!empty($product['icon'])){
+                    $ppostertag = cbv_get_image_tag($product['icon']);
+                  } 
+              ?>
               <li>
                 <div class="h-pro-grd-item">
-                  <h4><a href="#">Corrugated <span>Case</span></a> </h4>
+                  <?php 
+                    $subtitle = !empty($product['normal_text'])? '<span>'.$product['normal_text'].'</span>': '';
+                    if( !empty( $product['bold_text'] ) ) printf( '<h4><a href="%s">%s %s</a></h4>', $linkurl, $product['bold_text'], $subtitle);
+                  ?>
                   <div class="h-pro-grd-item-des">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-01.png"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
-                    <a href="#">READ MORE</a>
+                    <i><?php echo $ppostertag; ?></i>
+                    <?php if( !empty( $product['content'] ) ) echo wpautop($product['content']); 
+                    if( is_array( $link3 ) &&  !empty( $link3['url'] ) ){
+                      printf('<a href="%s" target="%s">%s</a>', $link3['url'], $link3['target'], $link3['title']); 
+                    }
+                    ?>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="h-pro-grd-item">
-                  <h4><a href="#">Food <span>Packaging</span></a> </h4>
-                  <div class="h-pro-grd-item-des">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-02.png"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
-                    <a href="#">READ MORE</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="h-pro-grd-item">
-                  <h4><a href="#">Carton<span>board</span></a></h4>
-                  <div class="h-pro-grd-item-des">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-03.png"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
-                    <a href="#">READ MORE</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="h-pro-grd-item">
-                  <h4><a href="#">Specialty <span>Papers</span></a> </h4>
-                  <div class="h-pro-grd-item-des">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-04.png"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
-                    <a href="#">READ MORE</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="h-pro-grd-item">
-                  <h4><a href="#">Cupstock</a></h4>
-                  <div class="h-pro-grd-item-des">
-                    <i><img src="<?php echo THEME_URI; ?>/assets/images/h-pro-grd-item-05.png"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat erat. Lorem ipsum dolor sit amet.</p>
-                    <a href="#">READ MORE</a>
-                  </div>
-                </div>
-              </li>
+              <?php endforeach; endif; ?>
             </ul>
-            <div class="h-pro-more-btn">
-              <a href="#">VIEW OUR PORTFOLIO</a>
-            </div>
+            <?php 
+              if( is_array( $link4 ) &&  !empty( $link4['url'] ) ){
+                printf('<div class="h-pro-more-btn"><a href="%s" target="%s">%s</a></div>', $link4['url'], $link4['target'], $link4['title']); 
+              }
+            ?>
           </div>
         </div>
       </div>
   </div>    
 </section>
+<?php endif; 
 
-<section class="company-counter-sec" id="keyFiguresId" style="background:url(<?php echo THEME_URI; ?>/assets/images/counter-bg.jpg);">
+$show_hidekeyfea = get_field('show_hidekeyfea', HOMEID);
+if($show_hidekeyfea):
+  $keyfigures = get_field('keyfigures', HOMEID);
+  $counters = $keyfigures['key_figuresrep'];
+  $counterposter = THEME_URI.'/assets/images/counter-bg.jpg';
+  if(!empty($keyfigures['bg_image'])){
+    $counterposter = $keyfigures['bg_image'];
+  } 
+?>
+<section class="company-counter-sec" id="keyFiguresId" style="background:url(<?php echo $counterposter; ?>);">
   <div class="counter-inc-logo">
     <img src="<?php echo THEME_URI; ?>/assets/images/company-counter-sec-ing.png" alt="">
   </div>  
@@ -200,80 +229,97 @@
       <div class="col-sm-12">
         <div class="company-counter-innr">
           <div class="counter-des text-right ">
-            <h3>Eltracom <br/> <strong>Key Figures</strong></h3>
-            <p><em>Our  expertise is to offer our customers products that are perfectly suited to their needs!</em></p>
+            <?php if( !empty( $keyfigures['content'] ) ) echo wpautop($keyfigures['content']); ?>
           </div>
+          <?php if($counters): ?>
           <div class="counter-main clearfix text-center ">
-            <div class="counter-col counter-col-1">
-              <strong><span class="counter">2014</span></strong>
-              <small>established</small>
+            <?php $i = 1; foreach($counters as $counter):?>
+            <div class="counter-col counter-col-<?php echo $i; ?>">
+              <?php 
+                  $sym = !empty($counter['symbol'])? $counter['symbol']: '';
+                  if( !empty( $counter['value'] ) ) printf( '<strong><span class="counter">%s</span>%s</strong>', $counter['value'], $sym); 
+                  if( !empty( $counter['title'] ) ) printf( '<small>%s</small>', $counter['title']); 
+                ?>
             </div>
-            <div class="counter-col counter-col-2">
-              <strong><span class="counter">1200</span>+</strong>
-              <small>Orders Processed </small>
-            </div>
-            <div class="counter-col counter-col-3">
-              <strong><span class="counter">60</span>%</strong>
-              <small>exported</small>
-            </div>
-            <div class="counter-col counter-col-4">
-              <strong><span class="counter">35</span></strong>
-              <small>YEARS of <br />Experience</small>
-            </div>
-            <div class="counter-col counter-col-5">
-              <strong><span class="counter">10</span></strong>
-              <small>YEARS of <br />Served</small>
-            </div>
-            <div class="counter-col counter-col-6">
-              <strong><span class="counter">25</span>%</strong>
-              <small>ANNUAL GROWTH</small>
-            </div>
+            <?php $i++; endforeach; ?>
           </div>
+        <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; 
 
-
+$show_hidehcore = get_field('show_hidehcore', HOMEID);
+if($show_hidehcore):
+  $corevalues = get_field('corevalues', HOMEID);
+  $coreoposter = '';
+  if(!empty($corevalues['image'])){
+    $coreoposter = cbv_get_image_src($corevalues['image']);
+  } 
+  $clink = $corevalues['link'];
+?>
 <section class="perfection-section perfection-sec-2" id="coreValuesId">
   <span class="perfection-sec-btm-rgt-img-2"><img src="<?php echo THEME_URI; ?>/assets/images/perfection-sec-btm-rgt-img-2.png"></span>
   <div class="perfection-sec-inner clearfix">
-    <div class="perfection-sec-fea-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/perfection-sec-fea-img-02.jpg);"></div>
+    <div class="perfection-sec-fea-img" style="background: url(<?php echo $coreoposter; ?>);"></div>
     <div class="perfection-sec-des-bx">
       <div class="perfection-sec-des-bx-inner">
-        <h1>Our<br>
-          <strong>Core Values</strong></h1>
-        <p>We always try to see our business through the eyes of our customers and we focus solely on delivering results for our clients in ways that are meaningful to them. We live by and for our customers’ success and we want to be their top-of-mind and top-of-heart choice. </p>
-        <a href="#">READ MORE</a>
+        <?php 
+        if( !empty( $corevalues['content'] ) ) echo wpautop($corevalues['content']); 
+        if( is_array( $clink ) &&  !empty( $clink['url'] ) ){
+          printf('<a href="%s" target="%s">%s</a>', $clink['url'], $clink['target'], $clink['title']); 
+        }
+        ?>
       </div>
     </div>
   </div>    
 </section>
+<?php endif; 
 
-
-<section class="get-in-touch-section" style="background: url(<?php echo THEME_URI; ?>/assets/images/get-in-touch-sec-bg.jpg);">
+$show_hidelink = get_field('show_hidelink', HOMEID);
+if($show_hidelink):
+  $linksec = get_field('linksec', HOMEID);
+  $linkposter = THEME_URI.'/assets/images/get-in-touch-sec-bg.jpg';
+  if(!empty($linksec['image'])){
+    $linkposter = $linksec['bg_image'];
+  } 
+  $gettuch = $linksec['get_touch'];
+  $jointeam = $linksec['join_our_team'];
+  $glink = $gettuch['link'];
+  $jlink = $jointeam['link'];
+?>
+<section class="get-in-touch-section" style="background: url(<?php echo $linkposter; ?>);">
   <span class="get-in-touch-sec-overlay-bg"></span>
   <div class="container-xlg">
     <div class="row">
       <div class="col-sm-6 get-in-touch-grd">
         <div class="get-in-touch-sec-grd-item">
-          <h3>Get <span>in</span> Touch</h3>
-          <p>with us if you want to learn more about our products or grow your business!</p>
-          <a href="#">CONTACT US</a>
+          <?php 
+            if( !empty( $gettuch['title'] ) ) printf( '<h3>%s</h3>', $gettuch['title']);
+            if( !empty( $gettuch['content'] ) ) echo wpautop($gettuch['content']); 
+            if( is_array( $glink ) &&  !empty( $glink['url'] ) ){
+              printf('<a href="%s" target="%s">%s</a>', $glink['url'], $glink['target'], $glink['title']); 
+            }
+          ?>
         </div>
       </div>
       <div class="col-sm-6 get-in-touch-grd">
         <div class="get-in-touch-sec-grd-item">
-          <h3>Join <span>our</span> Team</h3>
-          <p>Join our diverse group of innovators—working to lorem ipsum donor sit amet together.</p>
-          <a href="#">JOB OPPORTUNITIES</a>
+        <?php 
+          if( !empty( $jointeam['title'] ) ) printf( '<h3>%s</h3>', $jointeam['title']);
+          if( !empty( $jointeam['content'] ) ) echo wpautop($jointeam['content']); 
+          if( is_array( $jlink ) &&  !empty( $jlink['url'] ) ){
+            printf('<a href="%s" target="%s">%s</a>', $jlink['url'], $jlink['target'], $jlink['title']); 
+          }
+        ?>
         </div>
       </div>
     </div>
   </div>   
 </section>
-
+<?php endif; ?>
 
 <section class="ftr-top-wrp text-center" id="">
   <div class="container">

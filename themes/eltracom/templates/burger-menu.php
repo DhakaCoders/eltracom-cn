@@ -1,11 +1,13 @@
 <?php 
   $logoObj = get_field('logo_burger', 'options');
+  $productlink = get_field('productlink', 'options');
   if( is_array($logoObj) ){
     $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
   }else{
     $logo_tag = '';
   }
 ?>
+
 <div class="burger-menu-wrap">
   <div class="burger-menu-inner clearfix">
     <div class="bm-lft-btm-lgo">
@@ -21,29 +23,22 @@
       </div>
       <div class="burger-menu-parent-lft-grd-inner clearfix matchHeightCol">
         <div class="burger-menu-site-logo">
-        <a href="<?php echo esc_url(home_url('/')); ?>">
-          <?php echo $logo_tag; ?>
-        </a>
+          <a href="<?php echo esc_url(home_url('/')); ?>">
+            <?php echo $logo_tag; ?>
+          </a>
         </div>
         <div class="clearfix">
           <div class="bmp-inner2 clearfix">
             <nav class="bm-main-nav">
-              <ul class="clearfix ulc">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Services</a>
-                  <ul class="ulc sub-menu">
-                    <li><a href="#">Exclusive Agencies</a></li>
-                    <li><a href="#">Business Brokerage</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">CSR</a></li>
-                <li><a href="#">Certificates</a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+              <?php 
+                $menuOptions = array( 
+                    'theme_location' => 'cbv_main_menu', 
+                    'menu_class' => 'clearfix ulc',
+                    'container' => 'mnav',
+                    'container_class' => 'mainnav'
+                  );
+                wp_nav_menu( $menuOptions ); 
+              ?>
             </nav>
             <div class="bm-social-xs-controller">
               <div class="bm-social">
@@ -66,11 +61,15 @@
               </div>
             </div>
             <div class="bm-btm-menu">
-              <ul class="clearfix ulc">
-                <li><a href="#">PRIVACY POLICY</a></li>
-                <li><a href="#">TERMS OF USE</a></li>
-                <li><a href="#">COOKIES POLICY</a></li>
-              </ul>
+              <?php 
+                $cmenuOptions = array( 
+                    'theme_location' => 'cbv_ftb_menu', 
+                    'menu_class' => 'clearfix ulc',
+                    'container' => 'cmnav',
+                    'container_class' => 'cmainnav'
+                  );
+                wp_nav_menu( $cmenuOptions ); 
+              ?>
             </div>
           </div>
         </div>
@@ -83,110 +82,42 @@
           <a href="#">Sl</a>
         </div>
         <div class="burger-menu-protfolio-con">
-          <h2>Portfolio <br>
-            of <strong>Products</strong></h2>
+          <?php 
+            if( !empty( $productlink['title'] ) ) printf( '<h2>%s</h2>', $productlink['title']); 
+          ?>
         </div>
+        <?php $productreps = $productlink['portfolio_products']; if($productreps): ?>
         <div class="burger-menu-protfolio-grds">
           <ul class="clearfix ulc">
+            <?php 
+              $i = 1;
+              foreach($productreps as $productrep): 
+                $link = !empty($productrep['link'])? $productrep['link']: '#';
+                $seapostertag = '';
+                if(!empty($productrep['icon'])){
+                  $seapostertag = cbv_get_image_tag($productrep['icon']);
+                } 
+            ?>
             <li>
               <div class="bmp-grd-item">
-                <a class="overlay-link" href="#"></a>
+                <a class="overlay-link" href="<?php echo $link; ?>"></a>
                 <i>
                   <span>
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-01.png">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-01-hover.png">
+                    <?php echo $seapostertag; ?>
+                    <img src="<?php echo $productrep['hover_icon']; ?>" alt="hover icon<?php echo $i; ?>">
                   </span>
                 </i>
                 <div>
-                  <strong>Corrugated <br>
-                  <span>Case MATERIALS</span> 
-                  </strong>
+                  <?php 
+                    if( !empty( $productrep['title'] ) ) printf( '<strong>%s</strong>', $productrep['title']); 
+                  ?>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="bmp-grd-item">
-                <a class="overlay-link" href="#"></a>
-                <i>
-                  <span>
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-02.png">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-02-hover.png">
-                  </span>
-                </i>
-                <div> 
-                  <strong>Food <br>
-                  <span>Packaging</span> 
-                  </strong>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="bmp-grd-item">
-                <a class="overlay-link" href="#"></a>
-                <i>
-                  <span>
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-03.png">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-03-hover.png">
-                  </span>
-                </i>
-                <div>
-                  <strong>Folding Carton  <br>
-                  <span>Packaging Materials</span> 
-                  </strong>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="bmp-grd-item">
-                <a class="overlay-link" href="#"></a>
-                <i>
-                  <span>
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-04.png">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-04-hover.png">
-                  </span>
-                </i>
-                <div>
-                  <strong>Cupstock <br>
-                  <span>lorem ipsum</span> 
-                  </strong>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="bmp-grd-item">
-                <a class="overlay-link" href="#"></a>
-                <i>
-                  <span>
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-05.png">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-05-hover.png">
-                  </span>
-                </i>
-                <div> 
-                  <strong>Specialty <br>
-                  <span>Papers</span> 
-                  </strong>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="bmp-grd-item">
-                <a class="overlay-link" href="#"></a>
-                <i>
-                  <span>
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-06.png">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/pop-up-portfolio-img-06-hover.png">
-                  </span>
-                </i>
-                <div> 
-                  <strong>Tissue <br>
-                  <span>PaperS</span> 
-                  </strong>
-                </div>
-              </div>
-            </li>
-
+          <?php $i++; endforeach; ?>
           </ul>
         </div>
+        <?php endif; ?>
         <div class="bmp-rgt-grd-btm-lgo">
           <img src="<?php echo THEME_URI; ?>/assets/images/bmp-rgt-grd-btm-lgo.png">
         </div>
