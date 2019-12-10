@@ -2,26 +2,15 @@
 /*  
   Template Name: Terms
 */
-get_header(); ?>
-<section class="page-banner">
-  <div class="page-banner-controller" style="position: relative; overflow: hidden;">
-    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-banner.jpg);"></div>
-    <div class="page-banner-des">
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="page-banner-des-inner">
-              <div>
-                <strong class="banner-page-title">Our <span>Terms</span></strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+get_header(); 
+get_template_part( 'templates/page', 'banner' );
 
+$thisID = get_the_ID()
+$show_hide = get_field('show_hide', $thisID);
+if($show_hide):
+  $terms = get_field('terms', $thisID);
+  if($terms):
+?>
 <section class="article-wrap">
   <span class="terms-page-rgt-bg-txt">
     <img src="<?php echo THEME_URI; ?>/assets/images/terms-page-rgt-bg-txt.png">
@@ -33,39 +22,33 @@ get_header(); ?>
           <div id="sidebar" class="sidebar">
             <div class="sidebar__inner clearfix">
               <div class="sidebar-controller">
-                <strong>Contents</strong>
+                <?php _e('<strong>Contents</strong>', THEME_NAME);?>
                 <ul class="clearfix ulc">
-                  <li><a href="#TermsConditions">Terms & Conditions</a></li>
-                  <li><a href="#PrivacyPolicy">Privacy policy</a></li>
-                  <li><a href="#Cookies">Cookies</a></li>
+                  <?php 
+                  foreach($terms as $term):
+                  $slug = str_replace(' ', '', $term['title']);
+                  $slug = preg_replace('/[^A-Za-z0-9]/', '', $slug);
+                  ?>
+                   <li><a href="#<?php echo $slug;?>"><?php if( !empty( $term['title'] ) ) printf( '%s', $term['title']); ?></a></li>
+                  <?php endforeach; ?>
                 </ul>
               </div>
             </div>
           </div>
           <div id="content" class="single-article-wrap clearfix">
             <div class="article-content">
-              <div class="article-content-row" id="TermsConditions">
-                <h3>Terms & Conditions</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan urna quis tempor dictum. Mauris laoreet est euismod, ullamcorper ante vel, semper felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan urna quis tempor dictum. Mauris laoreet est euismod, ullamcorper ante vel, semper felis. </p>
-
-                <strong>Title </strong>
-                <p>Donec sed sem vel nunc dictum pellentesque sit amet nec sem. Nam accumsan orci eget congue ullamcorper. Sed eu libero malesuada, egestas neque eget, pellentesque quam. Ut tincidunt a urna eu suscipit. Suspendisse vitae orci lacus. Nam elementum sapien eget elit laoreet luctus. Curabitur eu libero tellus. Maecenas faucibus blandit nisl, sed tempor elit rhoncus nec. Integer mollis metus dapibus tortor convallis, non condimentum leo pharetra.</p>
-
-                <strong>Title</strong>
-                <P>Donec sed sem vel nunc dictum pellentesque sit amet nec sem. Nam accumsan orci eget congue ullamcorper. Sed eu libero malesuada, egestas neque eget, pellentesque quam. Ut tincidunt a urna eu suscipit. Suspendisse vitae orci lacus. Nam elementum sapien eget elit laoreet luctus. Curabitur eu libero tellus. Maecenas faucibus blandit nisl, sed tempor elit rhoncus nec. Integer mollis metus dapibus tortor convallis, non condimentum leo pharetra. Donec sed sem vel nunc dictum pellentesque sit amet nec sem. Nam accumsan orci eget congue ullamcorper. Sed eu libero malesuada, egestas neque eget, pellentesque quam. Ut tincidunt a urna eu suscipit. Suspendisse vitae orci lacus. Nam elementum sapien eget elit laoreet luctus. Curabitur eu libero tellus. Maecenas faucibus blandit nisl, sed tempor elit rhoncus nec. Integer mollis metus dapibus tortor convallis, non condimentum leo pharetra.</p>
+              <?php 
+                foreach($terms as $term):
+                $slug = str_replace(' ', '', $term['title']);
+                $slug = preg_replace('/[^A-Za-z0-9]/', '', $slug);
+              ?>
+              <div class="article-content-row" id="<?php echo $slug;?>">
+                <?php 
+                  if( !empty( $term['title'] ) ) printf( '<h3>%s</h3>', $term['title']); 
+                  if( !empty( $term['content'] ) ) echo wpautop($term['content']);
+                ?>
               </div>
-              <div class="article-content-row" id="PrivacyPolicy">
-                <h3>Privacy policy</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan urna quis tempor dictum. Mauris laoreet est euismod, ullamcorper ante vel, semper felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan urna quis tempor dictum. Mauris laoreet est euismod, ullamcorper ante vel, semper felis. </p>
-                <strong>Title </strong>
-                <p>Donec sed sem vel nunc dictum pellentesque sit amet nec sem. Nam accumsan orci eget congue ullamcorper. Sed eu libero malesuada, egestas neque eget, pellentesque quam. Ut tincidunt a urna eu suscipit. Suspendisse vitae orci lacus. Nam elementum sapien eget elit laoreet luctus. Curabitur eu libero tellus. Maecenas faucibus blandit nisl, sed tempor elit rhoncus nec. Integer mollis metus dapibus tortor convallis, non condimentum leo pharetra.</p>
-              </div>
-              <div class="article-content-row" id="Cookies">
-                <h3>Cookies</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan urna quis tempor dictum. Mauris laoreet est euismod, ullamcorper ante vel, semper felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan urna quis tempor dictum. Mauris laoreet est euismod, ullamcorper ante vel, semper felis. </p>
-                <strong>Title </strong>
-                <p>Donec sed sem vel nunc dictum pellentesque sit amet nec sem. Nam accumsan orci eget congue ullamcorper. Sed eu libero malesuada, egestas neque eget, pellentesque quam. Ut tincidunt a urna eu suscipit. Suspendisse vitae orci lacus. Nam elementum sapien eget elit laoreet luctus. Curabitur eu libero tellus. Maecenas faucibus blandit nisl, sed tempor elit rhoncus nec. Integer mollis metus dapibus tortor convallis, non condimentum leo pharetra.</p>
-              </div>
+               <?php endforeach; ?>
             </div>
           </div>
         </div>
@@ -73,7 +56,7 @@ get_header(); ?>
     </div>
   </div>
 </section><!--.end of article-wrap -->
-
+<?php endif; endif; ?>
 
 <section class="ftr-top-wrp text-center" id="ftr-top-">
   <div class="container">

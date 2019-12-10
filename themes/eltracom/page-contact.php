@@ -3,30 +3,15 @@
   Template Name: Contact
 */
 get_header(); 
+
+get_template_part( 'templates/page', 'banner' ); 
+
 $thisID = get_the_ID();
-?>
-<section class="page-banner contact-page-banner">
-  <div class="page-banner-controller" style="position: relative; overflow: hidden;">
-    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/bg-contact.jpg);"></div>
-    <div class="page-banner-des">
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="page-banner-des-inner">
-              <strong class="banner-page-title"><span>Contact</span> Page</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<?php 
-  $title = get_field('title', $thisID);
-  $content = get_field('content', $thisID);
-  $address_ttitle = get_field('address_ttitle', $thisID);
-  $schedules = get_field('schedule', $thisID);
-  $google_map = get_field('google_maps');
+$title = get_field('title', $thisID);
+$content = get_field('content', $thisID);
+$address_ttitle = get_field('address_ttitle', $thisID);
+$schedules = get_field('schedule', $thisID);
+$google_map = get_field('google_maps');
 ?>
 <section class="ec-contact-frm-sec-wrp">
   <div class="ec-contact-frm-sec-bg hide-sm"></div>

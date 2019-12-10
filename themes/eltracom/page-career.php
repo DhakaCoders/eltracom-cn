@@ -5,26 +5,9 @@
 get_header(); 
 while ( have_posts() ) : the_post();
 $thisID = get_the_ID();
+$shortcode = get_field('shortcode', $thisID);
+get_template_part( 'templates/page', 'banner' );
 ?>
-
-<section class="page-banner">
-  <div class="page-banner-controller" style="position: relative; overflow: hidden;">
-    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-banner.jpg);"></div>
-    <div class="page-banner-des">
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="page-banner-des-inner">
-              <div>
-                <strong class="banner-page-title"><span>Career</span> Opportunities</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="career-frm-sec-wrp">
   <div class="career-frm-sec-bg hide-sm"></div>
@@ -36,9 +19,11 @@ $thisID = get_the_ID();
             <div class="ec-contact-frm-dsc">
               <?php the_content(); ?>
             </div>
+            <?php if(!empty($shortcode)): ?>
             <div class="wpforms-form">
-            <?php echo do_shortcode('[contact-form-7 id="36" title="Career Form"]'); ?>
+            <?php echo do_shortcode($shortcode); ?>
             </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>

@@ -6,30 +6,9 @@
 get_header(); 
 
 $thisID = get_the_ID();
-?>
+get_template_part( 'templates/page', 'banner' );
 
-<section class="page-banner">
-  <div class="page-banner-controller" style="position: relative; overflow: hidden;">
-    <div class="page-banner-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/page-banner.jpg);"></div>
-    <div class="page-banner-des">
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="page-banner-des-inner">
-              <div>
-                <strong class="banner-page-title">Our <span>Certificates</span></strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<?php 
+ 
 $show_hide = get_field('show_hide', $thisID);
 if($show_hide):
   $content = get_field('content', $thisID);
