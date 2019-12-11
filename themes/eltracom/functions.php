@@ -184,7 +184,7 @@ function custom_body_classes($classes){
 add_filter('body_class', 'custom_body_classes');
 
 
-function get_custom_excerpt($limit = 12) {
+function get_custom_excerpt() {
   $excerpt = explode(' ', get_the_content(), $limit);
   if (count($excerpt)>=$limit) {
     array_pop($excerpt);
@@ -192,7 +192,7 @@ function get_custom_excerpt($limit = 12) {
   } else {
     $excerpt = implode(" ",$excerpt);
   }	
-  //$excerpt = preg_replace('`\[[^\]]*\]`',$dot,$excerpt);
+  $excerpt = preg_replace('`\[[^\]]*\]`',$dot,$excerpt);
   return $excerpt;
 }
 
@@ -233,6 +233,7 @@ function remove_editor() {
   remove_post_type_support('page', 'editor');
 }
 add_action('admin_init', 'remove_editor');
+
 /**
 Debug->>
 */
