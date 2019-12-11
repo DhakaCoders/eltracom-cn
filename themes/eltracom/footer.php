@@ -51,17 +51,15 @@
                 </form> 
               </div>
               <div class="ftr-rgt-links">
-                <ul class="ulc clearfix">
-                  <li>
-                    <a href="#">PRIVACY POLICY</a>
-                  </li>
-                  <li>
-                    <a href="#">TERMS OF USE</a>
-                  </li>
-                  <li>
-                    <a href="#">COOKIES POLICY</a>
-                  </li>
-                </ul>
+              <?php 
+                $cmenuOptions = array( 
+                    'theme_location' => 'cbv_ftb_menu', 
+                    'menu_class' => 'clearfix ulc',
+                    'container' => 'cmnav',
+                    'container_class' => 'cmainnav'
+                  );
+                wp_nav_menu( $cmenuOptions ); 
+              ?>
               </div>
             </div>                
           </div>

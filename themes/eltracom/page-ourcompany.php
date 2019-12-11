@@ -58,18 +58,24 @@ $thisID = get_the_ID()
     <div class="row">
       <div class="col-sm-12">
         <div class="companyPage-about-innr">
-          	<?php 
-	          if( !empty( $introsec['content'] ) ) echo wpautop($introsec['content']);
-	        ?>
+          <?php if( !empty( $introsec['content'] ) ) echo wpautop($introsec['content']); ?>
         </div>
       </div>
     </div>
   </div> 
   <?php endif; ?>
 </section>
-
-
-<section class="company-counter-sec" id="counterId" style="background:url(<?php echo THEME_URI; ?>/assets/images/counter-bg.jpg);">
+<?php
+$show_hidekeyfea = get_field('show_hidekeyfea', HOMEID);
+if($show_hidekeyfea):
+  $keyfigures = get_field('keyfigures', HOMEID);
+  $counters = $keyfigures['key_figuresrep'];
+  $counterposter = THEME_URI.'/assets/images/counter-bg.jpg';
+  if(!empty($keyfigures['bg_image'])){
+    $counterposter = $keyfigures['bg_image'];
+  } 
+?>
+<section class="company-counter-sec" id="counterId" style="background:url(<?php echo $counterposter; ?>);">
   <div class="counter-inc-logo">
     <img src="<?php echo THEME_URI; ?>/assets/images/company-counter-sec-ing.png" alt="">
   </div>  
@@ -79,42 +85,28 @@ $thisID = get_the_ID()
       <div class="col-sm-12">
         <div class="company-counter-innr">
           <div class="counter-des text-right ">
-            <h3>Eltracom <br/> <strong>Key Figures</strong></h3>
-            <p><em>Our  expertise is to offer our customers products that are perfectly suited to their needs!</em></p>
+            <?php if( !empty( $keyfigures['content'] ) ) echo wpautop($keyfigures['content']); ?>
           </div>
+          <?php if($counters): ?>
           <div class="counter-main clearfix text-center ">
-            <div class="counter-col counter-col-1">
-              <strong><span class="counter">2014</span></strong>
-              <small>established</small>
+            <?php $i = 1; foreach($counters as $counter):?>
+            <div class="counter-col counter-col-<?php echo $i; ?>">
+              <?php 
+                  $sym = !empty($counter['symbol'])? $counter['symbol']: '';
+                  if( !empty( $counter['value'] ) ) printf( '<strong><span class="counter">%s</span>%s</strong>', $counter['value'], $sym); 
+                  if( !empty( $counter['title'] ) ) printf( '<small>%s</small>', $counter['title']); 
+                ?>
             </div>
-            <div class="counter-col counter-col-2">
-              <strong><span class="counter">1200</span>+</strong>
-              <small>Orders Processed </small>
-            </div>
-            <div class="counter-col counter-col-3">
-              <strong><span class="counter">60</span>%</strong>
-              <small>exported</small>
-            </div>
-            <div class="counter-col counter-col-4">
-              <strong><span class="counter">35</span></strong>
-              <small>YEARS of <br />Experience</small>
-            </div>
-            <div class="counter-col counter-col-5">
-              <strong><span class="counter">10</span></strong>
-              <small>YEARS of <br />Served</small>
-            </div>
-            <div class="counter-col counter-col-6">
-              <strong><span class="counter">25</span>%</strong>
-              <small>ANNUAL GROWTH</small>
-            </div>
+            <?php $i++; endforeach; ?>
           </div>
+        <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <?php 
+endif;
 	$show_hidevalue = get_field('show_hidevalue', $thisID);
 	if($show_hidevalue):
   	$valuessec = get_field('our_valuessec', $thisID);

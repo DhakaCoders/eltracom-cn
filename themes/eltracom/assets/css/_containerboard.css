@@ -127,6 +127,9 @@ cb-two-grid-sec-wrp
 	font-weight: 700;
 	font-family: 'Roboto Condensed', sans-serif;
 }
+.cb-two-grid-dsc-rgt p:nth-child(3), .cb-two-grid-dsc-lft p:nth-child(3){
+	margin-bottom: 0 !important;
+}
 .cb-two-grid-dsc-rgt ul,
 .cb-two-grid-dsc-lft ul{
 	list-style: none;

@@ -163,7 +163,9 @@ ec-product-details-sec-wrp
 .ec-product-details-sec-wrp .productPage-slc-wrp{
 	padding-top: 30px;
 }
-
+.az-solidboard p:nth-child(5) {
+    margin-bottom: 0 !important;
+}
 @media(max-width: 1399px){
 	.ec-product-details-dsc {
 	    padding-top: 130px;
