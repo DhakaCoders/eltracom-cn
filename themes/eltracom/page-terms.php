@@ -5,7 +5,7 @@
 get_header(); 
 get_template_part( 'templates/page', 'banner' );
 
-$thisID = get_the_ID()
+$thisID = get_the_ID();
 $show_hide = get_field('show_hide', $thisID);
 if($show_hide):
   $terms = get_field('terms', $thisID);

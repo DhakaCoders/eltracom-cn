@@ -33,6 +33,7 @@ if(!empty(str_replace(' ', '', $custom_page_title))){
 </section>
 
 <?php 
+$show_hidecsr = get_field('show_hidecsr', $thisID);
 $show_hide = get_field('show_hide', $thisID);
 if($show_hide):
   $intro = get_field('intro', $thisID);
@@ -57,7 +58,6 @@ if($show_hide):
   if(!empty($box['image'])){
     $posterr = cbv_get_image_src($box['image']);
   }
-  $link = $box['link'];
   ?>
   <div class="crs-gray-box">
     <div class="crs-gray-box-container clearfix">
@@ -66,11 +66,11 @@ if($show_hide):
       </div>
       <div class="crs-gray-box-grd-rgt">
         <?php 
-            if( !empty( $box['content'] ) ) echo wpautop($box['content']);
-            if( is_array( $link ) &&  !empty( $link['url'] ) ){
-              printf('<a href="%s" target="%s"><span>%s</span></a>', $link['url'], $link['target'], $link['title']); 
-            }
-          ?>
+          if( !empty( $box['content'] ) ) echo wpautop($box['content']);
+          if($show_hidecsr):
+        ?>
+          <a href="#teamModal" data-toggle="modal"><span>SOLUTIONS TOGETHER</span></a>
+        <?php endif; ?>
       </div>
     </div>
   </div>
@@ -89,5 +89,34 @@ if($show_hide):
 </section>
 
 
+<?php
+if($show_hidecsr):
+  $formcsrsec = get_field('formcsrsec', $thisID);
+?>
+<!-- start modal content -->
+<div class="modal fade team-modal" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="team-modal-con-controller">
+          <div class="ec-contact-frm-wrp clearfix">
+             <div class="contact-form clearfix">
+              <div class="ec-contact-frm-dsc">
+                <?php if( !empty( $formcsrsec['content'] ) ) echo wpautop($formcsrsec['content']); ?>
+              </div>
+              <div class="wpforms-form">
+              <?php if( !empty( $formcsrsec['shortcode'] ) ) echo do_shortcode($formcsrsec['shortcode']); ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<?php get_footer(); ?>
+</div><!-- end of modal content -->
+
+<?php endif; get_footer(); ?>

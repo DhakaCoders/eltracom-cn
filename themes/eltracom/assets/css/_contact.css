@@ -423,7 +423,10 @@ ec-contact-frm-sec-wrp
 	color: #00ad64;
 	text-align: center;
 }
-
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    margin-top: 70px;
+    text-align: center;
+}
 /*
 ------------------
  Responsive css
