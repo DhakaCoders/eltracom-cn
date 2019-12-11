@@ -408,19 +408,25 @@ body.body-scroll{
     display: block;
     font-family: 'RobotoBlack';
     font-size: 20px;
-    line-height: 25px;
+    line-height: 22px;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
 .bmp-grd-item strong span{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     transform: scale3d(1,1,1);
     -ms-transform: scale3d(1,1,1);
     -webkit-transform: scale3d(1,1,1);
+    font-size: 16px;
 }
-
+.pm-item-1 .bmp-grd-item i{
+    padding-right: 25px;
+}
+.pm-item-2 .bmp-grd-item i{
+    padding-right: 20px;
+}
 
 
 .bmp-grd-item:hover{
