@@ -468,6 +468,11 @@ if( $('.responsive-slider').length ){
       ]
     });
 }
+if($('.select_location').length){
+  $('.select_location').on('change', function(){
+     window.location = $(this).val();
+  });
+}
 
     new WOW().init();
 

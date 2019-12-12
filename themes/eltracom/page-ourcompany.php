@@ -72,7 +72,7 @@ if($show_hidekeyfea):
   $counters = $keyfigures['key_figuresrep'];
   $counterposter = THEME_URI.'/assets/images/counter-bg.jpg';
   if(!empty($keyfigures['bg_image'])){
-    $counterposter = $keyfigures['bg_image'];
+    $counterposter = cbv_get_image_src($keyfigures['bg_image'], 'hmcontr');
   } 
 ?>
 <section class="company-counter-sec" id="counterId" style="background:url(<?php echo $counterposter; ?>);">

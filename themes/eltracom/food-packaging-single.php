@@ -81,17 +81,8 @@ if(!empty($fpboard['image'])){
     </div>
   </div>
   <div class="productPage-slc-wrp text-center">
-    <div class=" pro-select-main">
-      <select class="selectpicker ">
-        <option selected="selected">ALL PRODUCTS</option>
-        <option>Corrugated Case MATERIALS </option>
-        <option>Cartonboard</option>
-        <option>Specialty Papers</option>
-        <option>Cupstock</option>
-        <option>Tissue PaperS</option>
-      </select>
-    </div>
   <?php 
+   get_template_part( 'templates/product', 'selectbox' );
   if( is_array( $plink ) &&  !empty( $plink['url'] ) ){
     printf('<a href="%s" target="%s">%s</a>', $plink['url'], $plink['target'], $plink['title']); 
   }
