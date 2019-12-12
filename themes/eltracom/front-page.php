@@ -85,7 +85,7 @@ if($show_hidehintro):
   $introsec = get_field('introsec', HOMEID);
   $introposter = '';
   if(!empty($introsec['image'])){
-    $introposter = cbv_get_image_src($introsec['image']);
+    $introposter = cbv_get_image_src($introsec['image'], 'hmintro');
   } 
   $link = $introsec['link'];
 ?>
@@ -121,7 +121,7 @@ if($show_hidehfea):
       <?php foreach($features as $feature): 
         $feapostertag = '';
           if(!empty($feature['image'])){
-            $feapostertag = cbv_get_image_tag($feature['image']);
+            $feapostertag = cbv_get_image_tag($feature['image'], 'hmfea');
           } 
           $link1 = !empty($feature['link'])? $feature['link']: '#';
 
@@ -183,8 +183,9 @@ if($show_hidehprod):
               <li>
                 <div class="h-pro-grd-item">
                   <?php 
-                    $subtitle = !empty($product['normal_text'])? '<span>'.$product['normal_text'].'</span>': '';
-                    if( !empty( $product['bold_text'] ) ) printf( '<h4><a href="%s">%s %s</a></h4>', $linkurl, $product['bold_text'], $subtitle);
+                    $ptitle = $product['title'];
+                    $subtitle = !empty($ptitle['normal_text'])? '<span>'.$ptitle['normal_text'].'</span>': '';
+                    if( !empty( $ptitle['bold_text'] ) ) printf( '<h4><a href="%s">%s %s</a></h4>', $linkurl, $ptitle['bold_text'], $subtitle);
                   ?>
                   <div class="h-pro-grd-item-des">
                     <i><?php echo $ppostertag; ?></i>
@@ -216,7 +217,7 @@ if($show_hidekeyfea):
   $counters = $keyfigures['key_figuresrep'];
   $counterposter = THEME_URI.'/assets/images/counter-bg.jpg';
   if(!empty($keyfigures['bg_image'])){
-    $counterposter = $keyfigures['bg_image'];
+    $counterposter = cbv_get_image_src($keyfigures['bg_image'], 'hmcontr');
   } 
 ?>
 <section class="company-counter-sec" id="keyFiguresId" style="background:url(<?php echo $counterposter; ?>);">
@@ -256,7 +257,7 @@ if($show_hidehcore):
   $corevalues = get_field('corevalues', HOMEID);
   $coreoposter = '';
   if(!empty($corevalues['image'])){
-    $coreoposter = cbv_get_image_src($corevalues['image']);
+    $coreoposter = cbv_get_image_src($corevalues['image'], 'hmintro');
   } 
   $clink = $corevalues['link'];
 ?>
@@ -283,7 +284,7 @@ if($show_hidelink):
   $linksec = get_field('linksec', HOMEID);
   $linkposter = THEME_URI.'/assets/images/get-in-touch-sec-bg.jpg';
   if(!empty($linksec['image'])){
-    $linkposter = $linksec['bg_image'];
+    $linkposter = cbv_get_image_src($linksec['bg_image'], 'hmgit');
   } 
   $gettuch = $linksec['get_touch'];
   $jointeam = $linksec['join_our_team'];
