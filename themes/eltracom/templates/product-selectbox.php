@@ -8,7 +8,7 @@ $proQuery = new WP_Query(array(
 if( $proQuery->have_posts() ){
 ?>
 <div class=" pro-select-main">
-	<select class="selectpicker" class="select_location">
+	<select class="selectpicker select_location">
 	<option selected="selected">ALL PRODUCTS</option>
 	<?php  while($proQuery->have_posts()): $proQuery->the_post();  ?>
 		<option value="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></option>
