@@ -426,6 +426,20 @@ ec-contact-frm-sec-wrp
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-top: 70px;
     text-align: center;
+    border: 0px solid #ff0000 !important;
+    color: #f00;
+}
+div.wpcf7-response-output {
+    margin: 6em 0.5em 1em !important;
+    padding: 0.2em 1em;
+    border: 0px solid #ff0000 !important;
+    color: #f00;
+}
+span.wpcf7-not-valid-tip {
+    margin-top: 10px;
+}
+.contact-cv-upload span.wpcf7-form-control-wrap.file {
+    position: initial !important;
 }
 /*
 ------------------

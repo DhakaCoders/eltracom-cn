@@ -10,9 +10,8 @@ $thisID = get_the_ID();
  ?>
 <div class="pspecialty-papers-con-ctrl">
 <?php 
-$show_hideintro = get_field('show_hideintro', $thisID);
-if($show_hideintro):
 $introsec = get_field('introsec', $thisID);
+if($introsec):
 $icons = $introsec['icons'];
 $plink = $introsec['plink'];
 $intropostersrc = '';

@@ -8,11 +8,9 @@ get_header();
 $thisID = get_the_ID();
 get_template_part( 'templates/page', 'banner' );
 
- 
-$show_hide = get_field('show_hide', $thisID);
-if($show_hide):
-  $content = get_field('content', $thisID);
-  $certificates = get_field('certificates', $thisID);
+
+$content = get_field('content', $thisID);
+$certificates = get_field('certificates', $thisID);
 ?>
 <section class="certificates-page-con-wrap">
   <div class="container">
@@ -46,7 +44,7 @@ if($show_hide):
                   </div>
                   <div class="certificates-item-row-des">
                     <?php 
-                      if( !empty( $certificate['bold_title'] ) ) printf( '<strong>%s<span> %s</span></strong>', $certificate['bold_title'], $certificate['normal_title']); 
+                      if( !empty( $certificate['title'] ) ) printf( '<strong>%s</strong>', $certificate['title']); 
                       if( !empty( $certificate['content'] ) ) echo wpautop($certificate['content']);
                     ?>
                   </div>
@@ -61,7 +59,6 @@ if($show_hide):
   </div>  
   <?php endif; ?> 
 </section>
-<?php endif; ?>
 
 <section class="ftr-top-wrp text-center" id="ftr-top-">
   <div class="container">

@@ -11,9 +11,8 @@ $thisID = get_the_ID();
 ?>
 <div class="pcontainerboard-contain-ctlr">
 <?php 
-$show_hideintro = get_field('show_hideintro', $thisID);
-if($show_hideintro):
 $introsec = get_field('introsec', $thisID);
+if($introsec):
 $icons = $introsec['icons'];
 $intropostersrc = '';
 if(!empty($introsec['image'])){
@@ -50,8 +49,6 @@ if(!empty($introsec['image'])){
   </section><!-- end of cb-product-details-sec-wrp -->
 <?php endif; 
 
-$show_hidecboard = get_field('show_hidecboard', $thisID);
-if($show_hidecboard):
 $vfcb = get_field('virgin_fibre_containerboard', $thisID);
 $rcb = get_field('recycled_containerboard', $thisID);
 $plink = get_field('plink', $thisID);
@@ -83,7 +80,7 @@ $plink = get_field('plink', $thisID);
 	if( is_array( $plink ) &&  !empty( $plink['url'] ) ){
 	  printf('<a href="%s" target="%s">%s</a>', $plink['url'], $plink['target'], $plink['title']); 
 	}
-	endif; ?>
+  ?>
   </div>
 </div>
 

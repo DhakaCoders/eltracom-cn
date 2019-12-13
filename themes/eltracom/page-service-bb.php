@@ -33,9 +33,8 @@ if(!empty(str_replace(' ', '', $custom_page_title))){
 
 <section class="business-brokerage-page-con-wrap">
 <?php 
-$show_hideintro = get_field('show_hideintro', $thisID);
-if($show_hideintro):
-  $intro = get_field('introsec', $thisID);
+$intro = get_field('introsec', $thisID);
+if($intro):
 ?>
   <div class="container">
       <div class="row">
@@ -48,9 +47,8 @@ if($show_hideintro):
   </div>
 <?php endif; 
 
-$show_hideintro = get_field('show_hideintro', $thisID);
-if($show_hideintro):
-  $servicessec = get_field('servicessec', $thisID);
+$servicessec = get_field('servicessec', $thisID);
+if($servicessec):
   $services = $servicessec['servicesrep'];
   $link = $servicessec['link'];
 ?>

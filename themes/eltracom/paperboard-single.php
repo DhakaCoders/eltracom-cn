@@ -11,9 +11,8 @@ $thisID = get_the_ID();
 
 <div class="ppaperboard-contain-ctlr">
 <?php 
-$show_hideintro = get_field('show_hideintro', $thisID);
-if($show_hideintro):
 $introsec = get_field('introsec', $thisID);
+if($introsec):
 $icons = $introsec['icons'];
 $intropostersrc = '';
 if(!empty($introsec['image'])){
@@ -50,8 +49,6 @@ if(!empty($introsec['image'])){
   </section><!-- end of cb-product-details-sec-wrp -->
 <?php endif; 
 
-$show_hidepboard = get_field('show_hidepboard', $thisID);
-if($show_hidepboard):
 $fboard = get_field('rcartonboard', $thisID);
 $vfcb = get_field('vf_cartonboard', $thisID);
 $pboard = get_field('pboardsec', $thisID);
@@ -93,7 +90,6 @@ if(!empty($pboard['image'])){
       }
      ?>
   </div>
-  <?php endif; ?>
 </div>
 
 <section class="ftr-top-wrp text-center mt--65">

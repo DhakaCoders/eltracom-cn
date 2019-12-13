@@ -7,7 +7,6 @@ get_header();
 get_template_part( 'templates/page', 'banner' ); 
 
 $thisID = get_the_ID();
-$title = get_field('title', $thisID);
 $content = get_field('content', $thisID);
 $address_ttitle = get_field('address_ttitle', $thisID);
 $schedules = get_field('schedule', $thisID);
@@ -21,10 +20,7 @@ $google_map = get_field('google_maps');
         <div class="ec-contact-frm-wrp">
            <div class="contact-form">
             <div class="wpforms-form">
-            <?php 
-              if( !empty( $title ) ) printf( '<h1>%s</h1>', $title); 
-              if( !empty( $content ) ) echo wpautop($content);
-            ?>  
+            <?php if( !empty( $content ) ) echo wpautop($content); ?>  
             </div>
           </div>
         </div>

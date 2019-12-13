@@ -50,9 +50,9 @@ $thisID = get_the_ID()
     <img src="<?php echo THEME_URI; ?>/assets/images/aboutus-logo-inc-img.png" alt="">
   </div>
   <?php 
-	$show_hide = get_field('show_hide', $thisID);
-	if($show_hide):
-  	$introsec = get_field('introsec', $thisID);
+	$introsec = get_field('introsec', $thisID);
+	if($introsec):
+  	
   ?>
   <div class="container">
     <div class="row">
@@ -66,9 +66,8 @@ $thisID = get_the_ID()
   <?php endif; ?>
 </section>
 <?php
-$show_hidekeyfea = get_field('show_hidekeyfea', HOMEID);
-if($show_hidekeyfea):
-  $keyfigures = get_field('keyfigures', HOMEID);
+$keyfigures = get_field('keyfigures', HOMEID);
+if($keyfigures):
   $counters = $keyfigures['key_figuresrep'];
   $counterposter = THEME_URI.'/assets/images/counter-bg.jpg';
   if(!empty($keyfigures['bg_image'])){
@@ -107,9 +106,8 @@ if($show_hidekeyfea):
 </section>
 <?php 
 endif;
-	$show_hidevalue = get_field('show_hidevalue', $thisID);
-	if($show_hidevalue):
-  	$valuessec = get_field('our_valuessec', $thisID);
+	$valuessec = get_field('our_valuessec', $thisID);
+	if($valuessec):
   	$uessecreps = $valuessec['our_values'];
 ?>
 <section class="ourValue-sec" id="ourValueId">
@@ -159,9 +157,8 @@ endif;
 </section>
 <?php endif; 
 
-$show_hideportfolio = get_field('show_hideportfolio', $thisID);
-if($show_hideportfolio):
 $portfoliosec= get_field('ourportfoliosec', $thisID);
+if($portfoliosec):
 $portfolios = $portfoliosec['portfolios'];
 ?>
 <section class="company-portfolio-sec" id="portfolioId">

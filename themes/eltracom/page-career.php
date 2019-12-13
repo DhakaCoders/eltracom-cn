@@ -5,8 +5,9 @@
 get_header(); 
 while ( have_posts() ) : the_post();
 $thisID = get_the_ID();
-$shortcode = get_field('shortcode', $thisID);
 get_template_part( 'templates/page', 'banner' );
+$introsec = get_field('introsec', $thisID);
+$shortcode = get_field('shortcode', $thisID);
 ?>
 
 <section class="career-frm-sec-wrp">
@@ -17,7 +18,7 @@ get_template_part( 'templates/page', 'banner' );
         <div class="ec-contact-frm-wrp">
            <div class="contact-form">
             <div class="ec-contact-frm-dsc">
-              <?php the_content(); ?>
+             <?php if( !empty( $introsec['content'] ) ) echo wpautop($introsec['content']); ?> 
             </div>
             <?php if(!empty($shortcode)): ?>
             <div class="wpforms-form">

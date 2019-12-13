@@ -32,9 +32,8 @@ if(!empty(str_replace(' ', '', $custom_page_title))){
 </section>
 
 <?php 
-$show_hide = get_field('show_hide', $thisID);
-if($show_hide):
-  $serviceea = get_field('serviceea', $thisID);
+$serviceea = get_field('serviceea', $thisID);
+if($serviceea):
   $seas = $serviceea['exclusive_agencies'];
   $link = $serviceea['link'];
 ?>

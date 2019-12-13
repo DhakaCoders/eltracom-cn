@@ -1,11 +1,8 @@
 <?php 
-/*
-  Template Name: Career
-*/
 get_header(); 
 while ( have_posts() ) : the_post();
 $thisID = get_the_ID();
-$content = get_field('content', $thisID);
+$content = get_field('intro', $thisID);
 get_template_part( 'templates/page', 'banner' );
 ?>
 <section class="article-wrap">

@@ -11,9 +11,8 @@ $thisID = get_the_ID();
 
 <section class="food-Packag-main-sec">
 <?php 
-$show_hideintro = get_field('show_hideintro', $thisID);
-if($show_hideintro):
 $introsec = get_field('introsec', $thisID);
+if($introsec):
 $icons = $introsec['icons'];
 $intropostersrc = '';
 if(!empty($introsec['image'])){
@@ -53,9 +52,8 @@ if(!empty($introsec['image'])){
   </div>
 <?php endif; 
 
-$show_hidepboard = get_field('show_hidepboard', $thisID);
-if($show_hidepboard):
 $fpboard = get_field('food_properties', $thisID);
+if($fpboard):
 $plink = $fpboard['plink'];
 $gridlogotag = '';
 if(!empty($fpboard['image'])){

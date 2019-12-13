@@ -33,10 +33,9 @@ if(!empty(str_replace(' ', '', $custom_page_title))){
 </section>
 
 <?php 
-$show_hidecsr = get_field('show_hidecsr', $thisID);
-$show_hide = get_field('show_hide', $thisID);
-if($show_hide):
-  $intro = get_field('intro', $thisID);
+$formcsrsec = get_field('formcsrsec', $thisID);
+$intro = get_field('intro', $thisID);
+if($intro): 
 ?>
 <section class="crs-page-con-wrap">
   <div class="container">
@@ -67,7 +66,7 @@ if($show_hide):
       <div class="crs-gray-box-grd-rgt">
         <?php 
           if( !empty( $box['content'] ) ) echo wpautop($box['content']);
-          if($show_hidecsr):
+          if($formcsrsec):
         ?>
           <a href="#teamModal" data-toggle="modal"><span>SOLUTIONS TOGETHER</span></a>
         <?php endif; ?>
@@ -89,10 +88,7 @@ if($show_hide):
 </section>
 
 
-<?php
-if($show_hidecsr):
-  $formcsrsec = get_field('formcsrsec', $thisID);
-?>
+<?php if($formcsrsec): ?>
 <!-- start modal content -->
 <div class="modal fade team-modal" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">

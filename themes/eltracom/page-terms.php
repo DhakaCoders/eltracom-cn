@@ -6,10 +6,8 @@ get_header();
 get_template_part( 'templates/page', 'banner' );
 
 $thisID = get_the_ID();
-$show_hide = get_field('show_hide', $thisID);
-if($show_hide):
-  $terms = get_field('terms', $thisID);
-  if($terms):
+$terms = get_field('terms', $thisID);
+if($terms):
 ?>
 <section class="article-wrap">
   <span class="terms-page-rgt-bg-txt">
@@ -56,7 +54,7 @@ if($show_hide):
     </div>
   </div>
 </section><!--.end of article-wrap -->
-<?php endif; endif; ?>
+<?php endif;?>
 
 <section class="ftr-top-wrp text-center" id="ftr-top-">
   <div class="container">

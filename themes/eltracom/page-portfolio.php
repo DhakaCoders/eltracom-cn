@@ -10,9 +10,9 @@ $thisID = get_the_ID()
 
 <div class="portfolio-page-overflow-con">
 <?php 
-$show_hide = get_field('show_hide', $thisID);
-if($show_hide):
-  $introsec = get_field('introsec', $thisID);
+$introsec = get_field('introsec', $thisID);
+if($introsec):
+  
 ?>
 <section class="portfolio-intro-sec-wrp">     
   <div class="portfolio-intro-logo">

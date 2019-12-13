@@ -183,9 +183,7 @@ if($show_hidehprod):
               <li>
                 <div class="h-pro-grd-item">
                   <?php 
-                    $ptitle = $product['title'];
-                    $subtitle = !empty($ptitle['normal_text'])? '<span>'.$ptitle['normal_text'].'</span>': '';
-                    if( !empty( $ptitle['bold_text'] ) ) printf( '<h4><a href="%s">%s %s</a></h4>', $linkurl, $ptitle['bold_text'], $subtitle);
+                    if( !empty($product['title'] ) ) printf( '<h4><a href="%s">%s</a></h4>', $linkurl, $product['title']);
                   ?>
                   <div class="h-pro-grd-item-des">
                     <i><?php echo $ppostertag; ?></i>
