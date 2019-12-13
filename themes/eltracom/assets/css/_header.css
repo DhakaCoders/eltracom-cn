@@ -105,7 +105,8 @@ header.header{
 Burger menu
 ----------------
 */
-body.body-scroll{
+body.body-scroll,
+body.menuOpened{
     overflow-y: hidden;
 }
 .burger-menu-wrap{
@@ -115,12 +116,12 @@ body.body-scroll{
     right: 0;
     top: 0;
     bottom: 0;
-    background: url(../images/burger-manu-bg-layer-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    z-index: 100;
-    display: none;
+    z-index: -99;
+    visibility: hidden;
+    opacity: 0;
 }
 .burger-menu-inner{
     position: relative;
@@ -144,7 +145,7 @@ body.body-scroll{
 }
 .bm-close-btn{
     position: fixed;
-    right: 0;
+    right: 15px;
     top: 0;
     cursor: pointer;
     width: 80px;
@@ -170,12 +171,10 @@ body.body-scroll{
 .burger-menu-parent-rgt-grd{
     float: right;
     width: 54%;
-    background: #003a91;
     height: 100%;
     position: relative;
 }
 .burger-menu-parent-lft-grd-inner{
-    background: url(../images/burger-menu-parent-lft-grd-inner-bg.png);
     position: relative;
     z-index: 2;
 }
@@ -571,6 +570,33 @@ strong#sticky-astitle{
 .sticky-scroll-numbers ul li a:hover span,
 .sticky-scroll-numbers ul li.current a span{
     opacity: 0;
+}
+.burger-menu-holder{
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+.leftBg1{
+    background: url(../images/burger-menu-parent-lft-grd-inner-bg.png);
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.leftBg2{}
+.rightBg{
+    width: 54%;
+    background: #003a91;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.rightBg, .burger-menu-parent-rgt-grd{
+    transform-origin: center;
 }
 @media(max-width: 1899px){
     .bm-lft-btm-lgo {

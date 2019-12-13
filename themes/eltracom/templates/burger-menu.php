@@ -10,6 +10,12 @@
 
 <div class="burger-menu-wrap">
   <div class="burger-menu-inner clearfix">
+
+    <div class="leftBg1"></div>
+    <div class="leftBg2"></div>
+    <div class="rightBg"></div>
+    
+    <div class="burger-menu-holder clearfix">
     <div class="bm-lft-btm-lgo">
       <img src="<?php echo THEME_URI; ?>/assets/images/bm-lft-btm-lgo.png">
     </div>
@@ -18,9 +24,6 @@
     </div>
 
     <div class="burger-menu-parent-lft-grd">
-      <div class="bm-content-center-logo">
-        <img src="<?php echo THEME_URI; ?>/assets/images/bm-content-center-logo.png">
-      </div>
       <div class="burger-menu-parent-lft-grd-inner clearfix matchHeightCol">
         <div class="burger-menu-site-logo">
           <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -124,4 +127,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
