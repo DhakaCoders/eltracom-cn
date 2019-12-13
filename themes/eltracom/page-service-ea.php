@@ -55,7 +55,7 @@ if($serviceea):
             $link1 = !empty($sea['link'])? $sea['link']: '#';
             $seapostertag = '';
             if(!empty($sea['image'])){
-              $seapostertag = cbv_get_image_tag($sea['image']);
+              $seapostertag = cbv_get_image_tag($sea['image'], 'seagrid');
             } 
             ?>
             <li class="clearfix">

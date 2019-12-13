@@ -25,7 +25,11 @@ if( !function_exists('cbv_theme_setup') ){
     add_image_size( 'hmintro', 918, 672, true );
     add_image_size( 'hmfea', 608, 336, true );
     add_image_size( 'hmcontr', 1920, 560, true );
-		add_image_size( 'hmgit', 1920, 466, true );
+    add_image_size( 'hmgit', 1920, 466, true );
+    add_image_size( 'seagrid', 794, 462, true );
+    add_image_size( 'prtfgrid', 1800, 400, true );
+    add_image_size( 'compgrid', 766, 410, true );
+    add_image_size( 'crsbox', 478, 666, true );
 
 		
 		// add size to media uploader

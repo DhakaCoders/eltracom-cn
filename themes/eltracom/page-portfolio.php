@@ -46,7 +46,7 @@ if( $proQuery->have_posts() ){
       $overview = get_field('overviewsec', get_the_ID());
       $gridimage = '';
       if(!empty($overview['image'])){
-        $gridimage = cbv_get_image_src($overview['image']);
+        $gridimage = cbv_get_image_src($overview['image'], 'prtfgrid');
       } 
       $gridlogotag = '';
       if(!empty($overview['logo'])){

@@ -55,7 +55,7 @@ if($intro):
   if($box):
   $posterr = '';
   if(!empty($box['image'])){
-    $posterr = cbv_get_image_src($box['image']);
+    $posterr = cbv_get_image_src($box['image'], 'crsbox');
   }
   ?>
   <div class="crs-gray-box">

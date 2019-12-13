@@ -131,8 +131,8 @@ endif;
       		$valposter = '';
       		$valpostertag = '';
             if(!empty($uessecrep['image'])){
-              $valposter = cbv_get_image_src($uessecrep['image']);
-              $valpostertag = cbv_get_image_tag($uessecrep['image']);
+              $valposter = cbv_get_image_src($uessecrep['image'], 'compgrid');
+              $valpostertag = cbv_get_image_tag($uessecrep['image'], 'compgrid');
             } 
       	?>
       	<li class="clearfix">
@@ -144,7 +144,10 @@ endif;
           </div>
           <div class="ourValue-des clearfix">
             <div class="ourValue-des-innr">
-            <?php if( !empty( $uessecrep['content'] ) ) echo wpautop($uessecrep['content']); ?>
+            <?php 
+            if( !empty( $uessecrep['title'] ) ) printf('<h3>%s</h3>', $uessecrep['title']); 
+            if( !empty( $uessecrep['content'] ) ) echo wpautop($uessecrep['content']); 
+            ?>
             </div>
           </div>
         </li>
